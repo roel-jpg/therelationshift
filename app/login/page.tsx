@@ -12,7 +12,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   if (user && !invite) redirect(next || '/program');
 
   return (
-    <div className="container section" style={{ maxWidth: 480 }}>
+    <div className="container page auth">
       <h1 className="center">Welcome back</h1>
       <AuthForm mode="login" action={logIn} invite={invite} next={next} />
     </div>

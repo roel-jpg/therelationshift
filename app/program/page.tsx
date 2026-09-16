@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
+import { Honeycomb } from '@/components/Honeycomb';
 import { completedDays, listExercises, openInviteFor } from '@/lib/repo';
 import { getCurrentUser } from '@/lib/session';
 import { createInviteAction } from '@/lib/actions';
@@ -23,50 +24,54 @@ export default async function ProgramPage({ searchParams }: { searchParams: Prom
   const base = process.env.NEXT_PUBLIC_SITE_URL || '';
 
   return (
-    <div className="container narrow section">
-      <h1>Hi {user.firstName}</h1>
-      {paired && <p className="notice">You and {partner?.firstName ?? 'your partner'} are now connected. Enjoy the program together!</p>}
-
-      <div className="card block">
-        {partner ? (
+    <>
+      <section className="program-top">
+        <div className="container">
+          <h1>Hi {user.firstName}</h1>
           <p>
-            You are doing the program with <strong>{partner.firstName}</strong>. You have completed {done.size} of 21 days,{' '}
-            {partner.firstName} has completed {partnerDone.size}.
+            {partner
+              ? `You and ${partner.firstName} have completed ${done.size} and ${partnerDone.size} of 21 days.`
+              : `You have completed ${done.size} of 21 days.`}
           </p>
-        ) : (
-          <>
-            <h3>Invite your partner</h3>
-            <p className="muted">The program works best when you both do it. Send your partner this link; when they sign up, your accounts are connected.</p>
-            {invite ? (
-              <p className="invite-link">{base}/invite/{invite.token}</p>
-            ) : (
-              <form action={createInviteAction}>
-                <button className="btn" type="submit">Create invite link</button>
-              </form>
-            )}
-          </>
-        )}
-        <p style={{ marginTop: 16, marginBottom: 0 }}>
-          <Link href={`/program/day/${nextDay}`} className="btn">
-            {done.size === 0 ? 'Start with day 1' : done.size >= 21 ? 'Review the program' : `Continue with day ${nextDay}`}
-          </Link>
-        </p>
-      </div>
+        </div>
+      </section>
 
-      <div className="days">
-        {days.map((d) => (
-          <Link key={d.day} href={`/program/day/${d.day}`} className={`day-card${done.has(d.day) ? ' done' : ''}`}>
-            <div className="day-num">{done.has(d.day) ? '✓' : d.day}</div>
-            <div>
-              <div className="title">{d.title}</div>
-              <div className="meta">
-                {d.durationMin} min
-                {partner && partnerDone.has(d.day) ? ` · ${partner.firstName} done` : ''}
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
-    </div>
+      <section className="container program-body">
+        <div className="card partner-card">
+          {paired && <p className="notice">You and {partner?.firstName ?? 'your partner'} are now connected. Enjoy the program together!</p>}
+          {partner ? (
+            <p className="muted">You are doing the program with <strong>{partner.firstName}</strong>. Days you both completed light up green.</p>
+          ) : (
+            <>
+              <h3>Invite your partner</h3>
+              <p className="muted">The program works best when you both do it. Send your partner this link; when they sign up, your accounts are connected.</p>
+              {invite ? (
+                <p className="invite-link">{base}/invite/{invite.token}</p>
+              ) : (
+                <form action={createInviteAction}>
+                  <button className="btn secondary" type="submit">Create invite link</button>
+                </form>
+              )}
+            </>
+          )}
+          <p style={{ marginTop: 16, marginBottom: 0 }}>
+            <Link href={`/program/day/${nextDay}`} className="btn">
+              {done.size === 0 ? 'Start with day 1' : done.size >= 21 ? 'Review the program' : `Continue with day ${nextDay}`} <span className="arrow">→</span>
+            </Link>
+          </p>
+        </div>
+
+        <Honeycomb days={days} done={done} />
+
+        <div className="grid" style={{ marginTop: 40 }}>
+          {days.map((d) => (
+            <Link key={d.day} href={`/program/day/${d.day}`} className="card" style={{ padding: '14px 18px', color: 'inherit' }}>
+              <span className="muted small">Day {d.day} · {d.durationMin} min{done.has(d.day) ? ' · ✓ done' : ''}{partner && partnerDone.has(d.day) ? ` · ${partner.firstName} ✓` : ''}</span>
+              <div>{d.title}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

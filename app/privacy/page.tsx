@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: 'Disclaimer & privacy' };
 export default function PrivacyPage() {
   const text = (pages as Record<string, string>)['Disclaimer & Privacy Policy'] ?? '';
   return (
-    <div className="container narrow section">
+    <div className="container narrow page">
       <h1>Disclaimer &amp; privacy policy</h1>
       <div className="rich" dangerouslySetInnerHTML={{ __html: text }} />
     </div>

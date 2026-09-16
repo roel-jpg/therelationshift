@@ -35,7 +35,7 @@ export type Exercise = {
   durationMin: number;
 };
 
-export type ExerciseSummary = Pick<Exercise, 'day' | 'title' | 'type' | 'durationMin'>;
+export type ExerciseSummary = Pick<Exercise, 'day' | 'title' | 'type' | 'durationMin' | 'imageUrl'>;
 
 export type Answer = {
   exerciseId: number;
@@ -134,10 +134,10 @@ export async function markInviteAccepted(id: string) {
 // ---------- Exercises ----------
 
 export async function listExercises(): Promise<ExerciseSummary[]> {
-  const rows = await query<{ day: number; title: string; type: string; duration_min: number | null }>(
-    'SELECT day, title, type, duration_min FROM exercises ORDER BY day',
+  const rows = await query<{ day: number; title: string; type: string; duration_min: number | null; image_url: string | null }>(
+    'SELECT day, title, type, duration_min, image_url FROM exercises ORDER BY day',
   );
-  return rows.map((r) => ({ day: r.day, title: r.title, type: r.type, durationMin: r.duration_min ?? 15 }));
+  return rows.map((r) => ({ day: r.day, title: r.title, type: r.type, durationMin: r.duration_min ?? 15, imageUrl: r.image_url }));
 }
 
 export async function getExercise(day: number) {

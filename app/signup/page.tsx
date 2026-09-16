@@ -12,7 +12,7 @@ export default async function SignupPage({ searchParams }: { searchParams: Promi
   if (user && !invite) redirect(next || '/program');
 
   return (
-    <div className="container section" style={{ maxWidth: 480 }}>
+    <div className="container page auth">
       <h1 className="center">Start for free</h1>
       <p className="muted center">
         {invite ? 'Your partner invited you to do The Relationshift together. Create an account to connect.' : 'Create an account to save your progress and invite your partner.'}

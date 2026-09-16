@@ -56,7 +56,7 @@ check "A sees B" "$(page a.jar $B/program | grep -c 'with <strong>Bob')" 1
 
 # A answers day 2 (love language)
 act_form a.jar $SAVE $B/program/day/2 -F day=2 -F 'data={"choices":["A","B","A"],"scores":{"A":2,"B":1,"C":0,"D":0,"E":0},"result":"A"}' -F reflection=nice -F rating=5 >/dev/null
-check "A day 2 saved" "$(page a.jar $B/program | grep -o 'class="day-card done"' | wc -l | tr -d ' ')" 1
+check "A day 2 saved" "$(page a.jar $B/program | grep -o 'class="hex done"' | wc -l | tr -d ' ')" 1
 check "B sees A result" "$(page b.jar $B/program/day/2 | grep -c 'Words of Affirmation')" 1
 check "A can edit day 2" "$(page a.jar $B/program/day/2 | grep -c 'Save changes')" 1
 

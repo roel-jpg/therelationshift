@@ -8,7 +8,8 @@ export default function AboutPage() {
   const about = (pages as Record<string, string>)['About US'] ?? '';
   const beliefs = (pages as Record<string, string>)['Our Beliefs'] ?? '';
   return (
-    <div className="container narrow section">
+    <div className="container narrow page">
+      <img src="/media/site/about.jpg" alt="" style={{ borderRadius: 16, marginBottom: 28, maxHeight: 420, width: '100%', objectFit: 'cover' }} />
       <h1>Our story</h1>
       <div className="rich block" dangerouslySetInnerHTML={{ __html: about }} />
       <h2>Our beliefs</h2>

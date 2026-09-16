@@ -23,7 +23,7 @@ export default async function InvitePage({ params, searchParams }: { params: Pro
 
   if (!invite || !sender || invite.acceptedAt) {
     return (
-      <div className="container narrow section center">
+      <div className="container narrow page center">
         <h1>Invitation</h1>
         <p className="error">{MESSAGES['not-found']}</p>
         <Link href="/" className="btn secondary">Home</Link>
@@ -32,7 +32,7 @@ export default async function InvitePage({ params, searchParams }: { params: Pro
   }
 
   return (
-    <div className="container section center" style={{ maxWidth: 520 }}>
+    <div className="container page center" style={{ maxWidth: 520 }}>
       <h1>{sender.firstName} invited you</h1>
       <p className="muted">
         {sender.firstName} wants to do The Relationshift with you: 21 days of small exercises to strengthen your relationship. It is free.

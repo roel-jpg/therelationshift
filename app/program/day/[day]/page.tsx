@@ -38,15 +38,15 @@ export default async function DayPage({ params, searchParams }: { params: Promis
   const partnerResult = (partnerAnswer?.data ?? null) as { result?: string } | null;
 
   return (
-    <div className="container narrow section">
-      <p className="small"><Link href={user ? '/program' : '/'}>← All days</Link></p>
-      <div className="exercise-hero">
-        {ex.imageUrl && <img src={ex.imageUrl} alt="" />}
-        <div className="label">
-          <span>Day {ex.day} · {ex.durationMin} min</span>
-          <h1>{ex.title}</h1>
-        </div>
+    <>
+    <section className="exercise-hero" style={ex.imageUrl ? { backgroundImage: `url(${ex.imageUrl})` } : undefined}>
+      <Link href={user ? '/program' : '/'} className="back">← All days</Link>
+      <div className="container narrow">
+        <span className="eyebrow">Day {ex.day} · {ex.durationMin} min</span>
+        <h1>{ex.title}</h1>
       </div>
+    </section>
+    <div className="container narrow page">
 
       {done && <p className="notice">Saved. Nice work — see you tomorrow for day {Math.min(day + 1, 21)}.</p>}
 
@@ -118,5 +118,6 @@ export default async function DayPage({ params, searchParams }: { params: Promis
         {day < 21 ? <Link href={`/program/day/${day + 1}`} className="btn secondary">Day {day + 1} →</Link> : <Link href="/program" className="btn secondary">Overview</Link>}
       </div>
     </div>
+    </>
   );
 }
