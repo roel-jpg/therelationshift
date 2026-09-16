@@ -5,9 +5,11 @@ export function MapSection({ title, markers, columns, exercisesCompleted, nation
   title: string;
   markers: Marker[];
   columns: { c1: string; c2: string; c2items: string[]; c3: string };
-  exercisesCompleted: string;
+  exercisesCompleted: number;
   nationalities: string;
 }) {
+  // A rounded historic baseline plus everything done since, so "+" rather than a figure to the unit.
+  const completed = `${exercisesCompleted.toLocaleString('en-US')}+`;
   return (
     <section className="home-maps">
       <div className="map-box container">
@@ -27,7 +29,7 @@ export function MapSection({ title, markers, columns, exercisesCompleted, nation
       <div className="map-content container">
         <div className="map-widget">
           <div className="head">{columns.c1}</div>
-          <div className="content map-number">{exercisesCompleted}</div>
+          <div className="content map-number">{completed}</div>
         </div>
         <div className="map-widget">
           <div className="head">{columns.c2}</div>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getCurrentUser } from '@/lib/session';
+import { communityStats } from '@/lib/repo';
 import texts from '@/content/site-texts.json';
 import { HeroSlider } from '@/components/home/HeroSlider';
 import { HowItWorks } from '@/components/home/HowItWorks';
@@ -31,10 +32,12 @@ const testimonials = Object.values(site.testimonial)
   .filter((t) => t.images !== 'nl')
   .map((t) => ({ name: t.name, flag: t.images, text: t.url }));
 const markers = Object.values(site.markerList ?? {});
+// The three exercises the old site listed as most popular; used until there is enough new data.
+const HISTORIC_TOP = [hc.map_column_2_content_1, hc.map_column_2_content_2, hc.map_column_2_content_3];
 const nationalityCount = new Set(markers.filter((m) => m.x != null && m.name !== 'Country ID').map((m) => m.name)).size;
 
 export default async function Home() {
-  const user = await getCurrentUser();
+  const [user, stats] = await Promise.all([getCurrentUser(), communityStats()]);
   const joinHref = user ? '/dashboard' : '/signup';
   const steps = [1, 2, 3, 4, 5].map((n) => ({ title: hc[`how_${n}_title`] ?? '', description: hc[`how_${n}_description`] ?? '' }));
 
@@ -89,9 +92,9 @@ export default async function Home() {
         <MapSection
           title={hc.map_title}
           markers={markers}
-          columns={{ c1: hc.map_column_1, c2: hc.map_column_2, c2items: [hc.map_column_2_content_1, hc.map_column_2_content_2, hc.map_column_2_content_3], c3: hc.map_column_3 }}
-          exercisesCompleted="29.000+"
-          nationalities={`${hc.map_nationality} Couples from ${nationalityCount}+ countries have joined so far.`}
+          columns={{ c1: hc.map_column_1, c2: hc.map_column_2, c2items: stats.topExercises.length ? stats.topExercises : HISTORIC_TOP, c3: hc.map_column_3 }}
+          exercisesCompleted={stats.exercisesCompleted}
+          nationalities={`Every dot is a place where couples did The Relationshift® — ${nationalityCount} countries since 2016.`}
         />
 
         <Testimonials items={testimonials} title={hc.testimonial_title} intro={hc.testimonial_description} joinHref={joinHref} joinLabel={hc.testimonial_button_join ?? 'Join Now'} />

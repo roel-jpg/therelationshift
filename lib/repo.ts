@@ -180,3 +180,37 @@ export async function createMessage(input: { name: string; email: string; messag
   );
   return id;
 }
+
+// ---------- Community numbers (map section on the home page) ----------
+
+// The 2016–2020 programme ran on the old site and app; those exercises are not in this database.
+// We start the counter at a rounded figure for that period and add everything done since.
+export const EXERCISES_BASELINE = Number(process.env.EXERCISES_BASELINE ?? 20000);
+
+// Below this many answers the "most popular" list would be noise, so we keep the 2016 top three.
+const POPULAR_MIN_ANSWERS = 25;
+
+export type CommunityStats = { exercisesCompleted: number; participants: number; topExercises: string[] };
+
+export async function communityStats(): Promise<CommunityStats> {
+  try {
+    const [answers, users, popular] = await Promise.all([
+      one<{ c: number }>('SELECT COUNT(*) AS c FROM answers'),
+      one<{ c: number }>('SELECT COUNT(*) AS c FROM users'),
+      query<{ title: string; c: number }>(
+        `SELECT e.title AS title, COUNT(*) AS c FROM answers a
+         JOIN exercises e ON e.id = a.exercise_id
+         GROUP BY e.title ORDER BY c DESC, e.title LIMIT 3`,
+      ),
+    ]);
+    const done = Number(answers?.c ?? 0);
+    return {
+      exercisesCompleted: EXERCISES_BASELINE + done,
+      participants: Number(users?.c ?? 0),
+      topExercises: done >= POPULAR_MIN_ANSWERS ? popular.map((p) => p.title) : [],
+    };
+  } catch (err) {
+    console.error('[stats] falling back to the baseline', err);
+    return { exercisesCompleted: EXERCISES_BASELINE, participants: 0, topExercises: [] };
+  }
+}
