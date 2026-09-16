@@ -2,6 +2,9 @@
 //  - Postgres (production, via `pg`) when DATABASE_URL starts with "postgres"
 //  - SQLite (local development, via Node's built-in `node:sqlite`) otherwise
 // Column types are kept simple (TEXT/INTEGER, JSON as text, ISO timestamps) so the same SQL works on both.
+import programJson from '@/content/program.json';
+import productsJson from '@/content/products.json';
+
 type Row = Record<string, unknown>;
 
 interface Backend {
@@ -128,10 +131,9 @@ async function init(): Promise<Backend> {
 async function seedIfEmpty(backend: Backend) {
   const [{ n }] = (await backend.query('SELECT COUNT(*) AS n FROM exercises')) as { n: number | string }[];
   if (Number(n) >= 21) return;
-  const { readFileSync } = await import('node:fs');
-  const { join } = await import('node:path');
-  const program = JSON.parse(readFileSync(join(process.cwd(), 'content', 'program.json'), 'utf8')) as SeedExercise[];
-  const products = JSON.parse(readFileSync(join(process.cwd(), 'content', 'products.json'), 'utf8')) as SeedProduct[];
+  // Imported statically so the content is bundled into the serverless function (reading from disk fails on Vercel).
+  const program = programJson as unknown as SeedExercise[];
+  const products = productsJson as unknown as SeedProduct[];
   const DURATIONS: Record<string, number> = { 'noop-audio': 20, 'single-audio': 15, 'multiple-match-category': 20 };
   for (const e of program) {
     await backend.query(
