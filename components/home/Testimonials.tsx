@@ -14,7 +14,7 @@ function FlagHex({ t, idx, active, onClick }: { t: Testimonial; idx: number; act
       <svg viewBox="0 -1 93 108" aria-hidden="true">
         <defs>
           <pattern id={`flag-${idx}`} patternUnits="userSpaceOnUse" width="93" height="108">
-            <image href={`/media/site/flag-${t.flag}.png`} x="-54" y="-21" width="200" height="150" preserveAspectRatio="xMidYMid slice" />
+            <image href={`/media/site/flag-${t.flag}.png`} x="-24" y="0" width="141" height="108" preserveAspectRatio="xMidYMid slice" />
           </pattern>
         </defs>
         <path d={HEX_PATH} fill="#38375F" />
