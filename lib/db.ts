@@ -115,6 +115,13 @@ CREATE TABLE IF NOT EXISTS products (
   author TEXT,
   for_who TEXT
 );
+CREATE TABLE IF NOT EXISTS messages (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  message TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
 `;
 
 let ready: Promise<Backend> | null = null;

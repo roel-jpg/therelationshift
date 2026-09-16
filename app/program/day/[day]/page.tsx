@@ -40,7 +40,7 @@ export default async function DayPage({ params, searchParams }: { params: Promis
   return (
     <>
     <section className="exercise-hero" style={ex.imageUrl ? { backgroundImage: `url(${ex.imageUrl})` } : undefined}>
-      <Link href={user ? '/program' : '/'} className="back">← All days</Link>
+      <Link href={user ? '/dashboard' : '/'} className="back">← All days</Link>
       <div className="container narrow">
         <span className="eyebrow">Day {ex.day} · {ex.durationMin} min</span>
         <h1>{ex.title}</h1>
@@ -115,7 +115,7 @@ export default async function DayPage({ params, searchParams }: { params: Promis
 
       <div className="pager">
         {day > 1 ? <Link href={`/program/day/${day - 1}`} className="btn secondary">← Day {day - 1}</Link> : <span />}
-        {day < 21 ? <Link href={`/program/day/${day + 1}`} className="btn secondary">Day {day + 1} →</Link> : <Link href="/program" className="btn secondary">Overview</Link>}
+        {day < 21 ? <Link href={`/program/day/${day + 1}`} className="btn secondary">Day {day + 1} →</Link> : <Link href="/dashboard" className="btn secondary">Overview</Link>}
       </div>
     </div>
     </>

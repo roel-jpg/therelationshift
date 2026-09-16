@@ -11,7 +11,7 @@ export default async function AccountPage() {
   const partner = user.partner;
 
   return (
-    <div className="container narrow page">
+    <div className="container narrow page page-offset">
       <h1>Your account</h1>
       <div className="card block">
         <p><strong>Name</strong><br />{user.firstName}</p>

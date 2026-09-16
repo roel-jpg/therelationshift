@@ -2,6 +2,7 @@
 import { useActionState } from 'react';
 import Link from 'next/link';
 import type { ActionState } from '@/lib/actions';
+import { ArrowRight } from './Icons';
 
 type Props = {
   mode: 'signup' | 'login';
@@ -10,6 +11,7 @@ type Props = {
   next?: string;
 };
 
+// Sign up / sign in form in the style of the original register page (hairline inputs, gradient pill button with arrow).
 export function AuthForm({ mode, action, invite, next }: Props) {
   const [state, formAction, pending] = useActionState(action, undefined);
   const isSignup = mode === 'signup';
@@ -19,34 +21,26 @@ export function AuthForm({ mode, action, invite, next }: Props) {
   const q = qs.toString() ? `?${qs.toString()}` : '';
 
   return (
-    <form action={formAction} className="form card">
-      {invite && <input type="hidden" name="invite" value={invite} />}
-      {next && <input type="hidden" name="next" value={next} />}
-      {state?.error && <p className="error">{state.error}</p>}
-      {isSignup && (
-        <label>
-          First name
-          <input type="text" name="firstName" required autoComplete="given-name" />
-        </label>
-      )}
-      <label>
-        Email
-        <input type="email" name="email" required autoComplete="email" />
-      </label>
-      <label>
-        Password
-        <input type="password" name="password" required minLength={isSignup ? 8 : 1} autoComplete={isSignup ? 'new-password' : 'current-password'} />
-      </label>
-      <button className="btn block" type="submit" disabled={pending}>
-        {pending ? 'One moment...' : isSignup ? 'Create free account' : 'Log in'}
-      </button>
-      <p className="small muted center" style={{ margin: 0 }}>
-        {isSignup ? (
-          <>Already have an account? <Link href={`/login${q}`}>Log in</Link></>
-        ) : (
-          <>New here? <Link href={`/signup${q}`}>Create a free account</Link></>
-        )}
-      </p>
-    </form>
+    <div className="auth-box">
+      <form action={formAction} className="rs-form form-input">
+        <div className="form-head">{isSignup ? 'Sign up' : 'Sign in'}</div>
+        {invite && <input type="hidden" name="invite" value={invite} />}
+        {next && <input type="hidden" name="next" value={next} />}
+        {isSignup && <input type="text" name="firstName" placeholder="First name" required autoComplete="given-name" />}
+        <input type="email" name="email" placeholder="Email" required autoComplete="email" />
+        <input type="password" name="password" placeholder={isSignup ? 'Password (at least 8 characters)' : 'Password'} required minLength={isSignup ? 8 : 1} autoComplete={isSignup ? 'new-password' : 'current-password'} />
+        {state?.error && <div className="rs-error">{state.error}</div>}
+        <div className="save-button">
+          <button type="submit" disabled={pending}>{pending ? 'One moment…' : isSignup ? 'Sign Up' : 'Sign In'}<ArrowRight /></button>
+        </div>
+        <p className="small-content">
+          {isSignup ? (
+            <>Already have an account? <Link href={`/login${q}`}>Sign in</Link></>
+          ) : (
+            <>New here? <Link href={`/signup${q}`}>Create a free account</Link></>
+          )}
+        </p>
+      </form>
+    </div>
   );
 }

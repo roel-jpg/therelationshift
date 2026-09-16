@@ -39,29 +39,29 @@ check "day 2 needs login" "$(curl -s -o /dev/null -w '%{http_code}' $B/program/d
 
 # Sign up user A
 act_state a.jar $SIGNUP $B/signup -F firstName=Anna -F email=anna@example.com -F password=password1 >/dev/null
-check "A logged in" "$(page a.jar $B/program | grep -c 'Hi Anna')" 1
+check "A logged in" "$(page a.jar $B/dashboard | grep -c 'Hi Anna')" 1
 rm -f dup.jar; act_state dup.jar $SIGNUP $B/signup -F firstName=Anna -F email=anna@example.com -F password=password1 >/dev/null
 check "duplicate signup gets no session" "$(n=$(grep -c rs_session dup.jar 2>/dev/null); echo ${n:-0})" 0
 
 # A creates invite
-act_form a.jar $INVITE $B/program >/dev/null
-TOKEN=$(page a.jar $B/program | grep -o 'invite/[A-Za-z0-9_-]*' | head -1 | cut -d/ -f2)
+act_form a.jar $INVITE $B/dashboard >/dev/null
+TOKEN=$(page a.jar $B/dashboard | grep -o 'invite/[A-Za-z0-9_-]*' | head -1 | cut -d/ -f2)
 check "invite token created" "$([ -n "$TOKEN" ] && echo yes)" yes
 check "invite page shows sender" "$(curl -s $B/invite/$TOKEN | sed 's/<!-- -->//g' | grep -c 'Anna invited you')" 1
 
 # B signs up via invite
 act_state b.jar $SIGNUP "$B/signup?invite=$TOKEN" -F firstName=Bob -F email=bob@example.com -F password=password2 -F invite=$TOKEN >/dev/null
-check "B paired with A" "$(page b.jar $B/program | grep -c 'with <strong>Anna')" 1
-check "A sees B" "$(page a.jar $B/program | grep -c 'with <strong>Bob')" 1
+check "B paired with A" "$(page b.jar $B/dashboard | grep -c 'with <strong>Anna')" 1
+check "A sees B" "$(page a.jar $B/dashboard | grep -c 'with <strong>Bob')" 1
 
 # A answers day 2 (love language)
 act_form a.jar $SAVE $B/program/day/2 -F day=2 -F 'data={"choices":["A","B","A"],"scores":{"A":2,"B":1,"C":0,"D":0,"E":0},"result":"A"}' -F reflection=nice -F rating=5 >/dev/null
-check "A day 2 saved" "$(page a.jar $B/program | grep -o 'class="hex done"' | wc -l | tr -d ' ')" 1
+check "A day 2 saved" "$(page a.jar $B/dashboard | grep -o 'class="hex done"' | wc -l | tr -d ' ')" 1
 check "B sees A result" "$(page b.jar $B/program/day/2 | grep -c 'Words of Affirmation')" 1
 check "A can edit day 2" "$(page a.jar $B/program/day/2 | grep -c 'Save changes')" 1
 
 # Login / logout
-act_form a.jar $LOGOUT $B/program >/dev/null
+act_form a.jar $LOGOUT $B/dashboard >/dev/null
 check "A logged out" "$(page a.jar $B/account | head -c 0; curl -s -o /dev/null -w '%{http_code}' -b a.jar $B/account)" 307
 act_state a.jar $LOGIN $B/login -F email=anna@example.com -F password=wrong >/dev/null
 check "wrong password stays out" "$(curl -s -o /dev/null -w '%{http_code}' -b a.jar $B/account)" 307

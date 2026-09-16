@@ -1,113 +1,103 @@
 import Link from 'next/link';
-import { Honeycomb } from '@/components/Honeycomb';
-import { listExercises } from '@/lib/repo';
+import type { Metadata } from 'next';
 import { getCurrentUser } from '@/lib/session';
 import texts from '@/content/site-texts.json';
+import { HeroSlider } from '@/components/home/HeroSlider';
+import { HowItWorks } from '@/components/home/HowItWorks';
+import { MapSection } from '@/components/home/MapSection';
+import { Testimonials } from '@/components/home/Testimonials';
+import { BookstoreFooter } from '@/components/Books';
+import { ArrowRight } from '@/components/Icons';
 
 type Hardcode = Record<string, string>;
-type Testimonial = { name: string; images: string; url: string };
+type TestimonialRow = { name: string; images: string; url: string };
+type Marker = { name: string; x: number | null; y: number | null };
 
-const site = texts as unknown as { hardcode: Record<string, unknown>; testimonial: Record<string, Testimonial> };
+const site = texts as unknown as {
+  hardcode: Record<string, unknown>;
+  testimonial: Record<string, TestimonialRow>;
+  markerList: Record<string, Marker>;
+  hardcode_meta: Record<string, Record<string, string>>;
+};
 const hc = ((site.hardcode.en as Hardcode | undefined) ?? (site.hardcode as Hardcode));
-const testimonials = Object.values(site.testimonial);
+const meta = site.hardcode_meta?.en ?? {};
+
+export const metadata: Metadata = {
+  title: { absolute: meta.home_meta_title ?? 'You want to improve your relationship? | The Relationshift' },
+  description: meta.home_meta_description,
+};
+
+const testimonials = Object.values(site.testimonial)
+  .filter((t) => t.images !== 'nl')
+  .map((t) => ({ name: t.name, flag: t.images, text: t.url }));
+const markers = Object.values(site.markerList ?? {});
+const nationalityCount = new Set(markers.filter((m) => m.x != null && m.name !== 'Country ID').map((m) => m.name)).size;
 
 export default async function Home() {
   const user = await getCurrentUser();
-  const days = await listExercises();
+  const joinHref = user ? '/dashboard' : '/signup';
+  const steps = [1, 2, 3, 4, 5].map((n) => ({ title: hc[`how_${n}_title`] ?? '', description: hc[`how_${n}_description`] ?? '' }));
 
   return (
     <>
-      {/* Hero — full-bleed sunset photo from the original site */}
-      <section className="hero" style={{ backgroundImage: "url('/media/site/hero-1.jpg')" }}>
-        <div className="container">
-          <div>
-            <h1>{hc.slider_title ?? 'Welcome to The Relationshift®'}</h1>
-            <p className="lead">{hc.slider_text}</p>
-            <div className="actions">
-              <Link href={user ? '/program' : '/signup'} className="btn">{user ? 'Go to my program' : 'Join now — it’s free'} <span className="arrow">→</span></Link>
-              <Link href="/program/day/1" className="btn ghost">Try day 1 first</Link>
+      <HeroSlider images={['/media/site/hero-1.jpg', '/media/site/hero-2.jpg', '/media/site/hero-3.jpg']} />
+
+      <div className="slider-content">
+        <div className="slider-box">
+          <div className="big-banner wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+            <img src="/media/site/app.png" alt="The Relationshift app" />
+          </div>
+          <div className="slider-main-content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <div className="head wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"><h1>{hc.slider_title}</h1></div>
+            <div className="content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">{hc.slider_text}</div>
+            <div className="read-more wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
+              <div className="group-center">
+                <Link href={joinHref} className="btn-gradient"><span>{user ? 'My program' : 'Join now'}</span><ArrowRight /></Link>
+                <Link href="/program/day/1" className="btn-gradient"><span>Try day 1</span><ArrowRight /></Link>
+              </div>
             </div>
           </div>
-          <div className="hero-comb">
-            <Honeycomb days={days.slice(0, 8)} size="small" link={false} />
-          </div>
         </div>
-      </section>
+      </div>
 
-      {/* How it works — five numbered hexagons, as on the original home page */}
-      <section className="section how" style={{ backgroundImage: "url('/media/site/how-bg.jpg')" }}>
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">{hc.how_title ?? 'How it works'}</span>
-            <h2>{hc.how_subtitle ?? 'Your 21 day relationship workout'}</h2>
-          </div>
-          <div className="how-intro">
-            <p>{hc.how_left}</p>
-            <p>{hc.how_right}</p>
-          </div>
-          <div className="steps">
-            {[1, 2, 3, 4, 5].map((n) => (
-              <div className="step" key={n}>
-                <div className="step-hex">{n}</div>
-                <div>
-                  <h3>{hc[`how_${n}_title`]}</h3>
-                  <div className="rich" dangerouslySetInnerHTML={{ __html: hc[`how_${n}_description`] ?? '' }} />
+      <div className="main-content-home">
+        {/* How it works */}
+        <section className="home-description" style={{ backgroundImage: "url('/media/site/how-bg.jpg')" }}>
+          <div className="home-description-container container">
+            <div className="block-head">
+              <div className="left wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".6s">
+                <div className="desc-head">{hc.how_title}</div>
+                <div className="desc-slogan"><h2>{hc.how_subtitle}</h2></div>
+                <div className="desc wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".7s">
+                  {hc.how_left}
+                  <div className="read-more">
+                    <Link href="/program" className="btn-gradient w200"><span>Learn more</span><ArrowRight /></Link>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-          <p className="center" style={{ marginTop: 40 }}>
-            <Link href={user ? '/program' : '/signup'} className="btn">Join now <span className="arrow">→</span></Link>
-          </p>
-        </div>
-      </section>
-
-      {/* The 21 days as a honeycomb */}
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">The program</span>
-            <h2>21 days, one exercise a day</h2>
-            <p>Communication, intimacy, gratitude, meditation and your shared story. 5 to 25 minutes a day, together.</p>
-          </div>
-          <Honeycomb days={days} lockedFrom={user ? null : 2} />
-          {!user && <p className="center muted small" style={{ marginTop: 16 }}>Day 1 is open to everyone. Create a free account to unlock all 21 days and do the program with your partner.</p>}
-        </div>
-      </section>
-
-      {/* Community */}
-      <section className="section community">
-        <div className="container">
-          <h2>{hc.map_title ?? 'Join the global community & feel connected'}</h2>
-          <p style={{ maxWidth: 640, margin: '0 auto' }}>{hc.map_nationality}</p>
-          <div className="stats">
-            <div><strong>29,000+</strong><span>{hc.map_column_1 ?? 'exercises completed'}</span></div>
-            <div><strong>34+</strong><span>nationalities</span></div>
-            <div><strong>21</strong><span>days · 5–25 minutes each</span></div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials on the dark photo, as on the original */}
-      <section className="section testimonials" style={{ backgroundImage: "url('/media/site/testimonial-bg.jpg')" }}>
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow" style={{ color: '#fbb022' }}>Couples say</span>
-            <h2>What it did for them</h2>
-          </div>
-          <div className="quotes">
-            {testimonials.filter((t) => t.images !== "nl").slice(0, 6).map((t, i) => (
-              <div className="quote" key={i}>
-                <p>“{t.url}”</p>
-                <div className="who">{t.name}</div>
+              <div className="right wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                {hc.how_right}
+                <div className="read-more read-more-mobile">
+                  <Link href="/program" className="btn-gradient w200"><span>Learn more</span><ArrowRight /></Link>
+                </div>
               </div>
-            ))}
+            </div>
+            <HowItWorks steps={steps} joinHref={joinHref} />
           </div>
-          <p className="center" style={{ marginTop: 36 }}>
-            <Link href={user ? '/program' : '/signup'} className="btn">Start your 21 days <span className="arrow">→</span></Link>
-          </p>
-        </div>
-      </section>
+        </section>
+
+        <MapSection
+          title={hc.map_title}
+          markers={markers}
+          columns={{ c1: hc.map_column_1, c2: hc.map_column_2, c2items: [hc.map_column_2_content_1, hc.map_column_2_content_2, hc.map_column_2_content_3], c3: hc.map_column_3 }}
+          exercisesCompleted="29.000+"
+          nationalities={`${hc.map_nationality} Couples from ${nationalityCount}+ countries have joined so far.`}
+        />
+
+        <Testimonials items={testimonials} title={hc.testimonial_title} intro={hc.testimonial_description} joinHref={joinHref} joinLabel={hc.testimonial_button_join ?? 'Join Now'} />
+
+        <BookstoreFooter title={hc.shop_title} subtitle={hc.shop_subtitle} description={hc.shop_description} />
+      </div>
     </>
   );
 }

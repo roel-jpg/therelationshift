@@ -6,7 +6,7 @@ import { hashPassword, verifyPassword } from './password';
 import { createSession, destroySession, getCurrentUser } from './session';
 import {
   coupleMembers, createCouple, createInviteRow, createUser, findInvite, findUserByEmail, findUserById,
-  markInviteAccepted, openInviteFor, setUserCouple, touchLogin, upsertAnswer,
+  createMessage, markInviteAccepted, openInviteFor, setUserCouple, touchLogin, upsertAnswer,
 } from './repo';
 
 export type ActionState = { error?: string } | undefined;
@@ -19,7 +19,7 @@ function str(form: FormData, key: string): string {
 }
 
 function safeNext(next: string): string {
-  return next.startsWith('/') && !next.startsWith('//') ? next : '/program';
+  return next.startsWith('/') && !next.startsWith('//') ? next : '/dashboard';
 }
 
 // ---------- Sign up / login / logout ----------
@@ -39,7 +39,7 @@ export async function signUp(_prev: ActionState, form: FormData): Promise<Action
   const user = await createUser({ firstName, email, passwordHash: hashPassword(password) });
   await createSession(user.id);
 
-  if (invite && (await acceptInviteToken(invite, user.id)) === 'ok') redirect('/program?paired=1');
+  if (invite && (await acceptInviteToken(invite, user.id)) === 'ok') redirect('/dashboard?paired=1');
   redirect(safeNext(next));
 }
 
@@ -54,7 +54,7 @@ export async function logIn(_prev: ActionState, form: FormData): Promise<ActionS
   await touchLogin(user.id);
   await createSession(user.id);
 
-  if (invite && (await acceptInviteToken(invite, user.id)) === 'ok') redirect('/program?paired=1');
+  if (invite && (await acceptInviteToken(invite, user.id)) === 'ok') redirect('/dashboard?paired=1');
   redirect(safeNext(next));
 }
 
@@ -67,9 +67,9 @@ export async function logOut() {
 
 export async function createInviteAction() {
   const user = await getCurrentUser();
-  if (!user) redirect('/login?next=/program');
+  if (!user) redirect('/login?next=/dashboard');
   if (!(await openInviteFor(user.id))) await createInviteRow(user.id);
-  revalidatePath('/program');
+  revalidatePath('/dashboard');
 }
 
 type AcceptResult = 'ok' | 'not-found' | 'own' | 'already-paired' | 'sender-paired';
@@ -100,7 +100,7 @@ export async function acceptInvite(token: string) {
   const user = await getCurrentUser();
   if (!user) redirect(`/signup?invite=${encodeURIComponent(token)}`);
   const result = await acceptInviteToken(token, user.id);
-  if (result === 'ok') redirect('/program?paired=1');
+  if (result === 'ok') redirect('/dashboard?paired=1');
   redirect(`/invite/${encodeURIComponent(token)}?status=${result}`);
 }
 
@@ -108,7 +108,7 @@ export async function leaveCouple() {
   const user = await getCurrentUser();
   if (!user) redirect('/login');
   await setUserCouple(user.id, null);
-  revalidatePath('/program');
+  revalidatePath('/dashboard');
   revalidatePath('/account');
 }
 
@@ -130,7 +130,23 @@ export async function saveAnswer(form: FormData) {
   const rating = ratingRaw >= 1 && ratingRaw <= 5 ? ratingRaw : null;
 
   await upsertAnswer(user.id, day, data, reflection, rating);
-  revalidatePath('/program');
+  revalidatePath('/dashboard');
   revalidatePath(`/program/day/${day}`);
   redirect(`/program/day/${day}?done=1`);
+}
+
+// ---------- Contact form (support page) ----------
+
+export type ContactState = { ok?: boolean; error?: string } | undefined;
+
+export async function sendMessage(_prev: ContactState, form: FormData): Promise<ContactState> {
+  const name = str(form, 'name');
+  const email = str(form, 'email').toLowerCase();
+  const message = str(form, 'message');
+  if (!name) return { error: 'Please fill in your name.' };
+  if (!EMAIL_RE.test(email)) return { error: 'Please fill in a valid e-mail address.' };
+  if (message.length < 5) return { error: 'Please write your question or feedback.' };
+  if (str(form, 'website')) return { ok: true }; // honeypot
+  await createMessage({ name, email, message: message.slice(0, 5000) });
+  return { ok: true };
 }

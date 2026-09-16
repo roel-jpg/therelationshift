@@ -169,3 +169,14 @@ export async function upsertAnswer(userId: string, exerciseId: number, data: unk
     [newId(), userId, exerciseId, data == null ? null : JSON.stringify(data), reflection, rating, ts, ts],
   );
 }
+
+// ---------- Contact messages (support page) ----------
+
+export async function createMessage(input: { name: string; email: string; message: string }) {
+  const id = randomBytes(12).toString('hex');
+  await query(
+    'INSERT INTO messages (id, name, email, message, created_at) VALUES ($1, $2, $3, $4, $5)',
+    [id, input.name, input.email, input.message, now()],
+  );
+  return id;
+}

@@ -1,23 +1,27 @@
 import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import { AuthForm } from '@/components/AuthForm';
+import { BookHead } from '@/components/BookHead';
 import { signUp } from '@/lib/actions';
 import { getCurrentUser } from '@/lib/session';
+import texts from '@/content/site-texts.json';
 
-export const metadata: Metadata = { title: 'Create account' };
+export const metadata: Metadata = { title: 'Sign Up' };
+const hc = ((texts as unknown as { hardcode: Record<string, unknown> }).hardcode.en as Record<string, string>) ?? {};
 
 export default async function SignupPage({ searchParams }: { searchParams: Promise<{ invite?: string; next?: string }> }) {
   const { invite, next } = await searchParams;
   const user = await getCurrentUser();
-  if (user && !invite) redirect(next || '/program');
+  if (user && !invite) redirect(next || '/dashboard');
 
   return (
-    <div className="container page auth">
-      <h1 className="center">Start for free</h1>
-      <p className="muted center">
-        {invite ? 'Your partner invited you to do The Relationshift together. Create an account to connect.' : 'Create an account to save your progress and invite your partner.'}
-      </p>
-      <AuthForm mode="signup" action={signUp} invite={invite} next={next} />
-    </div>
+    <>
+      <BookHead image="/media/site/register.png" title="Sign Up" text={invite ? 'Your partner invited you to do The Relationshift together. Create an account to connect.' : hc.register_text} />
+      <div className="register-form container auth-page">
+        <div className="register-container">
+          <AuthForm mode="signup" action={signUp} invite={invite} next={next} />
+        </div>
+      </div>
+    </>
   );
 }
