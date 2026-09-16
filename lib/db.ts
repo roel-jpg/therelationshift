@@ -8,14 +8,22 @@ interface Backend {
   query(sql: string, params?: unknown[]): Promise<Row[]>;
 }
 
-const isPostgres = /^postgres(ql)?:/.test(process.env.DATABASE_URL ?? '');
+// Accept the variable names used by Neon, Vercel Postgres and Supabase integrations.
+const connectionString =
+  [process.env.DATABASE_URL, process.env.POSTGRES_URL, process.env.POSTGRES_PRISMA_URL, process.env.DATABASE_URL_UNPOOLED]
+    .find((v) => v && /^postgres(ql)?:/.test(v)) ?? null;
+const isPostgres = connectionString !== null;
 
 async function createBackend(): Promise<Backend> {
+  if (!isPostgres && process.env.VERCEL) {
+    throw new Error('No Postgres database configured. Add a Neon/Postgres database to the Vercel project (Storage tab) and redeploy.');
+  }
   if (isPostgres) {
     const { Pool } = await import('pg');
+    const local = /localhost|127\.0\.0\.1/.test(connectionString!);
     const pool = new Pool({
-      connectionString: process.env.DATABASE_URL,
-      ssl: process.env.DATABASE_URL?.includes('sslmode=') || process.env.DATABASE_URL?.includes('localhost') ? undefined : { rejectUnauthorized: false },
+      connectionString: connectionString!,
+      ssl: local ? undefined : { rejectUnauthorized: false },
       max: 5,
     });
     return {
