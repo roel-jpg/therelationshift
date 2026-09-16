@@ -128,9 +128,8 @@ async function init(): Promise<Backend> {
   return backend;
 }
 
+// Upserts the program content on every cold start, so edits to content/*.json go live on deploy.
 async function seedIfEmpty(backend: Backend) {
-  const [{ n }] = (await backend.query('SELECT COUNT(*) AS n FROM exercises')) as { n: number | string }[];
-  if (Number(n) >= 21) return;
   // Imported statically so the content is bundled into the serverless function (reading from disk fails on Vercel).
   const program = programJson as unknown as SeedExercise[];
   const products = productsJson as unknown as SeedProduct[];
