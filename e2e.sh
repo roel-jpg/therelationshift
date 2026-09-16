@@ -59,8 +59,21 @@ check "A sees B" "$(page a.jar $B/dashboard | grep -c 'with <strong>Bob')" 1
 # A answers day 2 (love language)
 act_form a.jar $SAVE $B/program/day/2 -F day=2 -F 'data={"choices":["A","B","A"],"scores":{"A":2,"B":1,"C":0,"D":0,"E":0},"result":"A"}' -F reflection=nice -F rating=5 >/dev/null
 check "A day 2 saved" "$(page a.jar $B/dashboard | grep -o 'class="hex done"' | wc -l | tr -d ' ')" 1
-check "B sees A result" "$(page b.jar $B/program/day/2 | grep -c 'Words of Affirmation')" 1
 check "A can edit day 2" "$(page a.jar $B/program/day/2 | grep -c 'Save changes')" 1
+
+# Sharing: an answer stays private until its author shares it AND the reader has done the day too
+DATA2='data={"choices":["A","B","A"],"scores":{"A":2,"B":1,"C":0,"D":0,"E":0},"result":"A"}'
+check "answer private by default" "$(page b.jar $B/program/day/2 | grep -c 'What Anna answered')" 0
+check "B sees only that A is done" "$(page b.jar $B/program/day/2 | grep -c 'Anna has completed this day')" 1
+act_form a.jar $SAVE $B/program/day/2 -F day=2 -F "$DATA2" -F reflection=nice -F rating=5 -F share=on >/dev/null
+check "shared but B has not answered" "$(page b.jar $B/program/day/2 | grep -c 'wants to show you the answer')" 1
+check "answer still hidden from B" "$(page b.jar $B/program/day/2 | grep -c 'What Anna answered')" 0
+act_form b.jar $SAVE $B/program/day/2 -F day=2 -F "$DATA2" -F reflection=mine -F rating=4 >/dev/null
+check "B now sees A answer" "$(page b.jar $B/program/day/2 | grep -c 'What Anna answered')" 1
+check "B sees A notes" "$(page b.jar $B/program/day/2 | grep -c 'Anna’s notes')" 1
+check "A does not see B answer (not shared)" "$(page a.jar $B/program/day/2 | grep -c 'What Bob answered')" 0
+act_form a.jar $SAVE $B/program/day/2 -F day=2 -F "$DATA2" -F reflection=nice -F rating=5 >/dev/null
+check "unsharing hides it again" "$(page b.jar $B/program/day/2 | grep -c 'What Anna answered')" 0
 
 # Login / logout
 act_form a.jar $LOGOUT $B/dashboard >/dev/null

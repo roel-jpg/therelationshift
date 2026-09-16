@@ -5,7 +5,7 @@ import { getAnswer, getExercise } from '@/lib/repo';
 import { getCurrentUser } from '@/lib/session';
 import { saveAnswer } from '@/lib/actions';
 import { ExerciseForm } from '@/components/exercises/ExerciseForm';
-import { LOVE_LANGUAGES } from '@/components/exercises/types';
+import { PartnerAnswer } from '@/components/exercises/PartnerAnswer';
 import { richHtml } from '@/lib/rich';
 
 type Params = { day: string };
@@ -36,7 +36,8 @@ export default async function DayPage({ params, searchParams }: { params: Promis
 
   const articles = ex.articles;
   const products = ex.products;
-  const partnerResult = (partnerAnswer?.data ?? null) as { result?: string } | null;
+  // Their answer appears only when they chose to share it and you have done the day yourself.
+  const seePartnerAnswer = Boolean(mine && partnerAnswer?.shared);
 
   return (
     <>
@@ -66,27 +67,34 @@ export default async function DayPage({ params, searchParams }: { params: Promis
         type={ex.type}
         data={ex.data}
         audioUrl={ex.audioUrl}
-        initial={mine ? { data: mine.data, reflection: mine.reflection, rating: mine.rating } : null}
+        initial={mine ? { data: mine.data, reflection: mine.reflection, rating: mine.rating, shared: mine.shared } : null}
         loggedIn={!!user}
+        partnerName={partner?.firstName ?? null}
         action={saveAnswer}
       />
 
       {partner && (
-        <div className="block" style={{ marginTop: 28 }}>
-          <div className="info">
-            {partnerAnswer ? (
-              <>
-                {partner.firstName} has completed this day
-                {ex.type === 'multiple-match-category' && partnerResult?.result
-                  ? ` — primary love language: ${LOVE_LANGUAGES[partnerResult.result] ?? partnerResult.result}`
-                  : ''}
-                .
-              </>
-            ) : (
-              <>{partner.firstName} has not done this day yet.</>
-            )}
+        <>
+          <div className="block" style={{ marginTop: 28 }}>
+            <div className="info">
+              {!partnerAnswer && <>{partner.firstName} has not done this day yet.</>}
+              {partnerAnswer && !partnerAnswer.shared && <>{partner.firstName} has completed this day.</>}
+              {partnerAnswer && partnerAnswer.shared && !mine && (
+                <>{partner.firstName} has done this day and wants to show you the answer — it appears here as soon as you have done it too.</>
+              )}
+              {seePartnerAnswer && <>{partner.firstName} has completed this day and shared the answer with you.</>}
+            </div>
           </div>
-        </div>
+          {seePartnerAnswer && partnerAnswer && (
+            <PartnerAnswer
+              name={partner.firstName}
+              type={ex.type}
+              data={ex.data}
+              answer={partnerAnswer.data}
+              reflection={partnerAnswer.reflection}
+            />
+          )}
+        </>
       )}
 
       {(ex.background || articles.length > 0) && (

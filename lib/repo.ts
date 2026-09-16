@@ -42,6 +42,8 @@ export type Answer = {
   data: unknown;
   reflection: string | null;
   rating: number | null;
+  /** The author chose to show this answer to their partner once the partner has done the day too. */
+  shared: boolean;
 };
 
 export type Invite = { id: string; token: string; senderId: string; acceptedAt: string | null };
@@ -147,8 +149,8 @@ export async function getExercise(day: number) {
 
 // ---------- Answers ----------
 
-type AnswerRow = { exercise_id: number; data: string | null; reflection: string | null; rating: number | null };
-const mapAnswer = (r: AnswerRow): Answer => ({ exerciseId: r.exercise_id, data: parseJson<unknown>(r.data, null), reflection: r.reflection, rating: r.rating });
+type AnswerRow = { exercise_id: number; data: string | null; reflection: string | null; rating: number | null; shared: number | boolean | null };
+const mapAnswer = (r: AnswerRow): Answer => ({ exerciseId: r.exercise_id, data: parseJson<unknown>(r.data, null), reflection: r.reflection, rating: r.rating, shared: r.shared === true || Number(r.shared) === 1 });
 
 export async function completedDays(userId: string): Promise<Set<number>> {
   const rows = await query<{ exercise_id: number }>('SELECT exercise_id FROM answers WHERE user_id = $1', [userId]);
@@ -156,17 +158,17 @@ export async function completedDays(userId: string): Promise<Set<number>> {
 }
 
 export async function getAnswer(userId: string, exerciseId: number) {
-  const r = await one<AnswerRow>('SELECT exercise_id, data, reflection, rating FROM answers WHERE user_id = $1 AND exercise_id = $2', [userId, exerciseId]);
+  const r = await one<AnswerRow>('SELECT exercise_id, data, reflection, rating, shared FROM answers WHERE user_id = $1 AND exercise_id = $2', [userId, exerciseId]);
   return r ? mapAnswer(r) : null;
 }
 
-export async function upsertAnswer(userId: string, exerciseId: number, data: unknown, reflection: string | null, rating: number | null) {
+export async function upsertAnswer(userId: string, exerciseId: number, data: unknown, reflection: string | null, rating: number | null, shared: boolean) {
   const ts = now();
   await query(
-    `INSERT INTO answers (id, user_id, exercise_id, data, reflection, rating, completed_at, updated_at)
-     VALUES ($1,$2,$3,$4,$5,$6,$7,$8)
-     ON CONFLICT (user_id, exercise_id) DO UPDATE SET data = excluded.data, reflection = excluded.reflection, rating = excluded.rating, updated_at = excluded.updated_at`,
-    [newId(), userId, exerciseId, data == null ? null : JSON.stringify(data), reflection, rating, ts, ts],
+    `INSERT INTO answers (id, user_id, exercise_id, data, reflection, rating, shared, completed_at, updated_at)
+     VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+     ON CONFLICT (user_id, exercise_id) DO UPDATE SET data = excluded.data, reflection = excluded.reflection, rating = excluded.rating, shared = excluded.shared, updated_at = excluded.updated_at`,
+    [newId(), userId, exerciseId, data == null ? null : JSON.stringify(data), reflection, rating, shared ? 1 : 0, ts, ts],
   );
 }
 

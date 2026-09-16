@@ -138,3 +138,18 @@ textarea { min-height: 120px; resize: vertical; }
 audio { width: 100%; margin: 8px 0 16px; }
 .q-block { margin-bottom: 20px; }
 .q-block h4 { margin: 0 0 4px; font-weight: 400; }
+
+/* ---------- Sharing an answer with your partner ---------- */
+.share-choice { background: #fff8f0; border: 1px solid #f6dcc0; border-radius: var(--radius); padding: 16px 18px; }
+.share-row { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; font-size: 15px; color: var(--ink); cursor: pointer; }
+.share-row input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--coral); }
+.partner-answer { background: var(--sand); border: 1px solid var(--taupe-light); border-radius: var(--radius); padding: 20px 22px; }
+.partner-answer h2 { border-left: 4px solid var(--success); }
+.partner-answer .q-block h4 { font-weight: 600; }
+.partner-answer ul, .partner-answer ol { padding-left: 1.3em; }
+.partner-answer .tf-yes { color: #1f6b3d; font-size: 14px; }
+.partner-answer .tf-no { color: var(--slate); font-size: 14px; }
+.partner-notes { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--taupe-light); }
+.partner-notes h4 { margin: 0 0 6px; font-weight: 600; }
+.partner-notes p { white-space: pre-wrap; margin: 0; }
+.rank-list-plain { margin: 0; }

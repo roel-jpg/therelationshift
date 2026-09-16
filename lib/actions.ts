@@ -129,8 +129,9 @@ export async function saveAnswer(form: FormData) {
   const reflection = str(form, 'reflection') || null;
   const ratingRaw = Number(form.get('rating'));
   const rating = ratingRaw >= 1 && ratingRaw <= 5 ? ratingRaw : null;
+  const shared = form.get('share') === 'on';
 
-  await upsertAnswer(user.id, day, data, reflection, rating);
+  await upsertAnswer(user.id, day, data, reflection, rating, shared);
   revalidatePath('/dashboard');
   revalidatePath(`/program/day/${day}`);
   redirect(`/program/day/${day}?done=1`);

@@ -11,9 +11,23 @@ type Props = {
   type: string;
   data: unknown;
   audioUrl: string | null;
-  initial: { data: unknown; reflection: string | null; rating: number | null } | null;
+  initial: { data: unknown; reflection: string | null; rating: number | null; shared: boolean } | null;
   loggedIn: boolean;
+  partnerName?: string | null;
   action: (form: FormData) => void | Promise<void>;
+};
+
+// What the share choice actually hands over, per kind of exercise.
+const WHAT: Record<string, string> = {
+  'basic-multiple': 'my answers and notes',
+  'multiple-match-category': 'my love language and notes',
+  checklist: 'my list and notes',
+  'true-false': 'my answers and notes',
+  'list-order': 'my top five and notes',
+  'single-picture': 'my notes',
+  'single-audio': 'my notes',
+  'noop-audio': 'my notes',
+  noop: 'my notes',
 };
 
 const REFLECTION_PROMPT: Record<string, string> = {
@@ -23,9 +37,10 @@ const REFLECTION_PROMPT: Record<string, string> = {
   noop: 'How did it go? Write a few words for yourself (and your partner).',
 };
 
-export function ExerciseForm({ day, type, data, audioUrl, initial, loggedIn, action }: Props) {
+export function ExerciseForm({ day, type, data, audioUrl, initial, loggedIn, partnerName, action }: Props) {
   const [answer, setAnswer] = useState<unknown>(initial?.data ?? null);
   const [rating, setRating] = useState<number | null>(initial?.rating ?? null);
+  const [share, setShare] = useState<boolean>(initial?.shared ?? false);
 
   let widget: React.ReactNode = null;
   const props = { data, initial: initial?.data ?? null, onChange: setAnswer };
@@ -76,6 +91,18 @@ export function ExerciseForm({ day, type, data, audioUrl, initial, loggedIn, act
           ))}
         </div>
       </div>
+
+      {loggedIn && partnerName && (
+        <div className="block share-choice">
+          <label className="share-row">
+            <input type="checkbox" name="share" checked={share} onChange={(e) => setShare(e.target.checked)} />
+            <span>
+              Show {WHAT[type] ?? 'my answer'} to {partnerName} once {partnerName} has done this day too.
+              <span className="muted small"> You can turn this off again at any time.</span>
+            </span>
+          </label>
+        </div>
+      )}
 
       {loggedIn ? (
         <button className="btn" type="submit">{initial ? 'Save changes' : 'Mark day as done'}</button>

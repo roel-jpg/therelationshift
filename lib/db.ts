@@ -104,6 +104,7 @@ CREATE TABLE IF NOT EXISTS answers (
   data TEXT,
   reflection TEXT,
   rating INTEGER,
+  shared INTEGER NOT NULL DEFAULT 0,
   completed_at TEXT NOT NULL,
   updated_at TEXT NOT NULL,
   UNIQUE (user_id, exercise_id)
@@ -131,8 +132,20 @@ async function init(): Promise<Backend> {
   for (const stmt of SCHEMA.split(';').map((s) => s.trim()).filter(Boolean)) {
     await backend.query(stmt);
   }
+  await migrate(backend);
   await seedIfEmpty(backend);
   return backend;
+}
+
+// Columns added after the first release; both backends throw when the column is already there.
+async function migrate(backend: Backend) {
+  const steps = ['ALTER TABLE answers ADD COLUMN shared INTEGER NOT NULL DEFAULT 0'];
+  for (const sql of steps) {
+    try { await backend.query(sql); } catch { /* already applied */ }
+  }
+  // Probe, so a migration that did not land shows up in the logs instead of breaking a page later.
+  try { await backend.query('SELECT shared FROM answers LIMIT 1'); }
+  catch (err) { console.error('[db] migration check failed: answers.shared is missing', err); }
 }
 
 // Upserts the program content on every cold start, so edits to content/*.json go live on deploy.
