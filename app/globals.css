@@ -30,8 +30,8 @@ h3 { font-size: 1.25rem; font-weight: 400; }
 p { margin: 0 0 1em; }
 img { max-width: 100%; height: auto; display: block; }
 
-.container { width: 1000px; max-width: calc(100% - 100px); margin: 0 auto; }
-@media (max-width: 750px) { .container { max-width: calc(100% - 40px); } }
+.container { width: min(1000px, calc(100% - 100px)); margin: 0 auto; }
+@media (max-width: 750px) { .container { width: min(1000px, calc(100% - 40px)); } }
 .narrow { max-width: 760px; }
 
 /* ---------- Buttons ---------- */

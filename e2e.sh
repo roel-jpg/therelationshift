@@ -30,11 +30,13 @@ act_form() { # jar id url fields...
   local jar=$1 id=$2 url=$3; shift 3
   curl -s -o /dev/null -w "%{http_code}" -c "$jar" -b "$jar" -X POST "$url" -F "\$ACTION_ID_$id=" "$@"
 }
-page() { curl -s -b "$1" "$2" | sed "s/<!-- -->//g"; }
+# Strip the RSC payload scripts: the same text appears there as well as in the HTML.
+strip() { sed "s/<!-- -->//g" | grep -v '__next_f\.push'; }
+page() { curl -s -b "$1" "$2" | strip; }
 
 rm -f a.jar b.jar c.jar
 check "home 200" "$(curl -s -o /dev/null -w '%{http_code}' $B/)" 200
-check "day 1 open" "$(curl -s $B/program/day/1 | grep -c 'Goals in life')" 1
+check "day 1 open" "$(curl -s $B/program/day/1 | strip | grep -c 'Goals in life')" 1
 check "day 2 needs login" "$(curl -s -o /dev/null -w '%{http_code}' $B/program/day/2)" 307
 
 # Sign up user A
@@ -47,7 +49,7 @@ check "duplicate signup gets no session" "$(n=$(grep -c rs_session dup.jar 2>/de
 act_form a.jar $INVITE $B/dashboard >/dev/null
 TOKEN=$(page a.jar $B/dashboard | grep -o 'invite/[A-Za-z0-9_-]*' | head -1 | cut -d/ -f2)
 check "invite token created" "$([ -n "$TOKEN" ] && echo yes)" yes
-check "invite page shows sender" "$(curl -s $B/invite/$TOKEN | sed 's/<!-- -->//g' | grep -c 'Anna invited you')" 1
+check "invite page shows sender" "$(curl -s $B/invite/$TOKEN | strip | grep -c 'Anna invited you')" 1
 
 # B signs up via invite
 act_state b.jar $SIGNUP "$B/signup?invite=$TOKEN" -F firstName=Bob -F email=bob@example.com -F password=password2 -F invite=$TOKEN >/dev/null
