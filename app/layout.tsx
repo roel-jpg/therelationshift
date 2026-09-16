@@ -7,6 +7,7 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Wow } from '@/components/Wow';
 import { PwaSetup } from '@/components/PwaSetup';
+import { DoctorLove } from '@/components/DoctorLove';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -41,6 +42,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <SiteFooter />
         <Wow />
         <PwaSetup />
+        <DoctorLove />
       </body>
     </html>
   );
