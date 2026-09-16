@@ -3,6 +3,7 @@
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
 import { hashPassword, verifyPassword } from './password';
+import { sendMail } from './mail';
 import { createSession, destroySession, getCurrentUser } from './session';
 import {
   coupleMembers, createCouple, createInviteRow, createUser, findInvite, findUserByEmail, findUserById,
@@ -147,6 +148,16 @@ export async function sendMessage(_prev: ContactState, form: FormData): Promise<
   if (!EMAIL_RE.test(email)) return { error: 'Please fill in a valid e-mail address.' };
   if (message.length < 5) return { error: 'Please write your question or feedback.' };
   if (str(form, 'website')) return { ok: true }; // honeypot
-  await createMessage({ name, email, message: message.slice(0, 5000) });
+
+  const body = message.slice(0, 5000);
+  await createMessage({ name, email, message: body });
+
+  // The message is stored either way; the e-mail is a notification on top of that.
+  await sendMail({
+    subject: `Relationshift contact form: ${name}`,
+    replyTo: email,
+    text: `${name} <${email}> wrote via the support page:\n\n${body}\n\n— therelationshift.com`,
+  });
+
   return { ok: true };
 }

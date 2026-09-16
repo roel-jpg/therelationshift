@@ -13,7 +13,7 @@ for i in $(seq 1 30); do curl -s -o /dev/null http://localhost:3100/ && break; s
 # Resolve action ids from the compiled bundle (order of registration = order of export in lib/actions.ts)
 IDS=$(grep -rho '(0,[a-zA-Z]\.A)([a-zA-Z]*,"[0-9a-f]\{42\}",null)' .next/server/chunks/*.js | sed 's/.*"\([0-9a-f]*\)".*/\1/' | awk '!seen[$0]++')
 set -- $IDS
-SIGNUP=$1; LOGIN=$2; LOGOUT=$3; INVITE=$4; ACCEPT=$5; LEAVE=$6; SAVE=$7
+SIGNUP=$1; LOGIN=$2; LOGOUT=$3; INVITE=$4; ACCEPT=$5; LEAVE=$6; SAVE=$7; CONTACT=$8
 B=http://localhost:3100
 pass=0; fail=0
 check() { if [ "$2" = "$3" ]; then echo "PASS $1"; pass=$((pass+1)); else echo "FAIL $1: got '$2' expected '$3'"; fail=$((fail+1)); fi; }
@@ -32,7 +32,7 @@ act_form() { # jar id url fields...
 }
 page() { curl -s -b "$1" "$2" | sed "s/<!-- -->//g"; }
 
-rm -f a.jar b.jar
+rm -f a.jar b.jar c.jar
 check "home 200" "$(curl -s -o /dev/null -w '%{http_code}' $B/)" 200
 check "day 1 open" "$(curl -s $B/program/day/1 | grep -c 'Goals in life')" 1
 check "day 2 needs login" "$(curl -s -o /dev/null -w '%{http_code}' $B/program/day/2)" 307
@@ -71,6 +71,17 @@ check "A logged in again" "$(page a.jar $B/account | grep -c 'anna@example.com')
 # Leave couple
 act_form b.jar $LEAVE $B/account >/dev/null
 check "B left couple" "$(page b.jar $B/account | grep -c 'Not connected yet')" 1
+
+# Contact form on the support page (stores the message; mail is skipped without RESEND_API_KEY)
+rows() { node -e "const{DatabaseSync}=require('node:sqlite');const d=new DatabaseSync('data/e2e.db');console.log(d.prepare('select count(*) c from messages').get().c)" 2>/dev/null; }
+act_state c.jar $CONTACT $B/support -F name=Test -F email=test@example.com -F message='Hello there, a question' >/dev/null
+check "contact message stored" "$(rows)" 1
+act_state c.jar $CONTACT $B/support -F name=Test -F email=not-an-email -F message='Hello there, a question' >/dev/null
+check "contact form rejects bad email" "$(rows)" 1
+act_state c.jar $CONTACT $B/support -F name=Test -F email=test@example.com -F message='x' >/dev/null
+check "contact form rejects empty message" "$(rows)" 1
+act_state c.jar $CONTACT $B/support -F name=Bot -F email=bot@example.com -F message='buy my stuff now' -F website=http://spam.example >/dev/null
+check "honeypot blocks spam" "$(rows)" 1
 
 echo "---- $pass passed, $fail failed"
 grep -iE "error|⨯" e2e-server.log | head -10
