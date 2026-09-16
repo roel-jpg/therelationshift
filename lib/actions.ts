@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
 import { hashPassword, verifyPassword } from './password';
 import { sendMail } from './mail';
+import { button, esc, field, quote, renderEmail } from './email-template';
 import { createSession, destroySession, getCurrentUser } from './session';
 import {
   coupleMembers, createCouple, createInviteRow, createUser, findInvite, findUserByEmail, findUserById,
@@ -157,7 +158,14 @@ export async function sendMessage(_prev: ContactState, form: FormData): Promise<
   await sendMail({
     subject: `Relationshift contact form: ${name}`,
     replyTo: email,
-    text: `${name} <${email}> wrote via the support page:\n\n${body}\n\n— therelationshift.com`,
+    text: `${name} <${email}> wrote via the support page:\n\n${body}\n\nReply straight to this mail to answer ${name}.`,
+    html: renderEmail({
+      title: 'A message from the support page',
+      preheader: `${name}: ${body.slice(0, 90)}`,
+      body: field('From', name) + field('E-mail', email) + quote(body)
+        + `<p style="margin:0;font-size:14px;line-height:1.6;color:#656772;">Replying to this mail answers ${esc(name)} directly.</p>`
+        + button(`Reply to ${name}`, `mailto:${email}?subject=${encodeURIComponent('Re: your message to The Relationshift')}`),
+    }),
   });
 
   return { ok: true };

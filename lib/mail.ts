@@ -8,8 +8,8 @@ const FROM = process.env.MAIL_FROM || 'The Relationshift <onboarding@resend.dev>
 
 export type MailResult = 'sent' | 'skipped' | 'failed';
 
-export async function sendMail({ to, subject, text, replyTo }: {
-  to?: string; subject: string; text: string; replyTo?: string;
+export async function sendMail({ to, subject, text, html, replyTo }: {
+  to?: string; subject: string; text: string; html?: string; replyTo?: string;
 }): Promise<MailResult> {
   const key = process.env.RESEND_API_KEY;
   if (!key) return 'skipped';
@@ -17,7 +17,7 @@ export async function sendMail({ to, subject, text, replyTo }: {
     const res = await fetch(ENDPOINT, {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ from: FROM, to: [to || CONTACT_EMAIL], subject, text, reply_to: replyTo }),
+      body: JSON.stringify({ from: FROM, to: [to || CONTACT_EMAIL], subject, text, html, reply_to: replyTo }),
       signal: AbortSignal.timeout(8000),
     });
     if (!res.ok) {
