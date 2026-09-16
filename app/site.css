@@ -20,6 +20,8 @@
   --rs-shadow-g: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
 }
 
+html, body { max-width: 100%; overflow-x: hidden; }
+
 .head-foot-container { width: 1200px; margin: 0 auto; }
 @media (max-width: 1200px) { .head-foot-container { width: calc(100% - 200px); } }
 @media (max-width: 970px) { .head-foot-container { width: calc(100% - 50px); } }
@@ -304,7 +306,8 @@ body.overflow-hidden { overflow: hidden; }
 .page-item .group-content { position: absolute; bottom: 100px; width: 100%; color: #fff; }
 .page-item .head { display: block; font-size: 35px; margin-bottom: 30px; }
 .page-item .head h1, .page-item .head h2 { font-size: inherit; font-weight: 400; color: #fff; margin: 0; line-height: 1.2; }
-.content-center { width: 700px; margin: auto; line-height: 25px; }
+/* 700px wide as on the original site, but never wider than the window (that made the page scroll sideways). */
+.content-center { width: 100%; max-width: 700px; padding: 0 20px; margin: auto; line-height: 25px; }
 .content-center p { margin: 0 0 10px; }
 .page-item .group-center { margin-top: 40px; height: 50px; }
 .page-item .read-more .btn-gradient { background: transparent; border: 1px solid #fff; width: 200px; margin: 0 auto; }
@@ -322,7 +325,6 @@ body.overflow-hidden { overflow: hidden; }
 @media (max-width: 1024px) { .page-item .group-content { bottom: auto; top: 50%; transform: translateY(-50%); } }
 @media (max-width: 767px) { .page-item .head { font-size: 26px; } .page-item .group-content { bottom: 100px; top: auto; transform: none; } }
 @media (max-width: 600px) { .pagination { display: none !important; } .pagination-mobile { display: flex !important; justify-content: center; position: absolute; right: 0; left: 0; bottom: 10px; width: 200px; margin: 0 auto; } }
-@media (max-width: 550px) { .content-center { width: 100%; padding: 0 20px; } }
 @media (max-width: 320px) { .page-item .group-content { bottom: 50px; } }
 
 /* ---------- Banner ("book-head") + static page content ---------- */
