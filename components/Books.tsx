@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CartIcon } from './Icons';
 import productsJson from '@/content/products.json';
+import { richHtml } from '@/lib/rich';
 
 export type Product = { id: number; name: string; url: string; author: string; for: string; cover: string; category: string };
 export const products = productsJson as Product[];
@@ -28,7 +29,7 @@ export function BookstoreFooter({ title, subtitle, description }: { title: strin
         <div className="action-book">
           <div className="small-head">{subtitle}</div>
           <div className="big-head">{title}</div>
-          <div className="desc" dangerouslySetInnerHTML={{ __html: description }} />
+          <div className="desc" dangerouslySetInnerHTML={{ __html: richHtml(description) }} />
           <div className="read-more">
             <Link href="/shop" className="btn-gradient w200"><span>Visit Shop</span><ArrowRight /></Link>
           </div>

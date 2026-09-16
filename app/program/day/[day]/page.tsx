@@ -6,6 +6,7 @@ import { getCurrentUser } from '@/lib/session';
 import { saveAnswer } from '@/lib/actions';
 import { ExerciseForm } from '@/components/exercises/ExerciseForm';
 import { LOVE_LANGUAGES } from '@/components/exercises/types';
+import { richHtml } from '@/lib/rich';
 
 type Params = { day: string };
 
@@ -52,12 +53,12 @@ export default async function DayPage({ params, searchParams }: { params: Promis
 
       <div className="block">
         <h2>Goal</h2>
-        <div className="rich" dangerouslySetInnerHTML={{ __html: ex.goal }} />
+        <div className="rich" dangerouslySetInnerHTML={{ __html: richHtml(ex.goal) }} />
       </div>
 
       <div className="block">
         <h2>How to</h2>
-        <div className="rich" dangerouslySetInnerHTML={{ __html: ex.howTo }} />
+        <div className="rich" dangerouslySetInnerHTML={{ __html: richHtml(ex.howTo) }} />
       </div>
 
       <ExerciseForm
@@ -91,7 +92,7 @@ export default async function DayPage({ params, searchParams }: { params: Promis
       {(ex.background || articles.length > 0) && (
         <div className="block">
           <h2>Background</h2>
-          {ex.background && <div className="rich" dangerouslySetInnerHTML={{ __html: ex.background }} />}
+          {ex.background && <div className="rich" dangerouslySetInnerHTML={{ __html: richHtml(ex.background) }} />}
           {articles.length > 0 && (
             <div className="articles" style={{ marginTop: 12 }}>
               {articles.map((a, i) => (

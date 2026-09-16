@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { ArrowRight, ChevronDown } from './Icons';
+import { richHtml } from '@/lib/rich';
 
 export type OnePageSection = { title: string; description: string; image: string; darker?: boolean };
 const ANCHORS = ['one', 'two', 'three', 'four', 'five'];
@@ -49,7 +50,7 @@ export function OnePage({ sections, joinHref, joinLabel }: { sections: OnePageSe
             <div className="group-content">
               <div className="head wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".3s">{i === 0 ? <h1>{s.title}</h1> : <h2>{s.title}</h2>}</div>
               <div className="content">
-                <div className="content-center wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".3s" dangerouslySetInnerHTML={{ __html: s.description }} />
+                <div className="content-center wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".3s" dangerouslySetInnerHTML={{ __html: richHtml(s.description) }} />
                 {i === sections.length - 1 ? (
                   <div className="read-more group-center wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s">
                     <Link href={joinHref} className="btn-gradient"><span>{joinLabel}</span><ArrowRight /></Link>

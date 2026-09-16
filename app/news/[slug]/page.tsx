@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { ShareGroup } from '@/components/ShareGroup';
 import { ChevronLeft, ChevronRight } from '@/components/Icons';
 import { findPost, fmtDate, postImage, posts, youtubeEmbed } from '@/lib/news';
+import { richHtml } from '@/lib/rich';
 
 export function generateStaticParams() { return posts.map((p) => ({ slug: p.slug })); }
 
@@ -33,7 +34,7 @@ export default async function NewsSingle({ params }: { params: Promise<{ slug: s
             <ShareGroup shareUrl={`${siteUrl}/news/${p.slug}`} title={p.title} />
           </div>
           <div className="single-main-content">
-            <div className="content" dangerouslySetInnerHTML={{ __html: p.content }} />
+            <div className="content" dangerouslySetInnerHTML={{ __html: richHtml(p.content) }} />
             {yt && <div className="youtube"><iframe src={yt} title={p.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div>}
             <div className="share-bottom">
               <div className="share-head">Share this article</div>
