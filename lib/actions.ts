@@ -146,9 +146,9 @@ export async function sendMessage(_prev: ContactState, form: FormData): Promise<
   const name = str(form, 'name');
   const email = str(form, 'email').toLowerCase();
   const message = str(form, 'message');
-  if (!name) return { error: 'Please fill in your name.' };
-  if (!EMAIL_RE.test(email)) return { error: 'Please fill in a valid e-mail address.' };
-  if (message.length < 5) return { error: 'Please write your question or feedback.' };
+  if (!name) return { error: 'Please fill in your name, so we know who we are writing back to.' };
+  if (!EMAIL_RE.test(email)) return { error: 'That e-mail address does not look right — we need it to answer you.' };
+  if (message.length < 2) return { error: 'Please write your question or feedback in the box below.' };
   if (str(form, 'website')) return { ok: true }; // honeypot
 
   const body = message.slice(0, 5000);

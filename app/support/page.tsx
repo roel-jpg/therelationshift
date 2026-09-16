@@ -3,7 +3,6 @@ import texts from '@/content/site-texts.json';
 import { BookHead } from '@/components/BookHead';
 import { Faq, type FaqItem } from '@/components/Faq';
 import { ContactForm } from '@/components/ContactForm';
-import { ShareGroup } from '@/components/ShareGroup';
 
 type Hardcode = Record<string, unknown>;
 const site = texts as unknown as { hardcode: Record<string, unknown>; locale: Record<string, Record<string, string>>; hardcode_meta: Record<string, Record<string, string>> };
@@ -30,9 +29,8 @@ export default function SupportPage() {
               email: String(hc.contact_lbl_email ?? 'E-mail'),
               question: String(hc.contact_lbl_question ?? 'Your question or feedback'),
               submit: loc.submit ?? 'Submit',
-              thanks: 'Thank you! We will come back to you as soon as possible.',
+              thanks: 'Thank you — your message has been sent. We will come back to you as soon as we can.',
             }} />
-            <ShareGroup className="support" />
           </div>
         </div>
       </div>

@@ -532,8 +532,9 @@ body.overflow-hidden { overflow: hidden; }
 .rs-form .group-form textarea:hover, .rs-form .group-form textarea:focus { border-color: #000; outline: none; }
 .submit-contact { margin-top: 30px; }
 .submit-contact .btn-gradient { cursor: pointer; width: 150px; }
-.rs-form .success { margin-top: 30px; color: green; line-height: 1.5; border: 1px solid #e2e2e2; padding: 10px; text-align: center; }
-.rs-form .rs-error { margin-top: 20px; color: red; font-size: 13px; }
+.rs-sent { margin: 30px 0 0; display: flex; gap: 10px; align-items: flex-start; background: #e9f8ef; border: 1px solid #bfe6cd; color: #1f6b3d; border-radius: 12px; padding: 14px 16px; font-size: 15px; line-height: 1.5; }
+.rs-sent span { font-size: 17px; line-height: 1.35; }
+.rs-form .rs-error { margin-top: 20px; background: #fdecea; border: 1px solid #f5c2bd; color: #b23b30; border-radius: 12px; padding: 12px 14px; font-size: 14px; line-height: 1.5; }
 @media (max-width: 800px) { .support-only .left, .support-only .right { flex: 1 100%; } .support-only .right form { padding-top: 30px; padding-left: 0; } .submit-contact { display: block; text-align: center; } }
 @media (max-width: 530px) { .support-only .left { padding-right: 0; } .rs-form { padding-left: 0; max-width: 100%; } .register-container { max-width: 100%; } }
 @media (max-width: 420px) { .submit-contact .btn-gradient { width: 100%; } .share-group.support { justify-content: center; } }

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Logo } from './Logo';
-import { ShareGroup } from './ShareGroup';
 
 export function SiteFooter() {
   return (
@@ -35,7 +34,6 @@ export function SiteFooter() {
             </ul>
           </div>
           <div className="widget-footer widget-bigger">
-            <ShareGroup />
             <div className="copyright">
               <p>© 2016 - {new Date().getFullYear()} The Relationshift®</p>
               <p>Amsterdam, The Netherlands</p>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { DoctorLoveAvatar } from './DoctorLoveAvatar';
 
 type Msg = { role: 'user' | 'assistant'; content: string };
 
@@ -65,14 +66,14 @@ export function DoctorLove() {
         onClick={() => setOpen(true)}
         aria-label="Ask Doctor Love a question about the programme"
       >
-        <img src="/icons/icon-192.png" alt="" width={30} height={30} />
+        <DoctorLoveAvatar size={30} id="dl-launch" />
         <span>Ask Doctor Love</span>
       </button>
 
       {open && (
         <section className="dl-panel" role="dialog" aria-label="Doctor Love" aria-modal="false">
           <header className="dl-head">
-            <img src="/icons/icon-192.png" alt="" width={32} height={32} />
+            <DoctorLoveAvatar size={34} id="dl-head" />
             <div>
               <strong>Doctor Love</strong>
               <span>here for questions about the programme</span>

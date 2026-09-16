@@ -17,7 +17,7 @@ export function ContactForm({ labels }: { labels: { name: string; email: string;
       </div>
       {state?.error && <div className="rs-error">{state.error}</div>}
       {state?.ok ? (
-        <div className="success">{labels.thanks}</div>
+        <p className="rs-sent"><span aria-hidden="true">✓</span>{labels.thanks}</p>
       ) : (
         <div className="read-more submit-contact save-button">
           <button className="btn-gradient" type="submit" disabled={pending}><span>{pending ? 'Sending…' : labels.submit}</span><ArrowRight /></button>
