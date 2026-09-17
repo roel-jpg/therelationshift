@@ -21,7 +21,7 @@ export async function sendMail({ to, subject, text, html, replyTo }: {
       signal: AbortSignal.timeout(8000),
     });
     if (!res.ok) {
-      console.error('[mail] resend rejected the message', res.status, await res.text().catch(() => ''));
+      console.error('[mail] resend rejected the message', res.status); // no body: it can echo the message
       return 'failed';
     }
     return 'sent';

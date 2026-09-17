@@ -57,6 +57,8 @@ const HOW_THE_SITE_WORKS = `
 - There is no separate app in the App Store or Play Store at the moment.
 - To delete an account or all answers, ask via the contact form on the support page; a self-service button does not exist yet.
 - Questions, feedback and anything Doctor Love cannot answer go through the contact form on the support page.
+- Privacy: answers are stored for the person who wrote them, are private by default, and are only visible to a partner per day that the author ticks a box for — and only once the partner has done that day too. Signing up asks for explicit consent to store answers, because they can touch on the relationship and sex life. From the account page anyone can download all their data or delete their account and every answer for good. There are no tracking or advertising cookies, only one cookie that keeps you signed in. The full story is on the privacy page (/privacy).
+- Conversations with Doctor Love are not stored anywhere.
 `.trim();
 
 export const ASSISTANT_CONTEXT = `

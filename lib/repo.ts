@@ -83,10 +83,44 @@ export async function createUser(input: { email: string; passwordHash: string; f
   const id = newId();
   const ts = now();
   await query(
-    'INSERT INTO users (id, email, password_hash, first_name, entitlement, is_admin, couple_id, created_at, last_login_at) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)',
-    [id, input.email, input.passwordHash, input.firstName, 'FREE', 0, null, ts, ts],
+    `INSERT INTO users (id, email, password_hash, first_name, entitlement, is_admin, couple_id, created_at, last_login_at, consent_at)
+     VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)`,
+    [id, input.email, input.passwordHash, input.firstName, 'FREE', 0, null, ts, ts, ts],
   );
   return (await findUserById(id))!;
+}
+
+// ---------- Your data: take it with you, or take it away ----------
+
+/** Everything we hold about one person, for the download button on the account page. */
+export async function exportUserData(userId: string) {
+  const user = await one<Record<string, unknown>>(
+    'SELECT id, email, first_name, created_at, last_login_at, consent_at, couple_id FROM users WHERE id = $1', [userId],
+  );
+  const answers = await query<{ exercise_id: number; data: string | null; reflection: string | null; rating: number | null; shared: number | boolean | null; completed_at: string; updated_at: string }>(
+    'SELECT exercise_id, data, reflection, rating, shared, completed_at, updated_at FROM answers WHERE user_id = $1 ORDER BY exercise_id', [userId],
+  );
+  return {
+    exportedAt: now(),
+    account: user,
+    answers: answers.map((a) => ({
+      day: a.exercise_id,
+      answer: parseJson<unknown>(a.data, null),
+      notes: a.reflection,
+      rating: a.rating,
+      sharedWithPartner: a.shared === true || Number(a.shared) === 1,
+      completedAt: a.completed_at,
+      updatedAt: a.updated_at,
+    })),
+  };
+}
+
+/** Erasure: answers, invites, the link with a partner and the account itself. */
+export async function deleteUserCompletely(userId: string) {
+  await query('DELETE FROM answers WHERE user_id = $1', [userId]);
+  await query('DELETE FROM invites WHERE sender_id = $1', [userId]);
+  await query('UPDATE users SET couple_id = NULL WHERE id = $1', [userId]);
+  await query('DELETE FROM users WHERE id = $1', [userId]);
 }
 
 export async function touchLogin(userId: string) {

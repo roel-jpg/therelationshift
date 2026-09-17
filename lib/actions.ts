@@ -7,7 +7,7 @@ import { sendMail } from './mail';
 import { button, esc, field, quote, renderEmail } from './email-template';
 import { createSession, destroySession, getCurrentUser } from './session';
 import {
-  coupleMembers, createCouple, createInviteRow, createUser, findInvite, findUserByEmail, findUserById,
+  coupleMembers, createCouple, createInviteRow, createUser, deleteUserCompletely, findInvite, findUserByEmail, findUserById,
   createMessage, markInviteAccepted, openInviteFor, setUserCouple, touchLogin, upsertAnswer,
 } from './repo';
 
@@ -36,6 +36,9 @@ export async function signUp(_prev: ActionState, form: FormData): Promise<Action
   if (firstName.length < 1) return { error: 'Please tell us your first name.' };
   if (!EMAIL_RE.test(email)) return { error: 'That email address does not look right.' };
   if (password.length < 8) return { error: 'Use a password of at least 8 characters.' };
+  if (form.get('consent') !== 'on') {
+    return { error: 'We can only save your answers if you agree to it — please tick the box.' };
+  }
   if (await findUserByEmail(email)) return { error: 'There is already an account with this email. Try logging in.' };
 
   const user = await createUser({ firstName, email, passwordHash: hashPassword(password) });
@@ -169,4 +172,18 @@ export async function sendMessage(_prev: ContactState, form: FormData): Promise<
   });
 
   return { ok: true };
+}
+
+// ---------- Your data ----------
+
+/** Erasure on request: everything this person wrote disappears, and they are logged out. */
+export async function deleteAccount(form: FormData) {
+  const user = await getCurrentUser();
+  if (!user) redirect('/login');
+  if (str(form, 'confirm').trim().toUpperCase() !== 'DELETE') {
+    redirect('/account?delete=confirm');
+  }
+  await deleteUserCompletely(user.id);
+  await destroySession();
+  redirect('/?deleted=1');
 }

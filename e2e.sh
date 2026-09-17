@@ -13,7 +13,7 @@ for i in $(seq 1 30); do curl -s -o /dev/null http://localhost:3100/ && break; s
 # Resolve action ids from the compiled bundle (order of registration = order of export in lib/actions.ts)
 IDS=$(grep -rho '(0,[a-zA-Z]\.A)([a-zA-Z]*,"[0-9a-f]\{42\}",null)' .next/server/chunks/*.js | sed 's/.*"\([0-9a-f]*\)".*/\1/' | awk '!seen[$0]++')
 set -- $IDS
-SIGNUP=$1; LOGIN=$2; LOGOUT=$3; INVITE=$4; ACCEPT=$5; LEAVE=$6; SAVE=$7; CONTACT=$8
+SIGNUP=$1; LOGIN=$2; LOGOUT=$3; INVITE=$4; ACCEPT=$5; LEAVE=$6; SAVE=$7; CONTACT=$8; DELETE=$9
 B=http://localhost:3100
 pass=0; fail=0
 check() { if [ "$2" = "$3" ]; then echo "PASS $1"; pass=$((pass+1)); else echo "FAIL $1: got '$2' expected '$3'"; fail=$((fail+1)); fi; }
@@ -43,9 +43,12 @@ check "narration player on a day" "$(curl -s $B/program/day/2 | strip | grep -c 
 check "all 21 days listed publicly" "$(curl -s $B/program/days | strip | grep -o 'class="hex[^"]*"' | wc -l | tr -d ' ')" 21
 
 # Sign up user A
-act_state a.jar $SIGNUP $B/signup -F firstName=Anna -F email=anna@example.com -F password=password1 >/dev/null
+# Signing up without ticking the consent box must not create an account (GDPR art. 9)
+rm -f noconsent.jar; act_state noconsent.jar $SIGNUP $B/signup -F firstName=Nope -F email=nope@example.com -F password=password1 >/dev/null
+check "no account without consent" "$(n=$(grep -c rs_session noconsent.jar 2>/dev/null); echo ${n:-0})" 0
+act_state a.jar $SIGNUP $B/signup -F firstName=Anna -F email=anna@example.com -F password=password1 -F consent=on >/dev/null
 check "A logged in" "$(page a.jar $B/dashboard | grep -c 'Hi Anna')" 1
-rm -f dup.jar; act_state dup.jar $SIGNUP $B/signup -F firstName=Anna -F email=anna@example.com -F password=password1 >/dev/null
+rm -f dup.jar; act_state dup.jar $SIGNUP $B/signup -F firstName=Anna -F email=anna@example.com -F password=password1 -F consent=on >/dev/null
 check "duplicate signup gets no session" "$(n=$(grep -c rs_session dup.jar 2>/dev/null); echo ${n:-0})" 0
 
 # A creates invite
@@ -55,7 +58,7 @@ check "invite token created" "$([ -n "$TOKEN" ] && echo yes)" yes
 check "invite page shows sender" "$(curl -s $B/invite/$TOKEN | strip | grep -c 'Anna invited you')" 1
 
 # B signs up via invite
-act_state b.jar $SIGNUP "$B/signup?invite=$TOKEN" -F firstName=Bob -F email=bob@example.com -F password=password2 -F invite=$TOKEN >/dev/null
+act_state b.jar $SIGNUP "$B/signup?invite=$TOKEN" -F firstName=Bob -F email=bob@example.com -F password=password2 -F invite=$TOKEN -F consent=on >/dev/null
 check "B paired with A" "$(page b.jar $B/dashboard | grep -c 'with <strong>Anna')" 1
 check "A sees B" "$(page a.jar $B/dashboard | grep -c 'with <strong>Bob')" 1
 
@@ -100,6 +103,15 @@ act_state c.jar $CONTACT $B/support -F name=Test -F email=test@example.com -F me
 check "contact form rejects empty message" "$(rows)" 1
 act_state c.jar $CONTACT $B/support -F name=Bot -F email=bot@example.com -F message='buy my stuff now' -F website=http://spam.example >/dev/null
 check "honeypot blocks spam" "$(rows)" 1
+
+# Your data: download it, and delete everything
+check "export needs a session" "$(curl -s -o /dev/null -w '%{http_code}' $B/api/account/export)" 401
+check "export returns my answers" "$(curl -s -b b.jar $B/api/account/export | grep -c '"day": 2')" 1
+check "privacy statement is public" "$(curl -s $B/privacy | strip | grep -c 'Autoriteit Persoonsgegevens')" 1
+check "old disclaimer redirects" "$(curl -s -o /dev/null -w '%{http_code}' $B/disclaimer)" 308
+act_form b.jar $DELETE $B/account -F confirm=DELETE >/dev/null
+check "deleted account cannot sign in" "$(rm -f b2.jar; act_state b2.jar $LOGIN $B/login -F email=bob@example.com -F password=password2 >/dev/null; n=$(grep -c rs_session b2.jar 2>/dev/null); echo ${n:-0})" 0
+check "deleted answers are gone" "$(node -e "const{DatabaseSync}=require('node:sqlite');const d=new DatabaseSync('data/e2e.db');console.log(d.prepare('select count(*) c from answers').get().c)" 2>/dev/null)" 1
 
 echo "---- $pass passed, $fail failed"
 grep -iE "error|⨯" e2e-server.log | head -10

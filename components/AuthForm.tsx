@@ -29,6 +29,17 @@ export function AuthForm({ mode, action, invite, next }: Props) {
         {isSignup && <input type="text" name="firstName" placeholder="First name" required autoComplete="given-name" />}
         <input type="email" name="email" placeholder="Email" required autoComplete="email" />
         <input type="password" name="password" placeholder={isSignup ? 'Password (at least 8 characters)' : 'Password'} required minLength={isSignup ? 8 : 1} autoComplete={isSignup ? 'new-password' : 'current-password'} />
+        {isSignup && (
+          <label className="consent-row">
+            <input type="checkbox" name="consent" required />
+            <span>
+              I agree that The Relationshift stores the answers and notes I write in the exercises, so that I can
+              come back to them and — only when I choose to per exercise — share them with my partner. These answers
+              can say something about my relationship and my sex life. I can withdraw this at any time by deleting my
+              answers or my account. See the <Link href="/privacy">privacy statement</Link>.
+            </span>
+          </label>
+        )}
         {state?.error && <div className="rs-error">{state.error}</div>}
         <div className="save-button">
           <button type="submit" disabled={pending}>{pending ? 'One moment…' : isSignup ? 'Sign Up' : 'Sign In'}<ArrowRight /></button>

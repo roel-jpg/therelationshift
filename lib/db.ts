@@ -68,7 +68,8 @@ CREATE TABLE IF NOT EXISTS users (
   is_admin INTEGER NOT NULL DEFAULT 0,
   couple_id TEXT,
   created_at TEXT NOT NULL,
-  last_login_at TEXT
+  last_login_at TEXT,
+  consent_at TEXT
 );
 CREATE TABLE IF NOT EXISTS couples (
   id TEXT PRIMARY KEY,
@@ -139,7 +140,10 @@ async function init(): Promise<Backend> {
 
 // Columns added after the first release; both backends throw when the column is already there.
 async function migrate(backend: Backend) {
-  const steps = ['ALTER TABLE answers ADD COLUMN shared INTEGER NOT NULL DEFAULT 0'];
+  const steps = [
+    'ALTER TABLE answers ADD COLUMN shared INTEGER NOT NULL DEFAULT 0',
+    'ALTER TABLE users ADD COLUMN consent_at TEXT',
+  ];
   for (const sql of steps) {
     try { await backend.query(sql); } catch { /* already applied */ }
   }

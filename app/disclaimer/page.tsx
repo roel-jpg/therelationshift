@@ -1,9 +1,7 @@
-import type { Metadata } from 'next';
-import { StaticPage } from '@/components/StaticPage';
+import { permanentRedirect } from 'next/navigation';
 
-export const metadata: Metadata = { title: 'Disclaimer & Privacy Policy' };
-
-// Imported from the original site; to be reviewed before launch.
-export default function DisclaimerPage() {
-  return <StaticPage pageKey="Disclaimer & Privacy Policy" title="Disclaimer & Privacy Policy" image="/media/site/single1.png" />;
+// The 2016 "Disclaimer & Privacy Policy" has been replaced by one current statement,
+// so there is never more than one story about what happens to people's data.
+export default function DisclaimerRedirect() {
+  permanentRedirect('/privacy');
 }

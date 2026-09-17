@@ -21,7 +21,7 @@ export function SiteFooter() {
             <div className="widget-head">Info</div>
             <ul>
               <li><Link href="/media-research-info">Media, Research &amp; Info</Link></li>
-              <li><Link href="/disclaimer">Disclaimer &amp; Privacy</Link></li>
+              <li><Link href="/privacy">Privacy statement</Link></li>
               <li><Link href="/support#faq">FAQ</Link></li>
             </ul>
           </div>
