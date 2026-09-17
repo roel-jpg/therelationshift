@@ -4,6 +4,7 @@
 set -u
 cd "$(dirname "$0")"
 export NEXT_TELEMETRY_DISABLED=1 SESSION_SECRET=${SESSION_SECRET:-e2e-secret} NEXT_PUBLIC_SITE_URL=http://localhost:3100
+export BACKUP_TOKEN=e2e-backup-token-long-enough
 rm -rf data/e2e.db*; export DATABASE_URL=file:./data/e2e.db
 npx next start -p 3100 > e2e-server.log 2>&1 &
 SERVER=$!
@@ -112,6 +113,13 @@ check "old disclaimer redirects" "$(curl -s -o /dev/null -w '%{http_code}' $B/di
 act_form b.jar $DELETE $B/account -F confirm=DELETE >/dev/null
 check "deleted account cannot sign in" "$(rm -f b2.jar; act_state b2.jar $LOGIN $B/login -F email=bob@example.com -F password=password2 >/dev/null; n=$(grep -c rs_session b2.jar 2>/dev/null); echo ${n:-0})" 0
 check "deleted answers are gone" "$(node -e "const{DatabaseSync}=require('node:sqlite');const d=new DatabaseSync('data/e2e.db');console.log(d.prepare('select count(*) c from answers').get().c)" 2>/dev/null)" 1
+
+# Watchdog and backup
+check "health says ok" "$(curl -s $B/api/health | grep -c '"ok":true')" 1
+check "backup is invisible without a token" "$(curl -s -o /dev/null -w '%{http_code}' $B/api/admin/backup)" 404
+check "backup refuses a wrong token" "$(curl -s -o /dev/null -w '%{http_code}' -H 'authorization: Bearer nope' $B/api/admin/backup)" 404
+check "backup works with the token" "$(curl -s -H "authorization: Bearer $BACKUP_TOKEN" $B/api/admin/backup | grep -c takenAt)" 1
+check "backup contains the answers" "$(curl -s -H "authorization: Bearer $BACKUP_TOKEN" $B/api/admin/backup | grep -o '"answers":[0-9]*' | head -1)" '"answers":1' 
 
 echo "---- $pass passed, $fail failed"
 grep -iE "error|⨯" e2e-server.log | head -10

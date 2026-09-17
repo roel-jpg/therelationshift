@@ -105,6 +105,7 @@ export default function PrivacyPage() {
             <li>Neon — the database in which your account and answers are stored.</li>
             <li>Resend — sending the e-mails we owe you, such as our reply to a message.</li>
             <li>Anthropic — producing Doctor Love's answers.</li>
+            <li>Dropbox — storing the nightly backup of the database, in our own business account.</li>
           </ul>
           <p>
             Where any of them processes data outside the European Economic Area, that transfer is covered by the
