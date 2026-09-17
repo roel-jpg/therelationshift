@@ -26,21 +26,24 @@ export function DoctorLoveAvatar({ size = 40, id = 'dl' }: { size?: number; id?:
         {/* neck */}
         <rect x="53" y="76" width="14" height="16" rx="7" fill="#e8b48e" />
 
-        {/* hair behind */}
-        <path d="M27 60c0-21 15-35 33-35s33 14 33 35c0 12-2 22-6 27 1-10 0-19-2-25-6 3-16 5-25 5s-19-2-25-5c-2 6-3 15-2 25-4-5-6-15-6-27z" fill="#4a3b35" />
+        {/* long hair, falling over the shoulders */}
+        <path d="M24 62c0-23 16-38 36-38s36 15 36 38c0 16-1 28-3 38-3 12-6 18-9 20 2-12 3-26 2-36-7 4-16 6-26 6s-19-2-26-6c-1 10 0 24 2 36-3-2-6-8-9-20-2-10-3-22-3-38z" fill="#4a3b35" />
+        <path d="M31 96c-1 8-1 15 0 20-3-3-5-10-6-18zM89 96c1 8 1 15 0 20 3-3 5-10 6-18z" fill="#3d322c" />
 
         {/* face */}
         <ellipse cx="60" cy="58" rx="27" ry="29" fill="#f7d3b3" />
         <ellipse cx="60" cy="58" rx="27" ry="29" fill="none" stroke="#eec0a0" strokeWidth="0.8" />
 
-        {/* fringe */}
-        <path d="M33 54c0-17 12-28 27-28s27 11 27 28c-4-8-11-13-20-14-3 5-9 9-17 10-8 1-13 1-17 4z" fill="#4a3b35" />
+        {/* side-swept fringe */}
+        <path d="M33 54c0-17 12-28 27-28s27 11 27 28c-3-9-9-15-16-17-2 6-10 11-20 12-7 1-14 2-18 5z" fill="#4a3b35" />
 
-        {/* eyes */}
+        {/* eyes with lashes */}
         <ellipse cx="50" cy="58" rx="3.2" ry="3.6" fill="#3a2f2a" />
         <ellipse cx="70" cy="58" rx="3.2" ry="3.6" fill="#3a2f2a" />
         <circle cx="51.2" cy="56.8" r="1.1" fill="#ffffff" />
         <circle cx="71.2" cy="56.8" r="1.1" fill="#ffffff" />
+        <path d="M45.6 55.4c1.4-1.6 3.4-2.4 5.4-2.4M74.4 55.4c-1.4-1.6-3.4-2.4-5.4-2.4" fill="none" stroke="#3a2f2a" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M45.2 53.4l-2.2-1.6M74.8 53.4l2.2-1.6" fill="none" stroke="#3a2f2a" strokeWidth="1.4" strokeLinecap="round" />
 
         {/* brows */}
         <path d="M45 50.5c2-2 6-2.4 8.6-1" fill="none" stroke="#4a3b35" strokeWidth="1.8" strokeLinecap="round" />
@@ -51,7 +54,8 @@ export function DoctorLoveAvatar({ size = 40, id = 'dl' }: { size?: number; id?:
         <ellipse cx="76" cy="66" rx="5" ry="3.4" fill="#f4a09a" opacity=".55" />
 
         {/* smile */}
-        <path d="M51 69c3 4.2 15 4.2 18 0" fill="none" stroke="#a9614a" strokeWidth="2.2" strokeLinecap="round" />
+        <path d="M52 69.2c3 4 13 4 16 0 0 0-2 5.4-8 5.4s-8-5.4-8-5.4z" fill="#d4565c" />
+        <path d="M52 69.2c3 1.2 13 1.2 16 0" fill="none" stroke="#b6474d" strokeWidth="1" strokeLinecap="round" />
       </g>
     </svg>
   );

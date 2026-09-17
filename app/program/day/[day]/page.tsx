@@ -16,6 +16,10 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return { title: ex ? `Day ${day}: ${ex.title}` : 'Program' };
 }
 
+// Temporarily open so the whole programme can be tried without an account.
+// Set to false to require an account again from day 2 onwards.
+const OPEN_PROGRAM = true;
+
 export default async function DayPage({ params, searchParams }: { params: Promise<Params>; searchParams: Promise<{ done?: string }> }) {
   const { day: dayStr } = await params;
   const { done } = await searchParams;
@@ -23,7 +27,7 @@ export default async function DayPage({ params, searchParams }: { params: Promis
   if (!Number.isInteger(day) || day < 1 || day > 21) notFound();
 
   const user = await getCurrentUser();
-  if (day > 1 && !user) redirect(`/signup?next=${encodeURIComponent(`/program/day/${day}`)}`);
+  if (!OPEN_PROGRAM && day > 1 && !user) redirect(`/signup?next=${encodeURIComponent(`/program/day/${day}`)}`);
 
   const ex = await getExercise(day);
   if (!ex) notFound();
@@ -34,6 +38,7 @@ export default async function DayPage({ params, searchParams }: { params: Promis
     partner ? getAnswer(partner.id, day) : null,
   ]);
 
+  const narrationUrl = `/media/audio/day-${day}.mp3`;
   const articles = ex.articles;
   const products = ex.products;
   // Their answer appears only when they chose to share it and you have done the day yourself.
@@ -42,13 +47,18 @@ export default async function DayPage({ params, searchParams }: { params: Promis
   return (
     <>
     <section className="exercise-hero" style={ex.imageUrl ? { backgroundImage: `url(${ex.imageUrl})` } : undefined}>
-      <Link href={user ? '/dashboard' : '/'} className="back">← All days</Link>
+      <Link href={user ? '/dashboard' : '/program/days'} className="back">← All days</Link>
       <div className="container narrow">
         <span className="eyebrow">Day {ex.day} · {ex.durationMin} min</span>
         <h1>{ex.title}</h1>
       </div>
     </section>
     <div className="container narrow page">
+      <div className="block narration">
+        <h2>Listen</h2>
+        <p className="muted small">The exercise read out for you, so you can do it together without staring at a screen.</p>
+        <audio controls preload="none" src={narrationUrl}>Your browser cannot play audio.</audio>
+      </div>
 
       {done && <p className="notice">Saved. Nice work — see you tomorrow for day {Math.min(day + 1, 21)}.</p>}
 
@@ -124,7 +134,7 @@ export default async function DayPage({ params, searchParams }: { params: Promis
 
       <div className="pager">
         {day > 1 ? <Link href={`/program/day/${day - 1}`} className="btn secondary">← Day {day - 1}</Link> : <span />}
-        {day < 21 ? <Link href={`/program/day/${day + 1}`} className="btn secondary">Day {day + 1} →</Link> : <Link href="/dashboard" className="btn secondary">Overview</Link>}
+        {day < 21 ? <Link href={`/program/day/${day + 1}`} className="btn secondary">Day {day + 1} →</Link> : <Link href={user ? '/dashboard' : '/program/days'} className="btn secondary">Overview</Link>}
       </div>
     </div>
     </>

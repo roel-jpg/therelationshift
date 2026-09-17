@@ -24,7 +24,7 @@ export default async function ProgramPage() {
   }));
   return (
     <>
-      <OnePage sections={sections} joinHref={user ? '/dashboard' : '/signup'} joinLabel={user ? 'Go to my program' : 'Join now'} />
+      <OnePage sections={sections} joinHref={user ? '/dashboard' : '/program/days'} joinLabel={user ? 'Go to my program' : 'See the 21 days'} />
       <BookstoreFooter title={hc.shop_title} subtitle={hc.shop_subtitle} description={hc.shop_description} />
     </>
   );

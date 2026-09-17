@@ -1,1522 +1,1543 @@
 [
-  {
-    "day": 1,
-    "slug": "day-1-goals-in-life",
-    "title": "Goals in life",
-    "type": "basic-multiple",
-    "goal": "<p>Setting goals helps couples strengthen their relationship as they then work together as a team towards a common aim. It can help you understand what is really important to you and to your partner, and having a common goal can help you to stick together, even during the most challenging times. It is about moving toward what you want, not necessarily achieving it. However, if you reach your goal, then don’t forget to celebrate together!</p>",
-    "howTo": "<p>Take a moment to imagine your life in the future, and focus specifically on your relationship. Think about where you want to be and what you want to do in the next six months to two years. Next imagine where you want your lives to be in five, ten and twenty years. Start making a list of practical and shoot-for-the-moon goals. Difficulties starting?<br/><br/>When you have both finished your lists of goals it’s time to prioritize and get specific about how you will achieve these goals together. Keep it positive and don't criticize any ideas until you've had the chance to get them on the table first. Setting goals as a couple is as much about strengthening your bond as it is about achieving your actual goals.</p>",
-    "data": {
-      "questions": [
-        {
-          "question": "Ask yourself what values are important to me, to my relationship.",
-          "description": "Think of a bucket list of things you would like to do on your own, with your partner or with family or friends.",
-          "type": "picture",
-          "order": 1
-        },
-        {
-          "question": "Imagine you bump into a friend 5 years from now.",
-          "description": "What would you like to be able to tell him about your private life, your relationship, and in particular your family, career, personal growth and other major achievements.",
-          "type": "audio",
-          "order": 2
-        }
-      ],
-      "outro": "When you have both finished your lists of goals it’s time to prioritize and get specific about how you will achieve these goals together. Keep it positive and don't criticize any ideas until you've had the chance to get them on the table first. Setting goals as a couple is as much about strengthening your bond as it is about achieving your actual goals."
+ {
+  "day": 1,
+  "slug": "day-1-goals-in-life",
+  "title": "Goals in life",
+  "type": "basic-multiple",
+  "goal": "<p>Setting goals helps couples strengthen their relationship as they then work together as a team towards a common aim. It can help you understand what is really important to you and to your partner, and having a common goal can help you to stick together, even during the most challenging times. It is about moving toward what you want, not necessarily achieving it. However, if you reach your goal, then don’t forget to celebrate together!</p>",
+  "howTo": "<p>Take a moment to imagine your life in the future, and focus specifically on your relationship. Think about where you want to be and what you want to do in the next six months to two years. Next imagine where you want your lives to be in five, ten and twenty years. Start making a list of practical and shoot-for-the-moon goals. Difficulties starting?<br/><br/>When you have both finished your lists of goals it’s time to prioritize and get specific about how you will achieve these goals together. Keep it positive and don't criticize any ideas until you've had the chance to get them on the table first. Setting goals as a couple is as much about strengthening your bond as it is about achieving your actual goals.</p>",
+  "data": {
+   "questions": [
+    {
+     "question": "Ask yourself what values are important to me, to my relationship.",
+     "description": "Think of a bucket list of things you would like to do on your own, with your partner or with family or friends.",
+     "type": "picture",
+     "order": 1
     },
-    "background": "<p>Want to know more about setting goals in life? Please have a look at the below articles that we have selected for you.</p>",
-    "articles": [
-      {
-        "title": "How to Set Goals",
-        "url": "https://www.psychologytoday.com/blog/notes-self/201308/how-set-goals"
-      },
-      {
-        "title": "How to Set Goals in 12 Steps",
-        "url": "http://www.wikihow.com/Set-Goals"
-      },
-      {
-        "title": "9 Steps To Setting And Reaching Relationship Goals",
-        "url": "http://www.yourtango.com/experts/brian-rzepczynski/9-steps-setting-and-reaching-relationship-goals"
-      }
-    ],
-    "products": [
-      {
-        "id": 28,
-        "name": "Goal Setting Journal: The Best Goal Setting Tool",
-        "url": "https://www.amazon.com/Goal-Setting-Journal-Best-Tool/dp/1523982284/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1474977977&sr=8-12",
-        "author": "Elizabeth Earl",
-        "for": "Both"
-      },
-      {
-        "id": 35,
-        "name": "The Bucket List for Couples",
-        "url": "https://www.amazon.com/Bucket-List-Couples-Lovebook/dp/193680641X?ie=UTF8&pldnSite=1&redirect=true&refRID=0V82FHV1MRP97KHHY0WR&ref_=pd_sim_b_14",
-        "author": "Kim Chapman",
-        "for": "Both"
-      },
-      {
-        "id": 27,
-        "name": "Write It Down, Make It Happen: Knowing What You Want And Getting It",
-        "url": "https://www.amazon.com/Write-Down-Make-Happen-Knowing/dp/0684850028/ref=sr_1_1?s=books&ie=UTF8&qid=1474977839&sr=1-1&keywords=setting+goals",
-        "author": "Henriette Anne Klauser",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-1.jpg",
-    "audioUrl": "/media/audio/audio_play_1.mp3",
-    "exerciseAudioUrl": null
+    {
+     "question": "Imagine you bump into a friend 5 years from now.",
+     "description": "What would you like to be able to tell him about your private life, your relationship, and in particular your family, career, personal growth and other major achievements.",
+     "type": "audio",
+     "order": 2
+    }
+   ],
+   "outro": "When you have both finished your lists of goals it’s time to prioritize and get specific about how you will achieve these goals together. Keep it positive and don't criticize any ideas until you've had the chance to get them on the table first. Setting goals as a couple is as much about strengthening your bond as it is about achieving your actual goals."
   },
-  {
-    "day": 2,
-    "slug": "day-2-what-is-your-love-language",
-    "title": "What is your love language?",
-    "type": "multiple-match-category",
-    "goal": "<p>Discover your love language and your partners love language. You come to understand how you experience love and to realise that you are most likely to express your love for another in the same way as you prefer to experience it yourself.<br/><br/>You might have heard of ‘The Five Love Languages’ by Dr. Gary Chapman. His first book on this subject was published in 1995 and has been consistently on the New York Times Best Seller list. Chapman holds that there are five main ways that people show their affection; this also tends to be the way they prefer to receive affection too: Words of Affirmation, Quality Time, Physical Touch, Acts of Service and Gifts.<br/><br/>Some people feel loved when their partner brings them a coffee in the morning: This is a great example of Act of Service.</p><p><br/>Some need their partner to tell them how good they look or how well they handled something: These are words of Affirmation.</p><p><br/>Some people always buy their partner a present if they’ve been away: Obviously this is Gifts.</p><p><br/>Others require physical forms of affection such as a kiss or stroke through the hair: These are expressions of “Physical Touch”.</p>",
-    "howTo": "<p>You and your partner separately do a test to discover your love language.</p><p>1. Below you will find 30 questions with two statements each. Select the statement that you prefer most. It is the one that fits the best right now.</p><p><br/>2. Talk about your love language and think about your own needs and your partner’s.</p>",
-    "data": {
-      "data": [
-        {
-          "options": [
-            {
-              "text": "I like to receive notes of affirmation.",
-              "value": "A"
-            },
-            {
-              "text": "I like to be hugged.",
-              "value": "E"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like to spend one-to-one time with a person who is special to me.",
-              "value": "B"
-            },
-            {
-              "text": "I feel loved when someone gives practical help to me.",
-              "value": "D"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like it when people give me gifts.",
-              "value": "C"
-            },
-            {
-              "text": "I like leisurely visits with friends and loved ones.",
-              "value": "B"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I feel loved when people do things to help me.",
-              "value": "D"
-            },
-            {
-              "text": "I feel loved when people touch me.",
-              "value": "E"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I feel loved when someone I love or admire puts his or her arm around me.",
-              "value": "E"
-            },
-            {
-              "text": "I feel loved when I receive a gift from someone I love or admire.",
-              "value": "C"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like to go places with friends and loved ones.",
-              "value": "B"
-            },
-            {
-              "text": "I like to high-five or hold hands with people who are special to me.",
-              "value": "E"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "Visible symbols of love (gifts) are very important to me.",
-              "value": "C"
-            },
-            {
-              "text": "I feel loved when people affirm me.",
-              "value": "A"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like to sit close to people whom I enjoy being around.",
-              "value": "E"
-            },
-            {
-              "text": "I like for people to tell me I am beautiful/handsome.",
-              "value": "A"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like to spend time with friends and loved ones.",
-              "value": "B"
-            },
-            {
-              "text": "I like to receive little gifts from friends and loved ones.",
-              "value": "C"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "Words of acceptance are important to me.",
-              "value": "A"
-            },
-            {
-              "text": "I know someone loves me when he or she helps me.",
-              "value": "D"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like being together and doing things with friends and loved ones.",
-              "value": "B"
-            },
-            {
-              "text": "I like it when kind words are spoken to me.",
-              "value": "A"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "What someone does affects me more than what he or she says.",
-              "value": "D"
-            },
-            {
-              "text": "Hugs make me feel connected and valued.",
-              "value": "E"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I value praise and try to avoid criticism.",
-              "value": "A"
-            },
-            {
-              "text": "Several small gifts mean more to me than one large gift.",
-              "value": "C"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I feel close to someone when we are talking or doing something together.",
-              "value": "B"
-            },
-            {
-              "text": "I feel closer to friends and loved ones when they touch me often.",
-              "value": "E"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like for people to compliment my achievements.",
-              "value": "A"
-            },
-            {
-              "text": "I know people love me when they do things for me that they don't enjoy doing.",
-              "value": "D"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like to be touched as friends and loves ones walk by.",
-              "value": "E"
-            },
-            {
-              "text": "I like it when people listen to me and show genuine interest in what I am saying.",
-              "value": "B"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I feel loved when friends and loved ones help me with jobs or projects.",
-              "value": "D"
-            },
-            {
-              "text": "I really enjoy receiving gifts from friends and loved ones.",
-              "value": "C"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like for people to compliment my appearance.",
-              "value": "A"
-            },
-            {
-              "text": "I feel loved when people take time to understand my feelings.",
-              "value": "B"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I feel secure when a special person is touching me.",
-              "value": "E"
-            },
-            {
-              "text": "Acts of service make me feel loved.",
-              "value": "D"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I appreciate the many things that special people do for me.",
-              "value": "D"
-            },
-            {
-              "text": "I like receiving gifts that special people make for me.",
-              "value": "C"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I really enjoy the feeling I get when someone gives me undivided attention.",
-              "value": "B"
-            },
-            {
-              "text": "I really enjoy the feeling I get when someone helps me make decisions.",
-              "value": "D"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I feel loved when a person celebrates my birthday with a gift.",
-              "value": "C"
-            },
-            {
-              "text": "I feel loved when a person celebrates my birthday with meaningful words.",
-              "value": "A"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I know a person is thinking of me when he or she gives me a gift.",
-              "value": "C"
-            },
-            {
-              "text": "I feel loved when a person helps with my chores.",
-              "value": "D"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I appreciate it when someone listens patiently and doesn't interrupt me.",
-              "value": "B"
-            },
-            {
-              "text": "I appreciate it when someone remembers special days with a gift.",
-              "value": "C"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like knowing loved ones are concern enough to help with my daily tasks.",
-              "value": "D"
-            },
-            {
-              "text": "I enjoy extended trips with someone who is special to me.",
-              "value": "B"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I enjoy kissing or being kissed by people with whom I am close.",
-              "value": "E"
-            },
-            {
-              "text": "I enjoy receiving a gift given for no special reason.",
-              "value": "C"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I like to be told that I am appreciated.",
-              "value": "A"
-            },
-            {
-              "text": "I like for a person to look at me when we are talking.",
-              "value": "B"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "Gifts from a friend or loved one are always special to me.",
-              "value": "C"
-            },
-            {
-              "text": "I feel good when a friend or loved one touches me.",
-              "value": "E"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I feel loved when a person enthusiastically does some task I have requested.",
-              "value": "D"
-            },
-            {
-              "text": "I feel loved when I am told how much I am needed.",
-              "value": "A"
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "text": "I need to be touched every day.",
-              "value": "E"
-            },
-            {
-              "text": "I need words of encouragement daily.",
-              "value": "A"
-            }
-          ]
-        }
-      ],
-      "results": [
-        {
-          "value": "a",
-          "title": "Words of Affirmation",
-          "description": "One of your deepest needs is the need to feel appreciated. Verbal compliments, words of appreciation, encouragement, kind and humble words are all ways to show love to you.",
-          "order": 1
-        },
-        {
-          "value": "b",
-          "title": "Quality Time",
-          "description": "You enjoy doing things together! We aren’t talking about just sitting in front of the T.V. together but really giving each other undivided attention. This means looking at each other, talking to each other, sharing your life with your partner.",
-          "order": 2
-        },
-        {
-          "value": "c",
-          "title": "Receiving Gifts",
-          "description": "You are happy to receive things from your loved ones. They don’t have to be expensive. The gift is a symbol of “s/he cares about me” and “s/he thinks of me”.",
-          "order": 3
-        },
-        {
-          "value": "d",
-          "title": "Acts of Service",
-          "description": "For you, actions speak louder than words! You prefer your partner to do things for you such as cooking a meal, giving a massage, cleaning the room… You like your partner to initiate the acts of service and put efforts into doing them to show that s/he cares.",
-          "order": 4
-        },
-        {
-          "value": "e",
-          "title": "Physical Touch",
-          "description": "You love to receive a hug, a kiss, squeezes on the shoulder, a pat on the back, a touch of the face, and an arm around the waist... Touches can be 10 times as powerful and comforting as any words!",
-          "order": 5
-        }
-      ]
+  "background": "<p>Want to know more about setting goals in life? Please have a look at the below articles that we have selected for you.</p>",
+  "articles": [
+   {
+    "title": "How to Set Goals",
+    "url": "https://www.psychologytoday.com/blog/notes-self/201308/how-set-goals"
+   },
+   {
+    "title": "How to Set Goals in 12 Steps",
+    "url": "http://www.wikihow.com/Set-Goals"
+   },
+   {
+    "title": "9 Steps To Setting And Reaching Relationship Goals",
+    "url": "http://www.yourtango.com/experts/brian-rzepczynski/9-steps-setting-and-reaching-relationship-goals"
+   }
+  ],
+  "products": [
+   {
+    "id": 28,
+    "name": "Goal Setting Journal: The Best Goal Setting Tool",
+    "url": "https://www.amazon.com/Goal-Setting-Journal-Best-Tool/dp/1523982284/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1474977977&sr=8-12",
+    "author": "Elizabeth Earl",
+    "for": "Both"
+   },
+   {
+    "id": 35,
+    "name": "The Bucket List for Couples",
+    "url": "https://www.amazon.com/Bucket-List-Couples-Lovebook/dp/193680641X?ie=UTF8&pldnSite=1&redirect=true&refRID=0V82FHV1MRP97KHHY0WR&ref_=pd_sim_b_14",
+    "author": "Kim Chapman",
+    "for": "Both"
+   },
+   {
+    "id": 27,
+    "name": "Write It Down, Make It Happen: Knowing What You Want And Getting It",
+    "url": "https://www.amazon.com/Write-Down-Make-Happen-Knowing/dp/0684850028/ref=sr_1_1?s=books&ie=UTF8&qid=1474977839&sr=1-1&keywords=setting+goals",
+    "author": "Henriette Anne Klauser",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-1.jpg",
+  "audioUrl": "/media/audio/audio_play_1.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-1.mp3"
+ },
+ {
+  "day": 2,
+  "slug": "day-2-what-is-your-love-language",
+  "title": "What is your love language?",
+  "type": "multiple-match-category",
+  "goal": "<p>Discover your love language and your partners love language. You come to understand how you experience love and to realise that you are most likely to express your love for another in the same way as you prefer to experience it yourself.<br/><br/>You might have heard of ‘The Five Love Languages’ by Dr. Gary Chapman. His first book on this subject was published in 1995 and has been consistently on the New York Times Best Seller list. Chapman holds that there are five main ways that people show their affection; this also tends to be the way they prefer to receive affection too: Words of Affirmation, Quality Time, Physical Touch, Acts of Service and Gifts.<br/><br/>Some people feel loved when their partner brings them a coffee in the morning: This is a great example of Act of Service.</p><p><br/>Some need their partner to tell them how good they look or how well they handled something: These are words of Affirmation.</p><p><br/>Some people always buy their partner a present if they’ve been away: Obviously this is Gifts.</p><p><br/>Others require physical forms of affection such as a kiss or stroke through the hair: These are expressions of “Physical Touch”.</p>",
+  "howTo": "<p>You and your partner separately do a test to discover your love language.</p><p>1. Below you will find 30 questions with two statements each. Select the statement that you prefer most. It is the one that fits the best right now.</p><p><br/>2. Talk about your love language and think about your own needs and your partner’s.</p>",
+  "data": {
+   "data": [
+    {
+     "options": [
+      {
+       "text": "I like to receive notes of affirmation.",
+       "value": "A"
+      },
+      {
+       "text": "I like to be hugged.",
+       "value": "E"
+      }
+     ]
     },
-    "background": "<p>Gary Chapman(1938) is a pastor and author of the mega-selling phenomenon “The 5 Love Languages® series”, which has sold more than 10 million worldwide and has been translated into 50 languages. Dr. Chapman travels the world presenting seminars on marriage, family, and relationships, and his radio programs air on more than 400 stations. He lives in North Carolina with his wife, Karolyn and they have two adult children.</p>",
-    "articles": [
+    {
+     "options": [
       {
-        "title": "What are the five love languages?",
-        "url": "http://www.sheknows.com/love-and-sex/articles/1059295/What-are-the-5-Love-Languages"
+       "text": "I like to spend one-to-one time with a person who is special to me.",
+       "value": "B"
       },
       {
-        "title": "Dr. Chapman explains Oprah Winfrey what her love language is",
-        "url": "https://www.youtube.com/watch?v=Jq92YwKfbb4"
+       "text": "I feel loved when someone gives practical help to me.",
+       "value": "D"
       }
-    ],
-    "products": [
-      {
-        "id": 8,
-        "name": "A Couple's Guide to Communication",
-        "url": "https://www.amazon.com/Couples-Guide-Communication-John-Gottman/dp/0878221271/ref=sr_1_15?ie=UTF8&qid=1467362511&sr=8-15&keywords=gottman",
-        "author": "Gottman",
-        "for": "Both"
-      },
-      {
-        "id": 29,
-        "name": "The 5 Love Languages for Men: Tools for Making a Good Relationship Great",
-        "url": "https://www.amazon.com/Love-Languages-Men-Making-Relationship/dp/0802412726/ref=sr_1_3?ie=UTF8&qid=1474978528&sr=8-3&keywords=5+love+languages",
-        "author": "Chapman",
-        "for": "Him"
-      },
-      {
-        "id": 18,
-        "name": "The 5 Love Languages: The Secret to Love that Lasts",
-        "url": "https://www.amazon.com/Love-Languages-Secret-that-Lasts/dp/080241270X/ref=sr_1_17?ie=UTF8&qid=1467363039&sr=8-17&keywords=gottman",
-        "author": "Chapman",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-2.jpg",
-    "audioUrl": "/media/audio/audio_play_2.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 3,
-    "slug": "day-3-active-listening",
-    "title": "Active listening",
-    "type": "single-audio",
-    "goal": "<p>Relationships are all about communication. Sometimes it happens that we listen to our partners speaking without really hearing what they are saying. This means we miss opportunities to connect with our partners – and even worse – risk making them feel neglected, disrespected, and resentful. In order to avoid this, the two of you are going to experiment with active listening.<br/><br/>This exercise helps you both express active interest in what your partner has to say and to make him or her feel heard so as to foster empathy and connection. Active listening creates a safe space in which one's thoughts and feelings do not come under judgment. This is crucial in a relationship, as you want to be able to talk freely and openly to each other. </p>",
-    "howTo": "<p>Find a quiet place where you can talk with your partner without interruption or distraction. Invite them to share what’s on their mind. When they do so, try to follow the steps below. You don’t need to cover every step, but the more you do cover, the more effective this exercise is likely to be.</p><p>1. Sit facing each other<br/></p><p>2. Set a timer for 5 minutes<br/></p><p>3. Just talk about whatever you feel like talking about: What has been on your mind lately, how do you feel about your partner.....whatever you feel you would like to talk about.<br/></p><p>4. Use engaged body language. Show that you are interested by maintaining eye contact, and try to maintain eye contact with them the entire time.<br/></p><p>5. Express empathy. If the other person voices negative feelings, strive to validate these feelings rather than questioning or defending against them. For example, if the speaker expresses frustration, try to consider why he or she feels that way, regardless of whether you think that feeling is justified or whether you would feel that way yourself were you in his or her position. <br/></p><p>6. Avoid judgment. Your goal is to understand the other person’s perspective and accept it for what it is, even if you disagree with it. Try not to interrupt with counter-arguments or mentally prepare a rebuttal while the other person is speaking.<br/></p><p>7.Avoid giving advice. Problem-solving is likely to be more effective once you understand your partner’s perspective and when they feel heard. Moving too quickly into advice-giving can be counterproductive. </p><p>Did you finish the exercise?</p><p>Take turns so once the timer has gone off, the roles switch and the other partner has their turn to speak in an uninterrupted stream of consciousness.</p>",
-    "data": null,
-    "background": "<p>Want to know more about active listening? Please have a look at the below articles that we have selected for you.<p>",
-    "articles": [
-      {
-        "title": "How active listening makes both sides of a conversation feel better",
-        "url": "http://www.wsj.com/articles/how-active-listening-makes-both-sides-of-a-conversation-feel-better-1421082684"
-      },
-      {
-        "title": "11 ways active listening can help your relationships",
-        "url": "https://www.psychologytoday.com/blog/fulfillment-any-age/201203/11-ways-active-listening-can-help-your-relationships"
-      },
-      {
-        "title": "Why active listening may help your relationship",
-        "url": "http://www.sheknows.com/love-and-sex/articles/1060641/why-active-listening-may-help-your-relationship"
-      }
-    ],
-    "products": [
-      {
-        "id": 8,
-        "name": "A Couple's Guide to Communication",
-        "url": "https://www.amazon.com/Couples-Guide-Communication-John-Gottman/dp/0878221271/ref=sr_1_15?ie=UTF8&qid=1467362511&sr=8-15&keywords=gottman",
-        "author": "Gottman",
-        "for": "Both"
-      },
-      {
-        "id": 30,
-        "name": "Just Listen: Discover the Secret to Getting Through to Absolutely Anyone",
-        "url": "https://www.amazon.com/Just-Listen-Discover-Getting-Absolutely/dp/0814436471/ref=sr_1_1?ie=UTF8&qid=1474978965&sr=8-1&keywords=active+listening",
-        "author": "Mark Goulston",
-        "for": "Both"
-      },
-      {
-        "id": 31,
-        "name": "The Lost Art of Listening, Second Edition: How Learning to Listen Can Improve Relationships",
-        "url": "https://www.amazon.com/Lost-Art-Listening-Second-Relationships/dp/1593859864/ref=sr_1_4?ie=UTF8&qid=1474978965&sr=8-4&keywords=active+listening",
-        "author": "Michael P. Nichols PhD",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-3.jpg",
-    "audioUrl": "/media/audio/audio_play_3.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 4,
-    "slug": "day-4-let-s-talk-about-sex",
-    "title": "Let's talk about sex",
-    "type": "single-audio",
-    "goal": "<p>In the early seventies, it was believed that only men had sexual fantasies. We nowadays know better and having sexual fantasies, whether you want to act them out or not, is completely natural and healthy. A 2001 study in the Journal of Sex Research found that 98% of men and 80% of women had fantasized about someone other than their partner in the previous 2 months! However, how to talk to your partner about sex can be one of the more challenging aspects of a relationship. Without being able to truly communicate about sex there is a danger that people engage in sexual activities they don’t really enjoy. Sexual satisfaction depends on your ability to express what arouses or interests you and what doesn’t.</p>",
-    "howTo": "<p>How do you talk with each other about sex?</p><p>Here are some pointers to get you started:</p><p>1. Make sure that you and your partner are ready to discuss this topic. Timing can make a huge difference in how and where a sexual conversation goes. Pick a time when you have some privacy and are not rushed, so you can both think about what’s being said and how it feels before you respond. Great if that can happen today, but its absolutely fine if you decide together to do this exercise another day.<br/></p><p>2. Agree on confidentiality. Whenever you bring up a new sexual conversation with your partner, you are exposing a part of yourself and you need to feel safe.<br/></p><p>3. You can start by asking each other questions about where you most like to be touched, what you liked best the last time you made love, what is your favourite place to kiss your partner’s body, what makes sex more exciting for you, do you have a fantasy you would like to share, is there a special love toy you’d like to try and what about watching erotic movies together?<br/></p><p>Try what works for you. Things that are new can feel uncomfortable or awkward at first, and having a sense of humour can help. There is no right or wrong, just have fun with discovering your sexual communication and see what happens. It's a nice idea to end your conversation sharing at least one positive thing that came out of it.<br/></p><p>You can record it and send it to your partner at a moment you want to surprise him or her with a sex date.<br/></p><p>Open link below to watch the scene of this movie</p><p><a href=\"https://www.youtube.com/watch?v=UV3QWd2RtwQ\" target=\"\">Play Video</a></p>",
-    "data": null,
-    "background": "<p>Visit the link for a <a href=\"https://www.ted.com/talks/esther_perel_the_secret_to_desire_in_a_long_term_relationship?language=nl\" target=\"\">TedX-talk by Ester Perel</a>, who talks about erotic intelligence and explains why fantasy is important for human relationships.</p>",
-    "articles": [
-      {
-        "title": "Esther Perel the Secret to Desire in a Long Term Relationship",
-        "url": "https://www.ted.com/talks/esther_perel_the_secret_to_desire_in_a_long_term_relationship?language=nl"
-      },
-      {
-        "title": "How To Talk About Sex With Your Spouse",
-        "url": "http://simplemarriage.net/how-to-talk-about-sex-with-your-spouse/"
-      },
-      {
-        "title": "How can you tell your partner what you want in bed?",
-        "url": "http://www.estherperel.com/how-can-you-tell-your-partner-what-you-want-in-bed/"
-      },
-      {
-        "title": "Hope Springs 2012 Meryl Streep, Tommy Lee Jones",
-        "url": "https://www.youtube.com/watch?v=UV3QWd2RtwQ"
-      }
-    ],
-    "products": [
-      {
-        "id": 20,
-        "name": "Mating in Captivity: Unlocking Erotic Intelligence",
-        "url": "https://www.amazon.com/Mating-Captivity-Unlocking-Erotic-Intelligence/dp/0060753641/ref=sr_1_1?ie=UTF8&qid=1468338782&sr=8-1&keywords=esther+perel",
-        "author": "Esther Perel",
-        "for": "Both"
-      },
-      {
-        "id": 23,
-        "name": "Reflected in You: A Crossfire Novel",
-        "url": "https://www.amazon.com/Reflected-You-Crossfire-Sylvia-Day-ebook/dp/B008GVD6D8/ref=sr_1_3?ie=UTF8&qid=1468483383&sr=8-3&keywords=bared+to+you",
-        "author": "Sylvia Day",
-        "for": "Both"
-      },
-      {
-        "id": 32,
-        "name": "The Art of Everyday Ecstasy",
-        "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
-        "author": "Margot Anand",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-4.jpg",
-    "audioUrl": "/media/audio/audio_play_4.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 5,
-    "slug": "day-5-expressing-gratitude",
-    "title": "Expressing gratitude",
-    "type": "single-picture",
-    "goal": "<p>Expressing gratitude improves our physical and mental health as well as our relationships.</p><p>Praise each other and show your appreciation for each other by writing the other one a letter.</p>",
-    "howTo": "<p>1. Set a timer for 15 minutes</p><p>2. Take a piece of paper and write a letter expressing the gratitude you feel for the other.</p><p>Try using the following as a guide:</p><p>Address your partner directly, “Dear ______”.</p><p>Don’t worry about perfect grammar or spelling.</p><p>Describe in specific terms something your partner does or has done, why you are grateful for that, and how his/her behavior affected your life. Try to use a concrete example. Describe what you are doing in your life now and how you often remember his or her efforts. Try to keep your letter to roughly one page (~300 words). If you find it difficult, you can start writing a list of things you really like about your partner. You could start by praising some aspect of your partner’s character, then their accomplishments, or anything else that comes to mind. There are no restrictions on what you are or are not allowed to write. Everything is ok.</p><p>3. If you don’t manage to finish the letter today, finish it another time. Make sure you agree on a special moment when you will give each other the letters.&#65279;</p>",
-    "data": null,
-    "background": null,
-    "articles": [
-      {
-        "title": "10 Ways to Show Gratitude in a Relationship",
-        "url": "https://www.powerofpositivity.com/10-ways-show-gratitude-in-a-relationship/"
-      },
-      {
-        "title": "Expressing Gratitude Can Make You Sexier!",
-        "url": "https://www.psychologytoday.com/blog/your-money-and-your-heart/201311/expressing-gratitude-can-make-you-sexier"
-      }
-    ],
-    "products": [
-      {
-        "id": 25,
-        "name": "Couple Skills: Making Your Relationship Work",
-        "url": "https://www.amazon.com/Couple-Skills-Making-Your-Relationship/dp/157224481X/ref=sr_1_9?ie=UTF8&qid=1468485741&sr=8-9&keywords=relationship+communication",
-        "author": "McKay",
-        "for": "Both"
-      },
-      {
-        "id": 19,
-        "name": "Hold Me Tight: Seven Conversations for a Lifetime of Love",
-        "url": "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X/ref=sr_1_21?ie=UTF8&qid=1467363080&sr=8-21&keywords=gottman",
-        "author": "Sue Johnson",
-        "for": "Both"
-      },
-      {
-        "id": 6,
-        "name": "The Seven Principles for Making Marriage Work: A Practical Guide from the Country's Foremost Relationship Expert",
-        "url": "https://www.amazon.com/Seven-Principles-Making-Marriage-Work/dp/0553447718/ref=sr_1_1?ie=UTF8&qid=1467362511&sr=8-1&keywords=gottman",
-        "author": "Gottman",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-5.jpg",
-    "audioUrl": "/media/audio/audio_play_5.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 6,
-    "slug": "day-6-back-to-back-heart-to-heart-meditation",
-    "title": "Back to Back, Heart to Heart Meditation",
-    "type": "noop",
-    "goal": "<p>An invitation from Josh Wise to join The Back to Back, Heart to Heart meditation. This meditation is an excellent way to extend love to someone you care for very deeply.</p>",
-    "howTo": "<p>Play the <b>audio</b> below.</p>",
-    "data": null,
-    "background": "<p>Josh Wise, a leading authority on mindfulness and relationships. Josh teaches couples from around the world how to slow down and connect with each other in ways that go beyond words. Josh lives in Bali with his wife, Lindsey and their three children. Josh and Lindsey offer Mindful Couples retreats and workshops, to help couples cultivate a deeper connection. <a href='https://www.wisemindbody.com/'>Wise Mind Body</a></p>",
-    "articles": [
-      {
-        "title": "3 Ways Yoga and Meditation Will Take Your Relationship to the Next Level",
-        "url": "http://therelationshift.com/blogs/3-ways-yoga-and-meditation-will-take-your-relationship-to-the-next-level"
-      }
-    ],
-    "products": [
-      {
-        "id": 24,
-        "name": "Get Some Headspace: 10 Minutes Can Make All the Difference",
-        "url": "https://www.amazon.com/Get-Some-Headspace-Difference-Paperback/dp/B00FFBZ1GW/ref=sr_1_4?ie=UTF8&qid=1468484566&sr=8-4&keywords=get+some+headspace",
-        "author": "Andy Puddicombe",
-        "for": "Both"
-      },
-      {
-        "id": 10,
-        "name": "Insight timer",
-        "url": "https://www.amazon.com/Spotlight-Six-Software-LLC-Insight/dp/B006HL9G10/ref=sr_1_2?s=mobile-apps&ie=UTF8&qid=1468486425&sr=1-2&keywords=insight+timer",
-        "author": "Spotlight Six Software, LLC",
-        "for": "Both"
-      },
-      {
-        "id": 17,
-        "name": "Mindfulness: A Practical Guide to Finding Peace in a Frantic World",
-        "url": "https://www.amazon.com/Mindfulness-Practical-Finding-Williams-Paperback/dp/B0157HTWS6/ref=sr_1_1?ie=UTF8&qid=1468484136&sr=8-1&keywords=Mindfulness%3A+A+Practical+Guide+to+Finding+Peace+in+a+Frantic+World",
-        "author": "Williams",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-6.jpg",
-    "audioUrl": "/media/audio/audio_play_6.mp3",
-    "exerciseAudioUrl": "/media/audio/exercise_audio_6.mp3"
-  },
-  {
-    "day": 7,
-    "slug": "day-7-feeling-connected",
-    "title": "Feeling connected",
-    "type": "single-picture",
-    "goal": "<p>Connection is key to developing the degree of intimacy any relationship needs to survive and blossom.</p><p>To help foster that feeling of connection, think about a time when you felt a strong connection with your partner and to describe that experience in writing.</p>",
-    "howTo": "<p>1. Try to think of a time when you felt an especially strong bond with your partner. Choose a specific example: an experience you had with your partner where you felt especially close and connected to him or her. This could be a time you had a meaningful conversation, gave or received support, experienced a great loss, succeeded at something, or witnessed a historic moment together.</p><p>2. spend a few minutes writing about that specific example. In particular, consider the ways in which this experience made you feel close and connected to your partner.</p><p>3. Share your moments with each other. If you feel like it, read out load to each other what you’ve written and then maybe talk about your chosen moments</p>",
-    "data": null,
-    "background": null,
-    "articles": [],
-    "products": [
-      {
-        "id": 25,
-        "name": "Couple Skills: Making Your Relationship Work",
-        "url": "https://www.amazon.com/Couple-Skills-Making-Your-Relationship/dp/157224481X/ref=sr_1_9?ie=UTF8&qid=1468485741&sr=8-9&keywords=relationship+communication",
-        "author": "McKay",
-        "for": "Both"
-      },
-      {
-        "id": 19,
-        "name": "Hold Me Tight: Seven Conversations for a Lifetime of Love",
-        "url": "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X/ref=sr_1_21?ie=UTF8&qid=1467363080&sr=8-21&keywords=gottman",
-        "author": "Sue Johnson",
-        "for": "Both"
-      },
-      {
-        "id": 6,
-        "name": "The Seven Principles for Making Marriage Work: A Practical Guide from the Country's Foremost Relationship Expert",
-        "url": "https://www.amazon.com/Seven-Principles-Making-Marriage-Work/dp/0553447718/ref=sr_1_1?ie=UTF8&qid=1467362511&sr=8-1&keywords=gottman",
-        "author": "Gottman",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-7.jpg",
-    "audioUrl": "/media/audio/audio_play_7.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 8,
-    "slug": "day-8-spoiling-session",
-    "title": "Spoiling session",
-    "type": "noop",
-    "goal": "<p>Connect by indulging in a sensual spoiling session. A spoiling session is an exercise that allows you to gain a deeper understanding of your own sexual needs and the sexual needs of your partner, while simultaneously reconnecting you as a couple and melting away the subtle shame and resistance that each partner may or may not have towards sex in general. Free of any expectations.</p>",
-    "howTo": "<ul><li></li></ul><p>1. Decide which partner will be first and also decide the amount of time you will share together. On day 12 there is another ‘sensual spoiling session’ when the other partner will enjoy the experience of being sensually spoiled for the same amount of time.</p><p>2. Role play. The partner who goes first is Lover A, and the other partner is</p><p>Lover B.</p><p>Lover A guides Lover B, expressing his/her desires and fantasies.</p><p>Lover B will be the listener.</p><p>3. Preparations Lover A: put together your intimate sensual spoiling box: The ideal size is probably a shoe box, or something a little smaller.  Fill this spoiling box with inventive toys such as feathers, flowers, straws, shells, crystals, leaves, sticks, necklaces, brushes, musical instruments such bells/ tingshas /a singing bowl, maybe food like grapes, strawberries, peanut butter, chocolate spread, or massage oils/ fragrances, ice cubes. Go for things you can imagine your lover using to tickle, kiss, squeeze, scratch, wipe, push, drip, blow, stroke, slap, sprinkle, rub and tap all over your body.<br/></p><p><b>Lover A.</b><br/></p><p>You are vulnerable, You are strong, You guide your lover.</p><p>You initiate how, where and with what your lover can touch you. </p><p>You can choose to start with a slow gentle full body massage or maybe a strong shoulder massage. <br/></p><p>You are in charge; you take the decisions. You could invite your lover to use their hand(s), finger(s), toe(s), elbow(s), nose, mouth, tongue, belly, bump and/or any of the extras from your intimate spoiling box.<br/></p><p>Lover A is welcoming the inner creativity of being the master, of sharing their inner sensuality and is active in exploring playfulness and boundaries.<br/></p><p><b><br/></b></p><p><b>Lover B.</b><br/></p><p>You are the listener. The non-judgmental listener.</p><p>You are vulnerable: by being curious and friendly. </p><p>You are strong: by being passive.</p><p>You are open to all the sensual invitations from Lover A.</p><p><b>IMPORTANT FOR BOTH LOVERS: Be present! </b></p><p>Surrender to the moment; be in the moment.  Both of you are patient and respectful, practice a non-judgmental awareness. Be aware of each others do’s and don’ts, the yes or the no.</p>",
-    "data": null,
-    "background": "<p>Shira van Spanje is the founder of Frameless Feminine.  She lives and works in Bali with her family.  Frameless Feminine facilitates nurturing ‘Silence retreats’ for both men and women on Bali and in various cities around the world. They also facilitate private sessions for couples, lovers and individuals.  Shira is passionate about intensifying our daily comfort,  pleasure and inner wisdom in order to minimise daily stress.</p>",
-    "articles": [],
-    "products": [
-      {
-        "id": 9,
-        "name": "Secret VII Adult Game",
-        "url": "https://www.amazon.com/Secret-VII-368281-Adult-Game/dp/B005DNHQ2O/ref=sr_1_6_s_it?s=hpc&ie=UTF8&qid=1468482714&sr=1-6&keywords=sex+games",
-        "author": "Secret VII",
-        "for": "Both"
-      },
-      {
-        "id": 32,
-        "name": "The Art of Everyday Ecstasy",
-        "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
-        "author": "Margot Anand",
-        "for": "Both"
-      },
-      {
-        "id": 33,
-        "name": "The Art of Sexual Magic",
-        "url": "https://www.amazon.com/Art-Sexual-Magic-Margot-Anand/dp/0874778409/ref=sr_1_4?s=books&ie=UTF8&qid=1468651337&sr=1-4&keywords=margot+anand",
-        "author": "Margot Anand",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-8.jpg",
-    "audioUrl": "/media/audio/audio_play_8.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 9,
-    "slug": "day-9-compassion-loving-kindness",
-    "title": "Compassion & Loving Kindness",
-    "type": "noop-audio",
-    "goal": "<p>An invitation from Desmond M Koh to join The Compassion &amp; Loving Kindess exercise. When couples take on a different approach to relationships, where partners practice the attitude of loving kindness and compassion for their partner in relationships, putting the happiness of their partner before self, relationships blossom.</p>",
-    "howTo": "<p>Click <b>Play</b> on the media player below to listen to Desmond M Koh</p>",
-    "data": null,
-    "background": "<p>Desmond M Koh is the founder of Compassion Capital and The Compassion Group. He lives with his family in Bali and Singapore. Together with his wife, Desmond founded a Buddhist study group on Bali. Their philosophy is that putting others before oneself leads to stronger relationships.</p>",
-    "articles": [],
-    "products": [],
-    "imageUrl": "/media/images/day-9.jpg",
-    "audioUrl": "/media/audio/audio_play_9.mp3",
-    "exerciseAudioUrl": "/media/audio/exercise_audio_9.mp3"
-  },
-  {
-    "day": 10,
-    "slug": "day-10-non-violent-communication-nvc",
-    "title": "Non-Violent Communication (NVC)",
-    "type": "noop",
-    "goal": "<p>According to Marshall Rosenberg, conflicts often arise because we do not understand each other’s needs. Do you know the needs of your partner? If you and your partner use the language of compassion it could help to shift this aspect of your relationship.</p>",
-    "howTo": "<p>Think of a moment when you were really annoyed with your partner.</p><p>Use the form set out below the exercise to write it down, or just give your partner an example by following 4 steps:</p><p>observation, feelings, need and request.</p><p><strong>OBSERVATION</strong>: Describe what happened at the moment you were annoyed. Use words like ‘ what I see, notice, hear, observe, etc</p><p>For example: What I observe is that you are on your phone the whole time when I am talking to you.</p><p><strong>FEELINGS</strong>: Describe how you felt about it?</p><p>For example: I felt neglected.</p><p><strong>NEEDS</strong>: Tell your partner what your needs are in this particular case.</p><p>For example: I want to be heard.</p><p><strong>REQUEST</strong>: what is it that you want from him or her and ask this.</p><p>For example: Can you please put the phone aside when we have a conversation?</p><p>Summarize what it is you want to say to your partner without judging him or her. In our example this could go something like, “When I see you busy with your phone whilst I’m telling you a story, I feel neglected, I want to be heard. Are you willing to put the phone aside whilst we have a conversation?”</p><p>Over the coming days you can experience what happens when you try addressing your partner using the language of compassion.</p><p>When your partner says something to you that you didn’t like hearing, try to also follow the four steps.</p>",
-    "data": null,
-    "background": "<p>Marshall B. Rosenberg, Ph.D. (1934-2015) is an American psychologist who developed in the 1960’s the Nonviolent Communication, also described as a language of compassion, a tool for social change. He founded and was for many years the Director of Educational Services for the Center for Nonviolent Communication, an international peacemaking organization. His bestselling book Nonviolent Communication: A Language of Life has sold more than one million copies worldwide and has been translated into more than 30 languages. <a href='https://www.youtube.com/watch?v=-4EDhdAHrOg'>Play Video</a></p>",
-    "articles": [],
-    "products": [],
-    "imageUrl": "/media/images/day-10.jpg",
-    "audioUrl": "/media/audio/audio_play_10.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 11,
-    "slug": "day-11-soul-gazing-meditation",
-    "title": "Soul Gazing Meditation",
-    "type": "noop",
-    "goal": "<p>An invitation from Josh Wise to join the Soul Gazing Meditation. Communication is probably one of the most important elements of your relationship. We generally think of communication as being a two-way exchange.  There is the receptive aspect of communication: listening, and the active aspect of communication, which is speaking.<br/><br/>Yet we intuitively know that communication goes far beyond what we hear and what we say. Communication occurs on many levels, the majority of which are nonverbal.</p>",
-    "howTo": "<p>Please have a look at the <a href=\"https://www.youtube.com/watch?v=OS0Tg0IjCp4\">short Movie</a> of a performance done by Marina Abramovic above. In 2010, Serbian artist  <a href=\"http://marinafilm.com/about-marina-abramovic\">Marina Abramović</a> had the honor of being the subject of a popular retrospective at New York’s <a href=\"http://www.moma.org/explore\">Museum of Modern Art</a>. Throughout the show, Abramović performed a grueling piece entitled <a href=\"http://www.moma.org/visit/calendar/exhibitions/965\">“The Artist Is Present”</a>, sitting in the museum’s atrium and inviting the swelling crowds of viewers to sit directly opposite her, in silent dialogue. In order to get the full strength of the performance it is important to realize that the person who is going to sit opposite of Marina is her former lover Ulay who she has not seen in 20 years.</p><p>To start the exercise, click <strong>Play</strong> on the media player below to listen to Josh Wise.</p>",
-    "data": null,
-    "background": "<p>Josh Wise, a leading authority on mindfulness and relationships. Josh teaches couples from around the world how to slow down and connect with each other in ways that go beyond words. Josh lives in Bali with his wife, Lindsey and their three children. Josh and Lindsey offer Mindful Couples retreats and workshops, to help couples cultivate a deeper connection.</p>",
-    "articles": [
-      {
-        "title": "How to Set Goals",
-        "url": "https://www.psychologytoday.com/blog/notes-self/201308/how-set-goals"
-      },
-      {
-        "title": "How to Set Goals in 12 Steps",
-        "url": "http://www.wikihow.com/Set-Goals"
-      }
-    ],
-    "products": [],
-    "imageUrl": "/media/images/day-11.jpg",
-    "audioUrl": "/media/audio/audio_play_11.mp3",
-    "exerciseAudioUrl": "/media/audio/exercise_audio_11.mp3"
-  },
-  {
-    "day": 12,
-    "slug": "day-12-spoiling-session-number-2",
-    "title": "Spoiling Session number 2!",
-    "type": "noop",
-    "goal": "<p>A spoiling session is an exercise that allows you to gain a deeper understanding of your own sexual needs and the sexual needs of your partner, while simultaneously reconnecting you as a couple and melting away the subtle shame and resistance that each partner may or may not have towards sex in general. Free of any expectations.</p>",
-    "howTo": "<p> 1. On day 8 one partner had their turn at being spoiled, now is the other one’s turn. If you were Lover A, the one that got spoiled and guided Lover B by telling him or her what you like, now you will be Lover B, the listener.<br/>If you find it difficult to talk to your partner about what you want, why not try writing it down in advance? Do what feels good for you.<br/><br/>2. Role play. The partner who goes first is Lover A, and the other partner is Lover B.<br/>Lover A guides Lover B, expressing his/her desires and fantasies.</p><p>Lover B will be the listener.<br/><br/>3. Preparations Lover A: put together your intimate sensual spoiling box: The ideal size is probably a shoe box, or something a little smaller. </p><p>Fill this spoiling box with inventive toys such as feathers, flowers, straws, shells, crystals, leaves, sticks, necklaces, brushes, musical instruments such bells/ tingshas /a singing bowl, maybe food like grapes, strawberries, peanut butter, chocolate spread, or massage oils/ fragrances, ice cubes. Go for things you can imagine your lover using to tickle, kiss, squeeze, scratch, wipe, push, drip, blow, stroke, slap, sprinkle, rub and tap all over your body.<br/><br/><b>Lover A.<br/></b>You are vulnerable, You are strong, You guide your lover.<br/>You initiate how, where and with what your lover can touch you. <br/>You can choose to start with a slow gentle full body massage or maybe a strong shoulder massage. <br/>You are in charge; you take the decisions. You could invite your lover to use their hand(s), finger(s), toe(s), elbow(s), nose, mouth, tongue, belly, bump and/or any of the extras from your intimate spoiling box.<br/><br/>Lover A is welcoming the inner creativity of being the master, of sharing their inner sensuality and is active in exploring playfulness and boundaries.<br/><br/><b>Lover B.<br/></b>You are the listener. The non-judgmental listener.<br/>You are vulnerable: by being curious and friendly. <br/>You are strong: by being passive.<br/><br/>You are open to all the sensual invitations from Lover A.<br/><br/><b>IMPORTANT FOR BOTH LOVERS: Be present! </b><br/>Surrender to the moment; be in the moment. <br/>Both of you are patient and respectful, practice a non-judgmental awareness.<br/>Be aware of each others do’s and don’ts, the yes or the no.                    </p>",
-    "data": null,
-    "background": null,
-    "articles": [],
-    "products": [
-      {
-        "id": 9,
-        "name": "Secret VII Adult Game",
-        "url": "https://www.amazon.com/Secret-VII-368281-Adult-Game/dp/B005DNHQ2O/ref=sr_1_6_s_it?s=hpc&ie=UTF8&qid=1468482714&sr=1-6&keywords=sex+games",
-        "author": "Secret VII",
-        "for": "Both"
-      },
-      {
-        "id": 32,
-        "name": "The Art of Everyday Ecstasy",
-        "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
-        "author": "Margot Anand",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-12.jpg",
-    "audioUrl": "/media/audio/audio_play_12.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 13,
-    "slug": "day-13-a-trip-down-memory-lane",
-    "title": "A trip down memory lane",
-    "type": "basic-multiple",
-    "goal": "<p>You will be taking a walk down memory lane. Whether you and your partner have only been together for a few months, or for years or decades, you are bound to have incredible memories.<br/><br/>This exercise encourages you both to focus on your shared positive and or life changing moments.<br/><br/>The purpose of this exercise is twofold: First, it will reinforce the realisation that you and your partner have shared many positive moments and remembering these can create a more positive feeling about your relationship. Second, by reinforcing positive memories you are much more likely to create more positive memories.</p>",
-    "howTo": "<p>Record your <b>song </b>and then upload it. Take a photo of your relationship <b>symbol </b>and upload that, together with your <b>photo </b>of your before and after moment. You need these <b>three items </b>for tomorrow’s exercise.<br/></p><ul><li></li></ul>",
-    "data": {
-      "questions": [
-        {
-          "question": "Choose a song",
-          "description": "Choose a song that reminds you of the moment you first noticed your partner or one that has a special meaning for you both.",
-          "type": "audio",
-          "order": 1
-        },
-        {
-          "question": "Find a photo",
-          "description": "Find a photo that reminds you of a ‘before and after moment’, that’s the moment when your world would never be the same again. Try to find an image that will pave your memory lane.",
-          "type": "picture",
-          "order": 2
-        },
-        {
-          "question": "Find an object",
-          "description": "Find an object that is the essence of now, an artefact or symbol of the current dominating force in your relationship. It can be a souvenir from one of your recent holidays or something you now use every day. Something that features in your relationship right now.",
-          "type": "picture",
-          "order": 3
-        }
-      ],
-      "outro": "Gather together three relationship symbols."
+     ]
     },
-    "background": null,
-    "articles": [
+    {
+     "options": [
       {
-        "title": "Long Distance Relationship Korean Couple Photo Collage Half Shiniart",
-        "url": "http://www.boredpanda.com/long-distance-relationship-korean-couple-photo-collage-half-shiniart/"
+       "text": "I like it when people give me gifts.",
+       "value": "C"
+      },
+      {
+       "text": "I like leisurely visits with friends and loved ones.",
+       "value": "B"
       }
-    ],
-    "products": [],
-    "imageUrl": "/media/images/day-13.jpg",
-    "audioUrl": "/media/audio/audio_play_13.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 14,
-    "slug": "day-14-the-story-of-us-part-1",
-    "title": "The Story of Us: Part 1",
-    "type": "noop-audio",
-    "goal": "<p>Our stories come from our memories and experiences; they are the framework we use to integrate the pivotal events in our lives. Our stories help us to understand and give meaning to our lives. In a sense, we become the stories we tell ourselves.<br/><br/>This exercise is designed to shine light on your relationship story to increase your awareness of the subconscious energy influencing your relationship, and to open the possibility of authoring your future relationship stories.</p><p>Today Kinchem, the creator of this exercise, will explain how to do the exercise herself.<br/></p>",
-    "howTo": "<p>Individually answer a series of questions to help you compose your version of your relationship story. When you have written your ‘story of us’ you’ll take turns, on day 21 to read, tell, or show it to your partner. You’ll only have 5 minutes to read or tell your story to your partner, so make sure you practise your timing. You need to make choices about what is included in the story, and what isn’t. Ask yourself what elements of your story currently have the biggest impact on your relationship. To do this exercise you will need the three relationship symbols you collected in the previous exercise:</p><ul><li>1. Song, That reminds you of the moment you first noticed your partner.</li><li>2. Photo, That reminds you of the moment of ‘before and after’, when your world would never be the same again</li><li>3. Object, That is the essence of now, an artefact or symbol of the current dominating force in your relationship</li></ul>",
-    "data": null,
-    "background": "Kinchem Hegedus , a writer from Australia, will now guide you and your partner in this process. Kinchem Hegedus lives and works in Sydney with her family and she organizes courses that help you with mapping your “inner landscape”.",
-    "articles": [],
-    "products": [],
-    "imageUrl": "/media/images/day-14.jpg",
-    "audioUrl": "/media/audio/audio_play_14.mp3",
-    "exerciseAudioUrl": "/media/audio/exercise_audio_14.mp3"
-  },
-  {
-    "day": 15,
-    "slug": "day-15-rituals",
-    "title": "Rituals",
-    "type": "checklist",
-    "goal": "<p>Rituals of connection are shared activities that you do on a repeated basis from daily to yearly that have meaning for you as a couple. Research shows that what makes a relationship successful are small things done often. Rituals connect us with others by providing a focus or activity that enables us to interact in an enjoyable and meaningful way.<br/><br/>For example, some couples have a daily routine of checking in with each other by phone at some point during the day. It only becomes a ritual, though, if it is used as a moment to connect rather than just an exercise in exchanging information.<br/><br/>Just like our essential daily vitamins, a number of simple rituals can keep our relationships healthy and vibrant.</p>",
-    "howTo": "<p>Create your own ritual list. It’s possible you already have numerous ‘couple rituals’ and you aren’t even aware of them. It may be that after today you choose a couple ritual that you would like to build into your relationship.<br/><br/>What are some of the couple rituals you have?  What aspects make them meaningful and significant to you? How can you modify your ritual to make it more effective?<br/><br/>Talk about these rituals together and identify why certain rituals are important to you.<br/><br/>Maybe consider how these rituals played out in your childhood home – have you adopted one or adapted it, or is it something you two have created for yourselves?<br/><br/>Below the exercise you will find a drop down menu giving a list of rituals. Take a moment to select the ones you wish to talk about with your partner.<br/><br/>Have fun with it.</p>",
-    "data": [
-      {
-        "text": "Waking up, waking one another up",
-        "order": 1
-      },
-      {
-        "text": "Spending a morning in bed talking or cuddling",
-        "order": 2
-      },
-      {
-        "text": "Having breakfast together",
-        "order": 3
-      },
-      {
-        "text": "Drinking a cup of coffee",
-        "order": 4
-      },
-      {
-        "text": "Having lunch",
-        "order": 5
-      },
-      {
-        "text": "Calling or texting just to check-in during the day",
-        "order": 6
-      },
-      {
-        "text": "Having a special dinner ritual",
-        "order": 7
-      },
-      {
-        "text": "Asking about each others day",
-        "order": 8
-      },
-      {
-        "text": "Sending each other funny,movies,etc",
-        "order": 9
-      },
-      {
-        "text": "Leaving notes for each other",
-        "order": 10
-      },
-      {
-        "text": "Setting up a specific time of day to talk and catch up",
-        "order": 11
-      },
-      {
-        "text": "Regular date nights",
-        "order": 12
-      },
-      {
-        "text": "Sharing a hobby",
-        "order": 13
-      },
-      {
-        "text": "Taking a class together",
-        "order": 14
-      },
-      {
-        "text": "Doing volunteer work together",
-        "order": 15
-      },
-      {
-        "text": "Attending religious events together",
-        "order": 16
-      },
-      {
-        "text": "Playing (board)games with each other",
-        "order": 17
-      },
-      {
-        "text": "Looking through photo albums together",
-        "order": 18
-      },
-      {
-        "text": "Cooking a meal together",
-        "order": 19
-      },
-      {
-        "text": "Holding each others’ hands (while walking, watching tv, etc)",
-        "order": 20
-      },
-      {
-        "text": "Handling finances",
-        "order": 21
-      },
-      {
-        "text": "Hosting others in your home",
-        "order": 22
-      },
-      {
-        "text": "Celebrating special days or important days (birthdays, anniversaries, etc.)",
-        "order": 23
-      },
-      {
-        "text": "Taking care of one another when sick",
-        "order": 24
-      },
-      {
-        "text": "Renewing your commitment to each other on your anniversary",
-        "order": 25
-      },
-      {
-        "text": "Taking special vacations or getaways",
-        "order": 26
-      },
-      {
-        "text": "Travelling together",
-        "order": 27
-      },
-      {
-        "text": "Attending sports events",
-        "order": 28
-      },
-      {
-        "text": "Participating in sports events",
-        "order": 29
-      },
-      {
-        "text": "Watching television/special programmes",
-        "order": 30
-      },
-      {
-        "text": "Attending movies",
-        "order": 31
-      },
-      {
-        "text": "Attending concerts, plays, and other cultural events",
-        "order": 32
-      },
-      {
-        "text": "Regular religious services",
-        "order": 33
-      },
-      {
-        "text": "Rituals of transition (funerals, weddings, etc.)",
-        "order": 34
-      },
-      {
-        "text": "Attending a partner’s performance or sports event",
-        "order": 35
-      },
-      {
-        "text": "Creating art",
-        "order": 36
-      },
-      {
-        "text": "Running errands",
-        "order": 37
-      },
-      {
-        "text": "Doing household chores",
-        "order": 38
-      },
-      {
-        "text": "Participating in community events or politics",
-        "order": 39
-      },
-      {
-        "text": "Studying",
-        "order": 40
-      },
-      {
-        "text": "Soothing other people’s feelings",
-        "order": 41
-      },
-      {
-        "text": "Apologizing or repairing feelings after an argument",
-        "order": 42
-      },
-      {
-        "text": "Giving each other flowers, gifts",
-        "order": 43
-      },
-      {
-        "text": "Annual Review Ritual",
-        "order": 44
-      }
-    ],
-    "background": null,
-    "articles": [],
-    "products": [],
-    "imageUrl": "/media/images/day-15.jpg",
-    "audioUrl": "/media/audio/audio_play_15.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 16,
-    "slug": "day-16-the-melting-hug",
-    "title": "The Melting Hug",
-    "type": "noop",
-    "goal": "<p>Multiple studies show that human touch triggers the release of the hormone “oxytocin” in our brain and reduces the stress hormone, “cortisol”.<br/><br/>Oxytocin gives us a sense of connection and bonding. This so called-love hormone is a neurotransmitter that increases feelings of trust, generosity and compassion, and decreases feelings of fear and anxiety.<br/><br/></p><p>When our cortisol levels are high, our skin actually gets more sensitive, so the healing touch of your partner’s hand is most effective when stress levels are highest. The reduction of cortisol is beneficial for the heart, circulatory system, and brain. Essentially, holding hands can make you healthier!</p>",
-    "howTo": "<p>The Melting Hug: hug through your breath, both of you breathing in a synchronistic, unifying way.<br><ul><li>1. Set the timer for 3 minutes</li><li>2. Stand in front of your partner and touch each other, nestle against your partner’s chest; slowly wrap your arms gently around each other. Let your hands feel they are really holding flesh, bones, and muscles without exerting pressure. Embrace the whole body don’t just squeeze each other.</li><li>3. Let your pelvis relax and move forward, rest against each other pelvis to pelvis. Allow your thighs and bellies to meet. Keep your knees slightly bent to enhance your sense of balance and groundedness. Let your bodies relax so that you can melt into each other, give yourselves over to a trusting embrace. Feel secure; welcome the same sensation of letting-go that a child feels in its mother&#39;s embrace.</li><li>4. Start to take notice of your partner’s breathing pattern. Let your own breathing harmonize with your partner’s so that you softly inhale and exhale together. If this harmonized breathing comes easily, enjoy the feeling and relax into it for a few minutes or take three full breathes, inhaling and exhaling together. You need not make any effort and shouldn’t feel any tension. In this exercise, you welcome, receive and dissolve into each other.</li></ul></p>",
-    "data": null,
-    "background": "Margot Anand (1944) is an internationally acclaimed authority on Tantra, best-selling author, and much-beloved teacher and founder of SkyDancing Tantra®. She lives on Bali and USA. www.margotanand.com.",
-    "articles": [],
-    "products": [
-      {
-        "id": 32,
-        "name": "The Art of Everyday Ecstasy",
-        "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
-        "author": "Margot Anand",
-        "for": "Both"
-      },
-      {
-        "id": 33,
-        "name": "The Art of Sexual Magic",
-        "url": "https://www.amazon.com/Art-Sexual-Magic-Margot-Anand/dp/0874778409/ref=sr_1_4?s=books&ie=UTF8&qid=1468651337&sr=1-4&keywords=margot+anand",
-        "author": "Margot Anand",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-16.jpg",
-    "audioUrl": "/media/audio/audio_play_16.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 17,
-    "slug": "day-17-where-do-we-stand",
-    "title": "Where do we stand?",
-    "type": "true-false",
-    "goal": "<p>You and you partner will discover how emotionally responsive you are by doing an exercise based on Emotional Focussed Therapy: EFT. Dr. Sue Johnson is the primary developer of Emotionally Focused Couples Therapy, which has demonstrated its effectiveness in over 25 years of peer- reviewed clinical research. The message of EFT is simple: Recognize and admit that you are emotionally attached to and dependent on your partner in much the same way that a child is on a parent for nurturing, soothing, and protection.<br/><br/>In secure love relationships, partners experience the other person as:<br/><br/>1. <b>A</b>ccessible, which means I can count on my partner, he or she feels near and I can reach him or her;<br/><br/>2. <b>R</b>esponsive, which means when I ask for help or connection, I can get it;<br/><br/>3. And <b>E</b>ngaged, which means my partner is really interested in me and wants to grow our love.<!--EndFragment--><br/><br/><br/></p>",
-    "howTo": "<p>Please go through the list of statements and answer whether you feel this is “True” or “False” in your relationship. Once you have gone through the list award 1 point for all the statements that you feel are “True”. If your score is 7 or higher, you are on the right track. If your score is below 7 points, it may be helpful to extend this exercise by talking to your partner about the answers each of you gave. Were they similar? Are you experiencing the same issues? Use the active listening method when discussing your answers and try to understand why your partner answered the way he/she did.</p>",
-    "data": {
-      "content": [
-        {
-          "group": "Accessibility",
-          "subtitle": "From your viewpoint, is your partner accessible to you?",
-          "list": [
-            {
-              "text": "I can get my partner’s attention easily.",
-              "order": 1
-            },
-            {
-              "text": "My partner is easy to connect with emotionally.",
-              "order": 2
-            },
-            {
-              "text": "My partner shows me that I come first with him/her.",
-              "order": 3
-            },
-            {
-              "text": "I am not feeling lonely or shut out in this relationship",
-              "order": 4
-            },
-            {
-              "text": "I can share my deepest feelings with my partner. He/she will listen.",
-              "order": 5
-            }
-          ],
-          "order": 1
-        },
-        {
-          "group": "Responsiveness",
-          "subtitle": "From your viewpoint is your partner responsive to you?",
-          "list": [
-            {
-              "text": "If I need connection and comfort, he/she will be there for me.",
-              "order": 1
-            },
-            {
-              "text": "My partner responds to signals that I need him/her to come close.",
-              "order": 2
-            },
-            {
-              "text": "I find I can lean on my partner when I am anxious or unsure.",
-              "order": 3
-            },
-            {
-              "text": "Even when we fight or disagree, I know that I am important to my partner and we will find a way to come together.",
-              "order": 4
-            },
-            {
-              "text": "If I need reassurance about how important I am to my partner, I can get it.",
-              "order": 5
-            }
-          ],
-          "order": 2
-        },
-        {
-          "group": "Engagement",
-          "subtitle": "Are you positively emotionally engaged with each other?",
-          "list": [
-            {
-              "text": "I feel very comfortable being close to, trusting my partner.",
-              "order": 1
-            },
-            {
-              "text": "I can confide in my partner about almost anything.",
-              "order": 2
-            },
-            {
-              "text": "I feel confident, even when we are apart, that we are connected to each other.",
-              "order": 3
-            },
-            {
-              "text": "I know that my partner cares about my joys, hurts, and fears.",
-              "order": 4
-            },
-            {
-              "text": "I feel safe enough to take emotional risks with my partner.",
-              "order": 5
-            }
-          ],
-          "order": 3
-        }
-      ],
-      "description": "<p>Take this questionnaire twice. The first time round you should answer the 15 questions about your partner, about how Accessible, Responsive, and Engaged your partner is with you. The second time you answer the questions, do so about yourself. focusing on how Accessible, Responsive, and Engaged you are towards your partner.</p>"
+     ]
     },
-    "background": "Dr. Sue Johnson is an author, clinical psychologist, researcher, professor and a leading innovator in the field of couple therapy. Sue is the primary developer of Emotionally Focused Couples Therapy (EFT), which has demonstrated its effectiveness in over 25 years of peer-reviewed clinical research. Her best-selling book Hold me Tight has been translated in 22 languages. She lives in Ottawa, Canada, with her husband and two children.",
-    "articles": [
+    {
+     "options": [
       {
-        "title": "Dr. Sue Johnson's Website",
-        "url": "www.drsuejohnson.com"
+       "text": "I feel loved when people do things to help me.",
+       "value": "D"
       },
       {
-        "title": "The New Frontier of Sex Intimac",
-        "url": "http://tedxtalks.ted.com/video/The-New-Frontier-of-Sex-Intimac"
+       "text": "I feel loved when people touch me.",
+       "value": "E"
       }
-    ],
-    "products": [
+     ]
+    },
+    {
+     "options": [
       {
-        "id": 36,
-        "name": "Emotionally Focused Couple Therapy For Dummies",
-        "url": "https://www.amazon.com/Emotionally-Focused-Couple-Therapy-Dummies/dp/1118512316/ref=sr_1_5?ie=UTF8&amp;qid=1475128638&amp;sr=8-5&amp;keywords=eft+relationship",
-        "author": "James Furrow",
-        "for": "Both"
+       "text": "I feel loved when someone I love or admire puts his or her arm around me.",
+       "value": "E"
       },
       {
-        "id": 19,
-        "name": "Hold Me Tight: Seven Conversations for a Lifetime of Love",
-        "url": "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X/ref=sr_1_21?ie=UTF8&qid=1467363080&sr=8-21&keywords=gottman",
-        "author": "Sue Johnson",
-        "for": "Both"
-      },
-      {
-        "id": 37,
-        "name": "Love Sense: The Revolutionary New Science of Romantic Relationships",
-        "url": "https://www.amazon.com/Love-Sense-Revolutionary-Romantic-Relationships/dp/0316133760/ref=sr_1_6?ie=UTF8&amp;qid=1475128691&amp;sr=8-6&amp;keywords=sue+johnson",
-        "author": "Sue Johnson",
-        "for": "Both"
+       "text": "I feel loved when I receive a gift from someone I love or admire.",
+       "value": "C"
       }
-    ],
-    "imageUrl": "/media/images/day-17.jpg",
-    "audioUrl": "/media/audio/audio_play_17.mp3",
-    "exerciseAudioUrl": null
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like to go places with friends and loved ones.",
+       "value": "B"
+      },
+      {
+       "text": "I like to high-five or hold hands with people who are special to me.",
+       "value": "E"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "Visible symbols of love (gifts) are very important to me.",
+       "value": "C"
+      },
+      {
+       "text": "I feel loved when people affirm me.",
+       "value": "A"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like to sit close to people whom I enjoy being around.",
+       "value": "E"
+      },
+      {
+       "text": "I like for people to tell me I am beautiful/handsome.",
+       "value": "A"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like to spend time with friends and loved ones.",
+       "value": "B"
+      },
+      {
+       "text": "I like to receive little gifts from friends and loved ones.",
+       "value": "C"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "Words of acceptance are important to me.",
+       "value": "A"
+      },
+      {
+       "text": "I know someone loves me when he or she helps me.",
+       "value": "D"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like being together and doing things with friends and loved ones.",
+       "value": "B"
+      },
+      {
+       "text": "I like it when kind words are spoken to me.",
+       "value": "A"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "What someone does affects me more than what he or she says.",
+       "value": "D"
+      },
+      {
+       "text": "Hugs make me feel connected and valued.",
+       "value": "E"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I value praise and try to avoid criticism.",
+       "value": "A"
+      },
+      {
+       "text": "Several small gifts mean more to me than one large gift.",
+       "value": "C"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I feel close to someone when we are talking or doing something together.",
+       "value": "B"
+      },
+      {
+       "text": "I feel closer to friends and loved ones when they touch me often.",
+       "value": "E"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like for people to compliment my achievements.",
+       "value": "A"
+      },
+      {
+       "text": "I know people love me when they do things for me that they don't enjoy doing.",
+       "value": "D"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like to be touched as friends and loves ones walk by.",
+       "value": "E"
+      },
+      {
+       "text": "I like it when people listen to me and show genuine interest in what I am saying.",
+       "value": "B"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I feel loved when friends and loved ones help me with jobs or projects.",
+       "value": "D"
+      },
+      {
+       "text": "I really enjoy receiving gifts from friends and loved ones.",
+       "value": "C"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like for people to compliment my appearance.",
+       "value": "A"
+      },
+      {
+       "text": "I feel loved when people take time to understand my feelings.",
+       "value": "B"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I feel secure when a special person is touching me.",
+       "value": "E"
+      },
+      {
+       "text": "Acts of service make me feel loved.",
+       "value": "D"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I appreciate the many things that special people do for me.",
+       "value": "D"
+      },
+      {
+       "text": "I like receiving gifts that special people make for me.",
+       "value": "C"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I really enjoy the feeling I get when someone gives me undivided attention.",
+       "value": "B"
+      },
+      {
+       "text": "I really enjoy the feeling I get when someone helps me make decisions.",
+       "value": "D"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I feel loved when a person celebrates my birthday with a gift.",
+       "value": "C"
+      },
+      {
+       "text": "I feel loved when a person celebrates my birthday with meaningful words.",
+       "value": "A"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I know a person is thinking of me when he or she gives me a gift.",
+       "value": "C"
+      },
+      {
+       "text": "I feel loved when a person helps with my chores.",
+       "value": "D"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I appreciate it when someone listens patiently and doesn't interrupt me.",
+       "value": "B"
+      },
+      {
+       "text": "I appreciate it when someone remembers special days with a gift.",
+       "value": "C"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like knowing loved ones are concern enough to help with my daily tasks.",
+       "value": "D"
+      },
+      {
+       "text": "I enjoy extended trips with someone who is special to me.",
+       "value": "B"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I enjoy kissing or being kissed by people with whom I am close.",
+       "value": "E"
+      },
+      {
+       "text": "I enjoy receiving a gift given for no special reason.",
+       "value": "C"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I like to be told that I am appreciated.",
+       "value": "A"
+      },
+      {
+       "text": "I like for a person to look at me when we are talking.",
+       "value": "B"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "Gifts from a friend or loved one are always special to me.",
+       "value": "C"
+      },
+      {
+       "text": "I feel good when a friend or loved one touches me.",
+       "value": "E"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I feel loved when a person enthusiastically does some task I have requested.",
+       "value": "D"
+      },
+      {
+       "text": "I feel loved when I am told how much I am needed.",
+       "value": "A"
+      }
+     ]
+    },
+    {
+     "options": [
+      {
+       "text": "I need to be touched every day.",
+       "value": "E"
+      },
+      {
+       "text": "I need words of encouragement daily.",
+       "value": "A"
+      }
+     ]
+    }
+   ],
+   "results": [
+    {
+     "value": "a",
+     "title": "Words of Affirmation",
+     "description": "One of your deepest needs is the need to feel appreciated. Verbal compliments, words of appreciation, encouragement, kind and humble words are all ways to show love to you.",
+     "order": 1
+    },
+    {
+     "value": "b",
+     "title": "Quality Time",
+     "description": "You enjoy doing things together! We aren’t talking about just sitting in front of the T.V. together but really giving each other undivided attention. This means looking at each other, talking to each other, sharing your life with your partner.",
+     "order": 2
+    },
+    {
+     "value": "c",
+     "title": "Receiving Gifts",
+     "description": "You are happy to receive things from your loved ones. They don’t have to be expensive. The gift is a symbol of “s/he cares about me” and “s/he thinks of me”.",
+     "order": 3
+    },
+    {
+     "value": "d",
+     "title": "Acts of Service",
+     "description": "For you, actions speak louder than words! You prefer your partner to do things for you such as cooking a meal, giving a massage, cleaning the room… You like your partner to initiate the acts of service and put efforts into doing them to show that s/he cares.",
+     "order": 4
+    },
+    {
+     "value": "e",
+     "title": "Physical Touch",
+     "description": "You love to receive a hug, a kiss, squeezes on the shoulder, a pat on the back, a touch of the face, and an arm around the waist... Touches can be 10 times as powerful and comforting as any words!",
+     "order": 5
+    }
+   ]
   },
-  {
-    "day": 18,
-    "slug": "day-18-values-of-life",
-    "title": "Values of life",
-    "type": "list-order",
-    "goal": "<p>Extensive research into the qualities of a happy couples has concluded that the most important element of a long-lasting, loving relationship is a shared attitude to life.</p><p>This means that one of the reasons why happy couples work so well together, despite being quite different people, is because there is a deeper level of shared values that keeps them solid and maybe surprisingly compatible.</p><p>Our values play a role in many aspects of our life including the choices we make, how we react or respond to situations, who we spend time with, the boundaries we set, and so much more. When our values are being honoured, we feel good. You and your partner will discover and discuss your values in life.</p>",
-    "howTo": "<ul><li>1. Go through the list of 35 Value Questions.</li><li>2. Check up to 10 values that are most important to you.</li><li>3. Rank them in importance from 1-10.</li><li>4. Discuss the values when you have both finished. Why did you choose these? What do you mean by a particular value?</li><li>5. Choose at least 5 values which you both agree will be “Your values in life”.</li><li>6. Make a photo and hang it up somewhere in your home so you see them every day! When you know what you believe in, it’s so much easier to make decisions that are in line with the kind of life you want to live.</li></ul>",
-    "data": [
-      {
-        "title": "Generosity",
-        "value": "Do you regularly give a part of your income to the charity or those in need?"
-      },
-      {
-        "title": "Friends & Family",
-        "value": "Do you enjoy spending your time, energy and resources on your friends and family?"
-      },
-      {
-        "title": "Adventure",
-        "value": "Do you appreciate new and thrilling experiences?"
-      },
-      {
-        "title": "Humor",
-        "value": "Do you love to laugh and see the lighter side of things?"
-      },
-      {
-        "title": "Authenticity",
-        "value": "Do you value saying and doing what is true to who you are?"
-      },
-      {
-        "title": "Compassion",
-        "value": "Do you appreciate tenderness,kindness, and being sensitive to the needs of others?"
-      },
-      {
-        "title": "Knowledge",
-        "value": "Do you set a high value on learning and contributing information?"
-      },
-      {
-        "title": "Excellence",
-        "value": "Do you enjoy doing something exceptionally well?"
-      },
-      {
-        "title": "Fame",
-        "value": "Do you enjoy being recognized and known by other people?"
-      },
-      {
-        "title": "Financially Responsible",
-        "value": "Do you value living within your means, paying bills on time and saving on a regular basis?"
-      },
-      {
-        "title": "Fun",
-        "value": "Do you love to be playful,entertain others or clown around?"
-      },
-      {
-        "title": "Service",
-        "value": "Do you enjoy helping others?"
-      },
-      {
-        "title": "Power",
-        "value": "Do you value influence and control?"
-      },
-      {
-        "title": "Integrity",
-        "value": "Do you like to say and do what is true to who you are?"
-      },
-      {
-        "title": "Peace",
-        "value": "Do you cherish times of tranquility without conflict or chaos?"
-      },
-      {
-        "title": "Respect",
-        "value": "Do you appreciate accepting"
-      },
-      {
-        "title": "Stability",
-        "value": "Do you treasure a balanced life with little change or upheaval?"
-      },
-      {
-        "title": "Security",
-        "value": "Do you appreciate freedom from danger or worry?"
-      },
-      {
-        "title": "Spirituality",
-        "value": "Do you value the spiritual aspects of our being?"
-      },
-      {
-        "title": "Achievements",
-        "value": "Do you enjoy accomplishing things and being task oriented?"
-      },
-      {
-        "title": "Trust",
-        "value": "Do you love people who are reliable and who keep their word?"
-      },
-      {
-        "title": "Career",
-        "value": "Do you consider your work or profession as very valuable?"
-      },
-      {
-        "title": "Wealth",
-        "value": "Do you love to have an abundance of money, possessions and/or property?"
-      },
-      {
-        "title": "Wisdom",
-        "value": "Do you set a high value on being discerning, wise or insightful?"
-      },
-      {
-        "title": "Challenge",
-        "value": "Do you appreciate confronting a demanding or difficult problem?"
-      },
-      {
-        "title": "Independence",
-        "value": "Do you love to be free from depending or relying on others?"
-      },
-      {
-        "title": "Cooperation",
-        "value": "Do you value working together with others?"
-      },
-      {
-        "title": "Adaptability",
-        "value": "Do you appreciate the ability to adjust to changing circumstances with ease?"
-      },
-      {
-        "title": "Humility",
-        "value": "Do you like to be modest, unassuming or unpretentious?"
-      },
-      {
-        "title": "Justice",
-        "value": "Do you treasure fair and impartial treatment for all?"
-      },
-      {
-        "title": "Loyalty",
-        "value": "Do you highly value people who are faithful?"
-      },
-      {
-        "title": "Leisure",
-        "value": "Do you appreciate time to relax, just doing what you want?"
-      },
-      {
-        "title": "Ambition",
-        "value": "Do you value hard work, advancement and improvement?"
-      },
-      {
-        "title": "Order",
-        "value": "Do you value neatness with everything in place?"
-      },
-      {
-        "title": "Solitude",
-        "value": "Do you like to have time"
-      }
-    ],
-    "background": null,
-    "articles": [
-      {
-        "title": "Relationship Roadblock Define Your Values",
-        "url": "https://www.psychologytoday.com/blog/fixing-families/201505/relationship-roadblock-define-your-values"
-      },
-      {
-        "title": "What are the the most important values to have in common that make for a good long term relationship?",
-        "url": "https://www.quora.com/What-are-the-the-most-important-values-to-have-in-common-that-make-for-a-good-long-term-relationship"
-      },
-      {
-        "title": "Why shared values are more important than shared interests",
-        "url": "http://www.eharmony.co.uk/dating-advice/dating/why-shared-values-are-more-important-than-shared-interests#.WCsNW5MrLow"
-      }
-    ],
-    "products": [],
-    "imageUrl": "/media/images/day-18.jpg",
-    "audioUrl": "/media/audio/audio_play_18.mp3",
-    "exerciseAudioUrl": null
+  "background": "<p>Gary Chapman(1938) is a pastor and author of the mega-selling phenomenon “The 5 Love Languages® series”, which has sold more than 10 million worldwide and has been translated into 50 languages. Dr. Chapman travels the world presenting seminars on marriage, family, and relationships, and his radio programs air on more than 400 stations. He lives in North Carolina with his wife, Karolyn and they have two adult children.</p>",
+  "articles": [
+   {
+    "title": "What are the five love languages?",
+    "url": "http://www.sheknows.com/love-and-sex/articles/1059295/What-are-the-5-Love-Languages"
+   },
+   {
+    "title": "Dr. Chapman explains Oprah Winfrey what her love language is",
+    "url": "https://www.youtube.com/watch?v=Jq92YwKfbb4"
+   }
+  ],
+  "products": [
+   {
+    "id": 8,
+    "name": "A Couple's Guide to Communication",
+    "url": "https://www.amazon.com/Couples-Guide-Communication-John-Gottman/dp/0878221271/ref=sr_1_15?ie=UTF8&qid=1467362511&sr=8-15&keywords=gottman",
+    "author": "Gottman",
+    "for": "Both"
+   },
+   {
+    "id": 29,
+    "name": "The 5 Love Languages for Men: Tools for Making a Good Relationship Great",
+    "url": "https://www.amazon.com/Love-Languages-Men-Making-Relationship/dp/0802412726/ref=sr_1_3?ie=UTF8&qid=1474978528&sr=8-3&keywords=5+love+languages",
+    "author": "Chapman",
+    "for": "Him"
+   },
+   {
+    "id": 18,
+    "name": "The 5 Love Languages: The Secret to Love that Lasts",
+    "url": "https://www.amazon.com/Love-Languages-Secret-that-Lasts/dp/080241270X/ref=sr_1_17?ie=UTF8&qid=1467363039&sr=8-17&keywords=gottman",
+    "author": "Chapman",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-2.jpg",
+  "audioUrl": "/media/audio/audio_play_2.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-2.mp3"
+ },
+ {
+  "day": 3,
+  "slug": "day-3-active-listening",
+  "title": "Active listening",
+  "type": "single-audio",
+  "goal": "<p>Relationships are all about communication. Sometimes it happens that we listen to our partners speaking without really hearing what they are saying. This means we miss opportunities to connect with our partners – and even worse – risk making them feel neglected, disrespected, and resentful. In order to avoid this, the two of you are going to experiment with active listening.<br/><br/>This exercise helps you both express active interest in what your partner has to say and to make him or her feel heard so as to foster empathy and connection. Active listening creates a safe space in which one's thoughts and feelings do not come under judgment. This is crucial in a relationship, as you want to be able to talk freely and openly to each other. </p>",
+  "howTo": "<p>Find a quiet place where you can talk with your partner without interruption or distraction. Invite them to share what’s on their mind. When they do so, try to follow the steps below. You don’t need to cover every step, but the more you do cover, the more effective this exercise is likely to be.</p><p>1. Sit facing each other<br/></p><p>2. Set a timer for 5 minutes<br/></p><p>3. Just talk about whatever you feel like talking about: What has been on your mind lately, how do you feel about your partner.....whatever you feel you would like to talk about.<br/></p><p>4. Use engaged body language. Show that you are interested by maintaining eye contact, and try to maintain eye contact with them the entire time.<br/></p><p>5. Express empathy. If the other person voices negative feelings, strive to validate these feelings rather than questioning or defending against them. For example, if the speaker expresses frustration, try to consider why he or she feels that way, regardless of whether you think that feeling is justified or whether you would feel that way yourself were you in his or her position. <br/></p><p>6. Avoid judgment. Your goal is to understand the other person’s perspective and accept it for what it is, even if you disagree with it. Try not to interrupt with counter-arguments or mentally prepare a rebuttal while the other person is speaking.<br/></p><p>7.Avoid giving advice. Problem-solving is likely to be more effective once you understand your partner’s perspective and when they feel heard. Moving too quickly into advice-giving can be counterproductive. </p><p>Did you finish the exercise?</p><p>Take turns so once the timer has gone off, the roles switch and the other partner has their turn to speak in an uninterrupted stream of consciousness.</p>",
+  "data": null,
+  "background": "<p>Want to know more about active listening? Please have a look at the below articles that we have selected for you.<p>",
+  "articles": [
+   {
+    "title": "How active listening makes both sides of a conversation feel better",
+    "url": "http://www.wsj.com/articles/how-active-listening-makes-both-sides-of-a-conversation-feel-better-1421082684"
+   },
+   {
+    "title": "11 ways active listening can help your relationships",
+    "url": "https://www.psychologytoday.com/blog/fulfillment-any-age/201203/11-ways-active-listening-can-help-your-relationships"
+   },
+   {
+    "title": "Why active listening may help your relationship",
+    "url": "http://www.sheknows.com/love-and-sex/articles/1060641/why-active-listening-may-help-your-relationship"
+   }
+  ],
+  "products": [
+   {
+    "id": 8,
+    "name": "A Couple's Guide to Communication",
+    "url": "https://www.amazon.com/Couples-Guide-Communication-John-Gottman/dp/0878221271/ref=sr_1_15?ie=UTF8&qid=1467362511&sr=8-15&keywords=gottman",
+    "author": "Gottman",
+    "for": "Both"
+   },
+   {
+    "id": 30,
+    "name": "Just Listen: Discover the Secret to Getting Through to Absolutely Anyone",
+    "url": "https://www.amazon.com/Just-Listen-Discover-Getting-Absolutely/dp/0814436471/ref=sr_1_1?ie=UTF8&qid=1474978965&sr=8-1&keywords=active+listening",
+    "author": "Mark Goulston",
+    "for": "Both"
+   },
+   {
+    "id": 31,
+    "name": "The Lost Art of Listening, Second Edition: How Learning to Listen Can Improve Relationships",
+    "url": "https://www.amazon.com/Lost-Art-Listening-Second-Relationships/dp/1593859864/ref=sr_1_4?ie=UTF8&qid=1474978965&sr=8-4&keywords=active+listening",
+    "author": "Michael P. Nichols PhD",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-3.jpg",
+  "audioUrl": "/media/audio/audio_play_3.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-3.mp3"
+ },
+ {
+  "day": 4,
+  "slug": "day-4-let-s-talk-about-sex",
+  "title": "Let's talk about sex",
+  "type": "single-audio",
+  "goal": "<p>In the early seventies, it was believed that only men had sexual fantasies. We nowadays know better and having sexual fantasies, whether you want to act them out or not, is completely natural and healthy. A 2001 study in the Journal of Sex Research found that 98% of men and 80% of women had fantasized about someone other than their partner in the previous 2 months! However, how to talk to your partner about sex can be one of the more challenging aspects of a relationship. Without being able to truly communicate about sex there is a danger that people engage in sexual activities they don’t really enjoy. Sexual satisfaction depends on your ability to express what arouses or interests you and what doesn’t.</p>",
+  "howTo": "<p>How do you talk with each other about sex?</p><p>Here are some pointers to get you started:</p><p>1. Make sure that you and your partner are ready to discuss this topic. Timing can make a huge difference in how and where a sexual conversation goes. Pick a time when you have some privacy and are not rushed, so you can both think about what’s being said and how it feels before you respond. Great if that can happen today, but its absolutely fine if you decide together to do this exercise another day.<br/></p><p>2. Agree on confidentiality. Whenever you bring up a new sexual conversation with your partner, you are exposing a part of yourself and you need to feel safe.<br/></p><p>3. You can start by asking each other questions about where you most like to be touched, what you liked best the last time you made love, what is your favourite place to kiss your partner’s body, what makes sex more exciting for you, do you have a fantasy you would like to share, is there a special love toy you’d like to try and what about watching erotic movies together?<br/></p><p>Try what works for you. Things that are new can feel uncomfortable or awkward at first, and having a sense of humour can help. There is no right or wrong, just have fun with discovering your sexual communication and see what happens. It's a nice idea to end your conversation sharing at least one positive thing that came out of it.<br/></p><p>You can record it and send it to your partner at a moment you want to surprise him or her with a sex date.<br/></p><p>Open link below to watch the scene of this movie</p><p><a href=\"https://www.youtube.com/watch?v=UV3QWd2RtwQ\" target=\"\">Play Video</a></p>",
+  "data": null,
+  "background": "<p>Visit the link for a <a href=\"https://www.ted.com/talks/esther_perel_the_secret_to_desire_in_a_long_term_relationship?language=nl\" target=\"\">TedX-talk by Ester Perel</a>, who talks about erotic intelligence and explains why fantasy is important for human relationships.</p>",
+  "articles": [
+   {
+    "title": "Esther Perel the Secret to Desire in a Long Term Relationship",
+    "url": "https://www.ted.com/talks/esther_perel_the_secret_to_desire_in_a_long_term_relationship?language=nl"
+   },
+   {
+    "title": "How To Talk About Sex With Your Spouse",
+    "url": "http://simplemarriage.net/how-to-talk-about-sex-with-your-spouse/"
+   },
+   {
+    "title": "How can you tell your partner what you want in bed?",
+    "url": "http://www.estherperel.com/how-can-you-tell-your-partner-what-you-want-in-bed/"
+   },
+   {
+    "title": "Hope Springs 2012 Meryl Streep, Tommy Lee Jones",
+    "url": "https://www.youtube.com/watch?v=UV3QWd2RtwQ"
+   }
+  ],
+  "products": [
+   {
+    "id": 20,
+    "name": "Mating in Captivity: Unlocking Erotic Intelligence",
+    "url": "https://www.amazon.com/Mating-Captivity-Unlocking-Erotic-Intelligence/dp/0060753641/ref=sr_1_1?ie=UTF8&qid=1468338782&sr=8-1&keywords=esther+perel",
+    "author": "Esther Perel",
+    "for": "Both"
+   },
+   {
+    "id": 23,
+    "name": "Reflected in You: A Crossfire Novel",
+    "url": "https://www.amazon.com/Reflected-You-Crossfire-Sylvia-Day-ebook/dp/B008GVD6D8/ref=sr_1_3?ie=UTF8&qid=1468483383&sr=8-3&keywords=bared+to+you",
+    "author": "Sylvia Day",
+    "for": "Both"
+   },
+   {
+    "id": 32,
+    "name": "The Art of Everyday Ecstasy",
+    "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
+    "author": "Margot Anand",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-4.jpg",
+  "audioUrl": "/media/audio/audio_play_4.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-4.mp3"
+ },
+ {
+  "day": 5,
+  "slug": "day-5-expressing-gratitude",
+  "title": "Expressing gratitude",
+  "type": "single-picture",
+  "goal": "<p>Expressing gratitude improves our physical and mental health as well as our relationships.</p><p>Praise each other and show your appreciation for each other by writing the other one a letter.</p>",
+  "howTo": "<p>1. Set a timer for 15 minutes</p><p>2. Take a piece of paper and write a letter expressing the gratitude you feel for the other.</p><p>Try using the following as a guide:</p><p>Address your partner directly, “Dear ______”.</p><p>Don’t worry about perfect grammar or spelling.</p><p>Describe in specific terms something your partner does or has done, why you are grateful for that, and how his/her behavior affected your life. Try to use a concrete example. Describe what you are doing in your life now and how you often remember his or her efforts. Try to keep your letter to roughly one page (~300 words). If you find it difficult, you can start writing a list of things you really like about your partner. You could start by praising some aspect of your partner’s character, then their accomplishments, or anything else that comes to mind. There are no restrictions on what you are or are not allowed to write. Everything is ok.</p><p>3. If you don’t manage to finish the letter today, finish it another time. Make sure you agree on a special moment when you will give each other the letters.&#65279;</p>",
+  "data": null,
+  "background": null,
+  "articles": [
+   {
+    "title": "10 Ways to Show Gratitude in a Relationship",
+    "url": "https://www.powerofpositivity.com/10-ways-show-gratitude-in-a-relationship/"
+   },
+   {
+    "title": "Expressing Gratitude Can Make You Sexier!",
+    "url": "https://www.psychologytoday.com/blog/your-money-and-your-heart/201311/expressing-gratitude-can-make-you-sexier"
+   }
+  ],
+  "products": [
+   {
+    "id": 25,
+    "name": "Couple Skills: Making Your Relationship Work",
+    "url": "https://www.amazon.com/Couple-Skills-Making-Your-Relationship/dp/157224481X/ref=sr_1_9?ie=UTF8&qid=1468485741&sr=8-9&keywords=relationship+communication",
+    "author": "McKay",
+    "for": "Both"
+   },
+   {
+    "id": 19,
+    "name": "Hold Me Tight: Seven Conversations for a Lifetime of Love",
+    "url": "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X/ref=sr_1_21?ie=UTF8&qid=1467363080&sr=8-21&keywords=gottman",
+    "author": "Sue Johnson",
+    "for": "Both"
+   },
+   {
+    "id": 6,
+    "name": "The Seven Principles for Making Marriage Work: A Practical Guide from the Country's Foremost Relationship Expert",
+    "url": "https://www.amazon.com/Seven-Principles-Making-Marriage-Work/dp/0553447718/ref=sr_1_1?ie=UTF8&qid=1467362511&sr=8-1&keywords=gottman",
+    "author": "Gottman",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-5.jpg",
+  "audioUrl": "/media/audio/audio_play_5.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-5.mp3"
+ },
+ {
+  "day": 6,
+  "slug": "day-6-back-to-back-heart-to-heart-meditation",
+  "title": "Back to Back, Heart to Heart Meditation",
+  "type": "noop",
+  "goal": "<p>An invitation from Josh Wise to join The Back to Back, Heart to Heart meditation. This meditation is an excellent way to extend love to someone you care for very deeply.</p>",
+  "howTo": "<p>Play the <b>audio</b> below.</p>",
+  "data": null,
+  "background": "<p>Josh Wise, a leading authority on mindfulness and relationships. Josh teaches couples from around the world how to slow down and connect with each other in ways that go beyond words. Josh lives in Bali with his wife, Lindsey and their three children. Josh and Lindsey offer Mindful Couples retreats and workshops, to help couples cultivate a deeper connection. <a href='https://www.wisemindbody.com/'>Wise Mind Body</a></p>",
+  "articles": [
+   {
+    "title": "3 Ways Yoga and Meditation Will Take Your Relationship to the Next Level",
+    "url": "http://therelationshift.com/blogs/3-ways-yoga-and-meditation-will-take-your-relationship-to-the-next-level"
+   }
+  ],
+  "products": [
+   {
+    "id": 24,
+    "name": "Get Some Headspace: 10 Minutes Can Make All the Difference",
+    "url": "https://www.amazon.com/Get-Some-Headspace-Difference-Paperback/dp/B00FFBZ1GW/ref=sr_1_4?ie=UTF8&qid=1468484566&sr=8-4&keywords=get+some+headspace",
+    "author": "Andy Puddicombe",
+    "for": "Both"
+   },
+   {
+    "id": 10,
+    "name": "Insight timer",
+    "url": "https://www.amazon.com/Spotlight-Six-Software-LLC-Insight/dp/B006HL9G10/ref=sr_1_2?s=mobile-apps&ie=UTF8&qid=1468486425&sr=1-2&keywords=insight+timer",
+    "author": "Spotlight Six Software, LLC",
+    "for": "Both"
+   },
+   {
+    "id": 17,
+    "name": "Mindfulness: A Practical Guide to Finding Peace in a Frantic World",
+    "url": "https://www.amazon.com/Mindfulness-Practical-Finding-Williams-Paperback/dp/B0157HTWS6/ref=sr_1_1?ie=UTF8&qid=1468484136&sr=8-1&keywords=Mindfulness%3A+A+Practical+Guide+to+Finding+Peace+in+a+Frantic+World",
+    "author": "Williams",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-6.jpg",
+  "audioUrl": "/media/audio/audio_play_6.mp3",
+  "exerciseAudioUrl": "/media/audio/exercise_audio_6.mp3",
+  "narrationUrl": "/media/audio/day-6.mp3"
+ },
+ {
+  "day": 7,
+  "slug": "day-7-feeling-connected",
+  "title": "Feeling connected",
+  "type": "single-picture",
+  "goal": "<p>Connection is key to developing the degree of intimacy any relationship needs to survive and blossom.</p><p>To help foster that feeling of connection, think about a time when you felt a strong connection with your partner and to describe that experience in writing.</p>",
+  "howTo": "<p>1. Try to think of a time when you felt an especially strong bond with your partner. Choose a specific example: an experience you had with your partner where you felt especially close and connected to him or her. This could be a time you had a meaningful conversation, gave or received support, experienced a great loss, succeeded at something, or witnessed a historic moment together.</p><p>2. spend a few minutes writing about that specific example. In particular, consider the ways in which this experience made you feel close and connected to your partner.</p><p>3. Share your moments with each other. If you feel like it, read out load to each other what you’ve written and then maybe talk about your chosen moments</p>",
+  "data": null,
+  "background": null,
+  "articles": [],
+  "products": [
+   {
+    "id": 25,
+    "name": "Couple Skills: Making Your Relationship Work",
+    "url": "https://www.amazon.com/Couple-Skills-Making-Your-Relationship/dp/157224481X/ref=sr_1_9?ie=UTF8&qid=1468485741&sr=8-9&keywords=relationship+communication",
+    "author": "McKay",
+    "for": "Both"
+   },
+   {
+    "id": 19,
+    "name": "Hold Me Tight: Seven Conversations for a Lifetime of Love",
+    "url": "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X/ref=sr_1_21?ie=UTF8&qid=1467363080&sr=8-21&keywords=gottman",
+    "author": "Sue Johnson",
+    "for": "Both"
+   },
+   {
+    "id": 6,
+    "name": "The Seven Principles for Making Marriage Work: A Practical Guide from the Country's Foremost Relationship Expert",
+    "url": "https://www.amazon.com/Seven-Principles-Making-Marriage-Work/dp/0553447718/ref=sr_1_1?ie=UTF8&qid=1467362511&sr=8-1&keywords=gottman",
+    "author": "Gottman",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-7.jpg",
+  "audioUrl": "/media/audio/audio_play_7.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-7.mp3"
+ },
+ {
+  "day": 8,
+  "slug": "day-8-spoiling-session",
+  "title": "Spoiling session",
+  "type": "noop",
+  "goal": "<p>Connect by indulging in a sensual spoiling session. A spoiling session is an exercise that allows you to gain a deeper understanding of your own sexual needs and the sexual needs of your partner, while simultaneously reconnecting you as a couple and melting away the subtle shame and resistance that each partner may or may not have towards sex in general. Free of any expectations.</p>",
+  "howTo": "<ul><li></li></ul><p>1. Decide which partner will be first and also decide the amount of time you will share together. On day 12 there is another ‘sensual spoiling session’ when the other partner will enjoy the experience of being sensually spoiled for the same amount of time.</p><p>2. Role play. The partner who goes first is Lover A, and the other partner is</p><p>Lover B.</p><p>Lover A guides Lover B, expressing his/her desires and fantasies.</p><p>Lover B will be the listener.</p><p>3. Preparations Lover A: put together your intimate sensual spoiling box: The ideal size is probably a shoe box, or something a little smaller.  Fill this spoiling box with inventive toys such as feathers, flowers, straws, shells, crystals, leaves, sticks, necklaces, brushes, musical instruments such bells/ tingshas /a singing bowl, maybe food like grapes, strawberries, peanut butter, chocolate spread, or massage oils/ fragrances, ice cubes. Go for things you can imagine your lover using to tickle, kiss, squeeze, scratch, wipe, push, drip, blow, stroke, slap, sprinkle, rub and tap all over your body.<br/></p><p><b>Lover A.</b><br/></p><p>You are vulnerable, You are strong, You guide your lover.</p><p>You initiate how, where and with what your lover can touch you. </p><p>You can choose to start with a slow gentle full body massage or maybe a strong shoulder massage. <br/></p><p>You are in charge; you take the decisions. You could invite your lover to use their hand(s), finger(s), toe(s), elbow(s), nose, mouth, tongue, belly, bump and/or any of the extras from your intimate spoiling box.<br/></p><p>Lover A is welcoming the inner creativity of being the master, of sharing their inner sensuality and is active in exploring playfulness and boundaries.<br/></p><p><b><br/></b></p><p><b>Lover B.</b><br/></p><p>You are the listener. The non-judgmental listener.</p><p>You are vulnerable: by being curious and friendly. </p><p>You are strong: by being passive.</p><p>You are open to all the sensual invitations from Lover A.</p><p><b>IMPORTANT FOR BOTH LOVERS: Be present! </b></p><p>Surrender to the moment; be in the moment.  Both of you are patient and respectful, practice a non-judgmental awareness. Be aware of each others do’s and don’ts, the yes or the no.</p>",
+  "data": null,
+  "background": "<p>Shira van Spanje is the founder of Frameless Feminine.  She lives and works in Bali with her family.  Frameless Feminine facilitates nurturing ‘Silence retreats’ for both men and women on Bali and in various cities around the world. They also facilitate private sessions for couples, lovers and individuals.  Shira is passionate about intensifying our daily comfort,  pleasure and inner wisdom in order to minimise daily stress.</p>",
+  "articles": [],
+  "products": [
+   {
+    "id": 9,
+    "name": "Secret VII Adult Game",
+    "url": "https://www.amazon.com/Secret-VII-368281-Adult-Game/dp/B005DNHQ2O/ref=sr_1_6_s_it?s=hpc&ie=UTF8&qid=1468482714&sr=1-6&keywords=sex+games",
+    "author": "Secret VII",
+    "for": "Both"
+   },
+   {
+    "id": 32,
+    "name": "The Art of Everyday Ecstasy",
+    "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
+    "author": "Margot Anand",
+    "for": "Both"
+   },
+   {
+    "id": 33,
+    "name": "The Art of Sexual Magic",
+    "url": "https://www.amazon.com/Art-Sexual-Magic-Margot-Anand/dp/0874778409/ref=sr_1_4?s=books&ie=UTF8&qid=1468651337&sr=1-4&keywords=margot+anand",
+    "author": "Margot Anand",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-8.jpg",
+  "audioUrl": "/media/audio/audio_play_8.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-8.mp3"
+ },
+ {
+  "day": 9,
+  "slug": "day-9-compassion-loving-kindness",
+  "title": "Compassion & Loving Kindness",
+  "type": "noop-audio",
+  "goal": "<p>An invitation from Desmond M Koh to join The Compassion &amp; Loving Kindess exercise. When couples take on a different approach to relationships, where partners practice the attitude of loving kindness and compassion for their partner in relationships, putting the happiness of their partner before self, relationships blossom.</p>",
+  "howTo": "<p>Click <b>Play</b> on the media player below to listen to Desmond M Koh</p>",
+  "data": null,
+  "background": "<p>Desmond M Koh is the founder of Compassion Capital and The Compassion Group. He lives with his family in Bali and Singapore. Together with his wife, Desmond founded a Buddhist study group on Bali. Their philosophy is that putting others before oneself leads to stronger relationships.</p>",
+  "articles": [],
+  "products": [],
+  "imageUrl": "/media/images/day-9.jpg",
+  "audioUrl": "/media/audio/audio_play_9.mp3",
+  "exerciseAudioUrl": "/media/audio/exercise_audio_9.mp3",
+  "narrationUrl": "/media/audio/day-9.mp3"
+ },
+ {
+  "day": 10,
+  "slug": "day-10-non-violent-communication-nvc",
+  "title": "Non-Violent Communication (NVC)",
+  "type": "noop",
+  "goal": "<p>According to Marshall Rosenberg, conflicts often arise because we do not understand each other’s needs. Do you know the needs of your partner? If you and your partner use the language of compassion it could help to shift this aspect of your relationship.</p>",
+  "howTo": "<p>Think of a moment when you were really annoyed with your partner.</p><p>Use the form set out below the exercise to write it down, or just give your partner an example by following 4 steps:</p><p>observation, feelings, need and request.</p><p><strong>OBSERVATION</strong>: Describe what happened at the moment you were annoyed. Use words like ‘ what I see, notice, hear, observe, etc</p><p>For example: What I observe is that you are on your phone the whole time when I am talking to you.</p><p><strong>FEELINGS</strong>: Describe how you felt about it?</p><p>For example: I felt neglected.</p><p><strong>NEEDS</strong>: Tell your partner what your needs are in this particular case.</p><p>For example: I want to be heard.</p><p><strong>REQUEST</strong>: what is it that you want from him or her and ask this.</p><p>For example: Can you please put the phone aside when we have a conversation?</p><p>Summarize what it is you want to say to your partner without judging him or her. In our example this could go something like, “When I see you busy with your phone whilst I’m telling you a story, I feel neglected, I want to be heard. Are you willing to put the phone aside whilst we have a conversation?”</p><p>Over the coming days you can experience what happens when you try addressing your partner using the language of compassion.</p><p>When your partner says something to you that you didn’t like hearing, try to also follow the four steps.</p>",
+  "data": null,
+  "background": "<p>Marshall B. Rosenberg, Ph.D. (1934-2015) is an American psychologist who developed in the 1960’s the Nonviolent Communication, also described as a language of compassion, a tool for social change. He founded and was for many years the Director of Educational Services for the Center for Nonviolent Communication, an international peacemaking organization. His bestselling book Nonviolent Communication: A Language of Life has sold more than one million copies worldwide and has been translated into more than 30 languages. <a href='https://www.youtube.com/watch?v=-4EDhdAHrOg'>Play Video</a></p>",
+  "articles": [],
+  "products": [],
+  "imageUrl": "/media/images/day-10.jpg",
+  "audioUrl": "/media/audio/audio_play_10.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-10.mp3"
+ },
+ {
+  "day": 11,
+  "slug": "day-11-soul-gazing-meditation",
+  "title": "Soul Gazing Meditation",
+  "type": "noop",
+  "goal": "<p>An invitation from Josh Wise to join the Soul Gazing Meditation. Communication is probably one of the most important elements of your relationship. We generally think of communication as being a two-way exchange.  There is the receptive aspect of communication: listening, and the active aspect of communication, which is speaking.<br/><br/>Yet we intuitively know that communication goes far beyond what we hear and what we say. Communication occurs on many levels, the majority of which are nonverbal.</p>",
+  "howTo": "<p>Please have a look at the <a href=\"https://www.youtube.com/watch?v=OS0Tg0IjCp4\">short Movie</a> of a performance done by Marina Abramovic above. In 2010, Serbian artist  <a href=\"http://marinafilm.com/about-marina-abramovic\">Marina Abramović</a> had the honor of being the subject of a popular retrospective at New York’s <a href=\"http://www.moma.org/explore\">Museum of Modern Art</a>. Throughout the show, Abramović performed a grueling piece entitled <a href=\"http://www.moma.org/visit/calendar/exhibitions/965\">“The Artist Is Present”</a>, sitting in the museum’s atrium and inviting the swelling crowds of viewers to sit directly opposite her, in silent dialogue. In order to get the full strength of the performance it is important to realize that the person who is going to sit opposite of Marina is her former lover Ulay who she has not seen in 20 years.</p><p>To start the exercise, click <strong>Play</strong> on the media player below to listen to Josh Wise.</p>",
+  "data": null,
+  "background": "<p>Josh Wise, a leading authority on mindfulness and relationships. Josh teaches couples from around the world how to slow down and connect with each other in ways that go beyond words. Josh lives in Bali with his wife, Lindsey and their three children. Josh and Lindsey offer Mindful Couples retreats and workshops, to help couples cultivate a deeper connection.</p>",
+  "articles": [
+   {
+    "title": "How to Set Goals",
+    "url": "https://www.psychologytoday.com/blog/notes-self/201308/how-set-goals"
+   },
+   {
+    "title": "How to Set Goals in 12 Steps",
+    "url": "http://www.wikihow.com/Set-Goals"
+   }
+  ],
+  "products": [],
+  "imageUrl": "/media/images/day-11.jpg",
+  "audioUrl": "/media/audio/audio_play_11.mp3",
+  "exerciseAudioUrl": "/media/audio/exercise_audio_11.mp3",
+  "narrationUrl": "/media/audio/day-11.mp3"
+ },
+ {
+  "day": 12,
+  "slug": "day-12-spoiling-session-number-2",
+  "title": "Spoiling Session number 2!",
+  "type": "noop",
+  "goal": "<p>A spoiling session is an exercise that allows you to gain a deeper understanding of your own sexual needs and the sexual needs of your partner, while simultaneously reconnecting you as a couple and melting away the subtle shame and resistance that each partner may or may not have towards sex in general. Free of any expectations.</p>",
+  "howTo": "<p> 1. On day 8 one partner had their turn at being spoiled, now is the other one’s turn. If you were Lover A, the one that got spoiled and guided Lover B by telling him or her what you like, now you will be Lover B, the listener.<br/>If you find it difficult to talk to your partner about what you want, why not try writing it down in advance? Do what feels good for you.<br/><br/>2. Role play. The partner who goes first is Lover A, and the other partner is Lover B.<br/>Lover A guides Lover B, expressing his/her desires and fantasies.</p><p>Lover B will be the listener.<br/><br/>3. Preparations Lover A: put together your intimate sensual spoiling box: The ideal size is probably a shoe box, or something a little smaller. </p><p>Fill this spoiling box with inventive toys such as feathers, flowers, straws, shells, crystals, leaves, sticks, necklaces, brushes, musical instruments such bells/ tingshas /a singing bowl, maybe food like grapes, strawberries, peanut butter, chocolate spread, or massage oils/ fragrances, ice cubes. Go for things you can imagine your lover using to tickle, kiss, squeeze, scratch, wipe, push, drip, blow, stroke, slap, sprinkle, rub and tap all over your body.<br/><br/><b>Lover A.<br/></b>You are vulnerable, You are strong, You guide your lover.<br/>You initiate how, where and with what your lover can touch you. <br/>You can choose to start with a slow gentle full body massage or maybe a strong shoulder massage. <br/>You are in charge; you take the decisions. You could invite your lover to use their hand(s), finger(s), toe(s), elbow(s), nose, mouth, tongue, belly, bump and/or any of the extras from your intimate spoiling box.<br/><br/>Lover A is welcoming the inner creativity of being the master, of sharing their inner sensuality and is active in exploring playfulness and boundaries.<br/><br/><b>Lover B.<br/></b>You are the listener. The non-judgmental listener.<br/>You are vulnerable: by being curious and friendly. <br/>You are strong: by being passive.<br/><br/>You are open to all the sensual invitations from Lover A.<br/><br/><b>IMPORTANT FOR BOTH LOVERS: Be present! </b><br/>Surrender to the moment; be in the moment. <br/>Both of you are patient and respectful, practice a non-judgmental awareness.<br/>Be aware of each others do’s and don’ts, the yes or the no.                    </p>",
+  "data": null,
+  "background": null,
+  "articles": [],
+  "products": [
+   {
+    "id": 9,
+    "name": "Secret VII Adult Game",
+    "url": "https://www.amazon.com/Secret-VII-368281-Adult-Game/dp/B005DNHQ2O/ref=sr_1_6_s_it?s=hpc&ie=UTF8&qid=1468482714&sr=1-6&keywords=sex+games",
+    "author": "Secret VII",
+    "for": "Both"
+   },
+   {
+    "id": 32,
+    "name": "The Art of Everyday Ecstasy",
+    "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
+    "author": "Margot Anand",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-12.jpg",
+  "audioUrl": "/media/audio/audio_play_12.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-12.mp3"
+ },
+ {
+  "day": 13,
+  "slug": "day-13-a-trip-down-memory-lane",
+  "title": "A trip down memory lane",
+  "type": "basic-multiple",
+  "goal": "<p>You will be taking a walk down memory lane. Whether you and your partner have only been together for a few months, or for years or decades, you are bound to have incredible memories.<br/><br/>This exercise encourages you both to focus on your shared positive and or life changing moments.<br/><br/>The purpose of this exercise is twofold: First, it will reinforce the realisation that you and your partner have shared many positive moments and remembering these can create a more positive feeling about your relationship. Second, by reinforcing positive memories you are much more likely to create more positive memories.</p>",
+  "howTo": "<p>Record your <b>song </b>and then upload it. Take a photo of your relationship <b>symbol </b>and upload that, together with your <b>photo </b>of your before and after moment. You need these <b>three items </b>for tomorrow’s exercise.<br/></p><ul><li></li></ul>",
+  "data": {
+   "questions": [
+    {
+     "question": "Choose a song",
+     "description": "Choose a song that reminds you of the moment you first noticed your partner or one that has a special meaning for you both.",
+     "type": "audio",
+     "order": 1
+    },
+    {
+     "question": "Find a photo",
+     "description": "Find a photo that reminds you of a ‘before and after moment’, that’s the moment when your world would never be the same again. Try to find an image that will pave your memory lane.",
+     "type": "picture",
+     "order": 2
+    },
+    {
+     "question": "Find an object",
+     "description": "Find an object that is the essence of now, an artefact or symbol of the current dominating force in your relationship. It can be a souvenir from one of your recent holidays or something you now use every day. Something that features in your relationship right now.",
+     "type": "picture",
+     "order": 3
+    }
+   ],
+   "outro": "Gather together three relationship symbols."
   },
-  {
-    "day": 19,
-    "slug": "day-19-love-map",
-    "title": "Love Map",
-    "type": "single-picture",
-    "goal": "<p>Create your own love map by playing “ The Love Map game’. The principle behind building a Love Map is simply: knowing the little things about your partner’s life creates a strong foundation for your friendship and intimacy. Research has found that emotionally intelligent couples are intimately familiar with each other’s worlds. They know each other’s goals in life, each other’s worries, each other’s hopes and dreams. Without such a love map, you can’t really know your partner. It is said that couples who have detailed love maps of each other’s world are far better prepared to cope with stressful events and conflict.</p>",
-    "howTo": "<ul><li>1. Write the numbers 1 through 20 on a piece of paper. Then take turns asking your partner the questions below.</li><li>2. If your partner answers correctly (and YOU are the judge), he or she receives the number of points indicated for that question, and you also receive one point. If your partner answers incorrectly, neither of you receives any points. High score wins.</li><li><br/></li><li>While you’re having fun playing, you’ll also be expanding and deepening your relationship.</li></ul><p><b>The Love Map</b></p><p>Name my two closest friends. (2)<br/>What was I wearing when we first met? (2)<br/>Name one of my hobbies. (3)<br/>What stresses am I facing right now? (4)<br/>Describe in detail what I did today, or yesterday. (4)<br/>What kind of present would I like best? (2)<br/>What personal improvements do I want to make in my life? (4)<br/>What was my favourite holiday? (2)<br/>What is one of my greatest fears or disaster scenarios? (3)<br/>What is my favourite restaurant? (2)<br/>What turns me on sexually? (3)<br/>What is my favourite time of the day for lovemaking? (2)<br/>Of all the people we both know, who do I like the least? (3)<br/>What is my favourite TV show? (2)<br/>Do I have a secret ambition? What is it? (4)<br/>What was my worst childhood experience? (3)<br/>What is the date of our anniversary? (1)<br/>Who is my greatest source of support (other than you)? (3)<br/>What are the important events coming up in my life? How do I feel about them? (4)<br/>What is one of my favourite ways to spend an evening? (2)<br/></p>",
-    "data": null,
-    "background": "<p>Dr. John Gottmann (1942) is a professor emeritus in psychology known for his work on marital stability and relationship analysis through scientific direct observations. In his book, The Seven Principles for Making Marriage Work, he sets out his idea for building a Love Map. With his wife, Julie Schwartz, Gottman heads a non-profit research institute (The Relationship Research Institute) and a for-profit therapist training entity (The Gottman Institute). www.gottman.com</p>",
-    "articles": [],
-    "products": [
+  "background": null,
+  "articles": [
+   {
+    "title": "Long Distance Relationship Korean Couple Photo Collage Half Shiniart",
+    "url": "http://www.boredpanda.com/long-distance-relationship-korean-couple-photo-collage-half-shiniart/"
+   }
+  ],
+  "products": [],
+  "imageUrl": "/media/images/day-13.jpg",
+  "audioUrl": "/media/audio/audio_play_13.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-13.mp3"
+ },
+ {
+  "day": 14,
+  "slug": "day-14-the-story-of-us-part-1",
+  "title": "The Story of Us: Part 1",
+  "type": "noop-audio",
+  "goal": "<p>Our stories come from our memories and experiences; they are the framework we use to integrate the pivotal events in our lives. Our stories help us to understand and give meaning to our lives. In a sense, we become the stories we tell ourselves.<br/><br/>This exercise is designed to shine light on your relationship story to increase your awareness of the subconscious energy influencing your relationship, and to open the possibility of authoring your future relationship stories.</p><p>Today Kinchem, the creator of this exercise, will explain how to do the exercise herself.<br/></p>",
+  "howTo": "<p>Individually answer a series of questions to help you compose your version of your relationship story. When you have written your ‘story of us’ you’ll take turns, on day 21 to read, tell, or show it to your partner. You’ll only have 5 minutes to read or tell your story to your partner, so make sure you practise your timing. You need to make choices about what is included in the story, and what isn’t. Ask yourself what elements of your story currently have the biggest impact on your relationship. To do this exercise you will need the three relationship symbols you collected in the previous exercise:</p><ul><li>1. Song, That reminds you of the moment you first noticed your partner.</li><li>2. Photo, That reminds you of the moment of ‘before and after’, when your world would never be the same again</li><li>3. Object, That is the essence of now, an artefact or symbol of the current dominating force in your relationship</li></ul>",
+  "data": null,
+  "background": "Kinchem Hegedus , a writer from Australia, will now guide you and your partner in this process. Kinchem Hegedus lives and works in Sydney with her family and she organizes courses that help you with mapping your “inner landscape”.",
+  "articles": [],
+  "products": [],
+  "imageUrl": "/media/images/day-14.jpg",
+  "audioUrl": "/media/audio/audio_play_14.mp3",
+  "exerciseAudioUrl": "/media/audio/exercise_audio_14.mp3",
+  "narrationUrl": "/media/audio/day-14.mp3"
+ },
+ {
+  "day": 15,
+  "slug": "day-15-rituals",
+  "title": "Rituals",
+  "type": "checklist",
+  "goal": "<p>Rituals of connection are shared activities that you do on a repeated basis from daily to yearly that have meaning for you as a couple. Research shows that what makes a relationship successful are small things done often. Rituals connect us with others by providing a focus or activity that enables us to interact in an enjoyable and meaningful way.<br/><br/>For example, some couples have a daily routine of checking in with each other by phone at some point during the day. It only becomes a ritual, though, if it is used as a moment to connect rather than just an exercise in exchanging information.<br/><br/>Just like our essential daily vitamins, a number of simple rituals can keep our relationships healthy and vibrant.</p>",
+  "howTo": "<p>Create your own ritual list. It’s possible you already have numerous ‘couple rituals’ and you aren’t even aware of them. It may be that after today you choose a couple ritual that you would like to build into your relationship.<br/><br/>What are some of the couple rituals you have?  What aspects make them meaningful and significant to you? How can you modify your ritual to make it more effective?<br/><br/>Talk about these rituals together and identify why certain rituals are important to you.<br/><br/>Maybe consider how these rituals played out in your childhood home – have you adopted one or adapted it, or is it something you two have created for yourselves?<br/><br/>Below the exercise you will find a drop down menu giving a list of rituals. Take a moment to select the ones you wish to talk about with your partner.<br/><br/>Have fun with it.</p>",
+  "data": [
+   {
+    "text": "Waking up, waking one another up",
+    "order": 1
+   },
+   {
+    "text": "Spending a morning in bed talking or cuddling",
+    "order": 2
+   },
+   {
+    "text": "Having breakfast together",
+    "order": 3
+   },
+   {
+    "text": "Drinking a cup of coffee",
+    "order": 4
+   },
+   {
+    "text": "Having lunch",
+    "order": 5
+   },
+   {
+    "text": "Calling or texting just to check-in during the day",
+    "order": 6
+   },
+   {
+    "text": "Having a special dinner ritual",
+    "order": 7
+   },
+   {
+    "text": "Asking about each others day",
+    "order": 8
+   },
+   {
+    "text": "Sending each other funny,movies,etc",
+    "order": 9
+   },
+   {
+    "text": "Leaving notes for each other",
+    "order": 10
+   },
+   {
+    "text": "Setting up a specific time of day to talk and catch up",
+    "order": 11
+   },
+   {
+    "text": "Regular date nights",
+    "order": 12
+   },
+   {
+    "text": "Sharing a hobby",
+    "order": 13
+   },
+   {
+    "text": "Taking a class together",
+    "order": 14
+   },
+   {
+    "text": "Doing volunteer work together",
+    "order": 15
+   },
+   {
+    "text": "Attending religious events together",
+    "order": 16
+   },
+   {
+    "text": "Playing (board)games with each other",
+    "order": 17
+   },
+   {
+    "text": "Looking through photo albums together",
+    "order": 18
+   },
+   {
+    "text": "Cooking a meal together",
+    "order": 19
+   },
+   {
+    "text": "Holding each others’ hands (while walking, watching tv, etc)",
+    "order": 20
+   },
+   {
+    "text": "Handling finances",
+    "order": 21
+   },
+   {
+    "text": "Hosting others in your home",
+    "order": 22
+   },
+   {
+    "text": "Celebrating special days or important days (birthdays, anniversaries, etc.)",
+    "order": 23
+   },
+   {
+    "text": "Taking care of one another when sick",
+    "order": 24
+   },
+   {
+    "text": "Renewing your commitment to each other on your anniversary",
+    "order": 25
+   },
+   {
+    "text": "Taking special vacations or getaways",
+    "order": 26
+   },
+   {
+    "text": "Travelling together",
+    "order": 27
+   },
+   {
+    "text": "Attending sports events",
+    "order": 28
+   },
+   {
+    "text": "Participating in sports events",
+    "order": 29
+   },
+   {
+    "text": "Watching television/special programmes",
+    "order": 30
+   },
+   {
+    "text": "Attending movies",
+    "order": 31
+   },
+   {
+    "text": "Attending concerts, plays, and other cultural events",
+    "order": 32
+   },
+   {
+    "text": "Regular religious services",
+    "order": 33
+   },
+   {
+    "text": "Rituals of transition (funerals, weddings, etc.)",
+    "order": 34
+   },
+   {
+    "text": "Attending a partner’s performance or sports event",
+    "order": 35
+   },
+   {
+    "text": "Creating art",
+    "order": 36
+   },
+   {
+    "text": "Running errands",
+    "order": 37
+   },
+   {
+    "text": "Doing household chores",
+    "order": 38
+   },
+   {
+    "text": "Participating in community events or politics",
+    "order": 39
+   },
+   {
+    "text": "Studying",
+    "order": 40
+   },
+   {
+    "text": "Soothing other people’s feelings",
+    "order": 41
+   },
+   {
+    "text": "Apologizing or repairing feelings after an argument",
+    "order": 42
+   },
+   {
+    "text": "Giving each other flowers, gifts",
+    "order": 43
+   },
+   {
+    "text": "Annual Review Ritual",
+    "order": 44
+   }
+  ],
+  "background": null,
+  "articles": [],
+  "products": [],
+  "imageUrl": "/media/images/day-15.jpg",
+  "audioUrl": "/media/audio/audio_play_15.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-15.mp3"
+ },
+ {
+  "day": 16,
+  "slug": "day-16-the-melting-hug",
+  "title": "The Melting Hug",
+  "type": "noop",
+  "goal": "<p>Multiple studies show that human touch triggers the release of the hormone “oxytocin” in our brain and reduces the stress hormone, “cortisol”.<br/><br/>Oxytocin gives us a sense of connection and bonding. This so called-love hormone is a neurotransmitter that increases feelings of trust, generosity and compassion, and decreases feelings of fear and anxiety.<br/><br/></p><p>When our cortisol levels are high, our skin actually gets more sensitive, so the healing touch of your partner’s hand is most effective when stress levels are highest. The reduction of cortisol is beneficial for the heart, circulatory system, and brain. Essentially, holding hands can make you healthier!</p>",
+  "howTo": "<p>The Melting Hug: hug through your breath, both of you breathing in a synchronistic, unifying way.<br><ul><li>1. Set the timer for 3 minutes</li><li>2. Stand in front of your partner and touch each other, nestle against your partner’s chest; slowly wrap your arms gently around each other. Let your hands feel they are really holding flesh, bones, and muscles without exerting pressure. Embrace the whole body don’t just squeeze each other.</li><li>3. Let your pelvis relax and move forward, rest against each other pelvis to pelvis. Allow your thighs and bellies to meet. Keep your knees slightly bent to enhance your sense of balance and groundedness. Let your bodies relax so that you can melt into each other, give yourselves over to a trusting embrace. Feel secure; welcome the same sensation of letting-go that a child feels in its mother&#39;s embrace.</li><li>4. Start to take notice of your partner’s breathing pattern. Let your own breathing harmonize with your partner’s so that you softly inhale and exhale together. If this harmonized breathing comes easily, enjoy the feeling and relax into it for a few minutes or take three full breathes, inhaling and exhaling together. You need not make any effort and shouldn’t feel any tension. In this exercise, you welcome, receive and dissolve into each other.</li></ul></p>",
+  "data": null,
+  "background": "Margot Anand (1944) is an internationally acclaimed authority on Tantra, best-selling author, and much-beloved teacher and founder of SkyDancing Tantra®. She lives on Bali and USA. www.margotanand.com.",
+  "articles": [],
+  "products": [
+   {
+    "id": 32,
+    "name": "The Art of Everyday Ecstasy",
+    "url": "https://www.amazon.com/Art-Everyday-Ecstasy-Margot-Anand/dp/0767901991/ref=sr_1_1?s=books&ie=UTF8&qid=1468651164&sr=1-1&keywords=margot+anand",
+    "author": "Margot Anand",
+    "for": "Both"
+   },
+   {
+    "id": 33,
+    "name": "The Art of Sexual Magic",
+    "url": "https://www.amazon.com/Art-Sexual-Magic-Margot-Anand/dp/0874778409/ref=sr_1_4?s=books&ie=UTF8&qid=1468651337&sr=1-4&keywords=margot+anand",
+    "author": "Margot Anand",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-16.jpg",
+  "audioUrl": "/media/audio/audio_play_16.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-16.mp3"
+ },
+ {
+  "day": 17,
+  "slug": "day-17-where-do-we-stand",
+  "title": "Where do we stand?",
+  "type": "true-false",
+  "goal": "<p>You and you partner will discover how emotionally responsive you are by doing an exercise based on Emotional Focussed Therapy: EFT. Dr. Sue Johnson is the primary developer of Emotionally Focused Couples Therapy, which has demonstrated its effectiveness in over 25 years of peer- reviewed clinical research. The message of EFT is simple: Recognize and admit that you are emotionally attached to and dependent on your partner in much the same way that a child is on a parent for nurturing, soothing, and protection.<br/><br/>In secure love relationships, partners experience the other person as:<br/><br/>1. <b>A</b>ccessible, which means I can count on my partner, he or she feels near and I can reach him or her;<br/><br/>2. <b>R</b>esponsive, which means when I ask for help or connection, I can get it;<br/><br/>3. And <b>E</b>ngaged, which means my partner is really interested in me and wants to grow our love.<!--EndFragment--><br/><br/><br/></p>",
+  "howTo": "<p>Please go through the list of statements and answer whether you feel this is “True” or “False” in your relationship. Once you have gone through the list award 1 point for all the statements that you feel are “True”. If your score is 7 or higher, you are on the right track. If your score is below 7 points, it may be helpful to extend this exercise by talking to your partner about the answers each of you gave. Were they similar? Are you experiencing the same issues? Use the active listening method when discussing your answers and try to understand why your partner answered the way he/she did.</p>",
+  "data": {
+   "content": [
+    {
+     "group": "Accessibility",
+     "subtitle": "From your viewpoint, is your partner accessible to you?",
+     "list": [
       {
-        "id": 6,
-        "name": "The Seven Principles for Making Marriage Work: A Practical Guide from the Country's Foremost Relationship Expert",
-        "url": "https://www.amazon.com/Seven-Principles-Making-Marriage-Work/dp/0553447718/ref=sr_1_1?ie=UTF8&qid=1467362511&sr=8-1&keywords=gottman",
-        "author": "Gottman",
-        "for": "Both"
+       "text": "I can get my partner’s attention easily.",
+       "order": 1
+      },
+      {
+       "text": "My partner is easy to connect with emotionally.",
+       "order": 2
+      },
+      {
+       "text": "My partner shows me that I come first with him/her.",
+       "order": 3
+      },
+      {
+       "text": "I am not feeling lonely or shut out in this relationship",
+       "order": 4
+      },
+      {
+       "text": "I can share my deepest feelings with my partner. He/she will listen.",
+       "order": 5
       }
-    ],
-    "imageUrl": "/media/images/day-19.jpg",
-    "audioUrl": "/media/audio/audio_play_19.mp3",
-    "exerciseAudioUrl": null
+     ],
+     "order": 1
+    },
+    {
+     "group": "Responsiveness",
+     "subtitle": "From your viewpoint is your partner responsive to you?",
+     "list": [
+      {
+       "text": "If I need connection and comfort, he/she will be there for me.",
+       "order": 1
+      },
+      {
+       "text": "My partner responds to signals that I need him/her to come close.",
+       "order": 2
+      },
+      {
+       "text": "I find I can lean on my partner when I am anxious or unsure.",
+       "order": 3
+      },
+      {
+       "text": "Even when we fight or disagree, I know that I am important to my partner and we will find a way to come together.",
+       "order": 4
+      },
+      {
+       "text": "If I need reassurance about how important I am to my partner, I can get it.",
+       "order": 5
+      }
+     ],
+     "order": 2
+    },
+    {
+     "group": "Engagement",
+     "subtitle": "Are you positively emotionally engaged with each other?",
+     "list": [
+      {
+       "text": "I feel very comfortable being close to, trusting my partner.",
+       "order": 1
+      },
+      {
+       "text": "I can confide in my partner about almost anything.",
+       "order": 2
+      },
+      {
+       "text": "I feel confident, even when we are apart, that we are connected to each other.",
+       "order": 3
+      },
+      {
+       "text": "I know that my partner cares about my joys, hurts, and fears.",
+       "order": 4
+      },
+      {
+       "text": "I feel safe enough to take emotional risks with my partner.",
+       "order": 5
+      }
+     ],
+     "order": 3
+    }
+   ],
+   "description": "<p>Take this questionnaire twice. The first time round you should answer the 15 questions about your partner, about how Accessible, Responsive, and Engaged your partner is with you. The second time you answer the questions, do so about yourself. focusing on how Accessible, Responsive, and Engaged you are towards your partner.</p>"
   },
-  {
-    "day": 20,
-    "slug": "day-20-relationshift-work-out",
-    "title": "Relationshift work out",
-    "type": "single-picture",
-    "goal": "<p>Invitation for you and your partner to come up with your own Relationshift exercise. What works in your relationship and how do you invest in your relationship? What is your relationship work out?</p>",
-    "howTo": "<p>Try to come up with something creative, fun and something new. We already got some ideas from other<br/>couples, who love to share their ideas with you.</p><ul><li>- Angela and Harold go out once a month. One of them decides what to do when they go out (e.g. organize a<br/>picnic) and the next time it is the other that makes a plan (e.g. go to a meditation<br/>class). After 6 months they switch, then Angela comes up with something she<br/>thinks Harold likes and Harold surprises Angela with something she enjoys very<br/>much.</li></ul><ul><li>- Ester en Sue like to read each other every week a different poem. Their favourite poem is the poem of<br/>Kahlil Gibran on marriage. </li></ul><ul><li>- Elizabeth and Mike like to try new workouts together like Zumba, Booty Barre, anything dance-related. They<br/>enjoy the fun and the fact that they learn new things.</li></ul><p>Please share your ideas of what you do to keep the fire burning in your relationship and inspire thousands<br/>of other couples. </p>",
-    "data": null,
-    "background": null,
-    "articles": [],
-    "products": [
-      {
-        "id": 38,
-        "name": "Couples Retreat",
-        "url": "https://www.amazon.com/Couples-Retreat-Vince-Vaughn/dp/B0037O5LLE/ref=sr_1_1?ie=UTF8&qid=1475500035&sr=8-1&keywords=couple+retreat",
-        "author": "Peter Billingsley",
-        "for": "Both"
-      },
-      {
-        "id": 40,
-        "name": "Kahlil Gibran's The Prophet",
-        "url": "https://www.amazon.com/Kahlil-Gibrans-Prophet-Blu-ray-Digital/dp/B014U45D08",
-        "author": "Roger Allers",
-        "for": "Both"
-      },
-      {
-        "id": 39,
-        "name": "The Prophet (A Borzoi Book)",
-        "url": "https://www.amazon.com/Prophet-Borzoi-Book-Kahlil-Gibran/dp/0394404289/ref=sr_1_1?s=books&ie=UTF8&qid=1475500082&sr=1-1&keywords=the+prophet",
-        "author": "Kahlil Gibran",
-        "for": "Both"
-      }
-    ],
-    "imageUrl": "/media/images/day-20.jpg",
-    "audioUrl": "/media/audio/audio_play_20.mp3",
-    "exerciseAudioUrl": null
-  },
-  {
-    "day": 21,
-    "slug": "day-21-the-story-of-us-part-2",
-    "title": "The Story of Us: Part 2",
-    "type": "noop",
-    "goal": "<p>To celebrate that you have completed this journey together. Hooray, You did it!</p>",
-    "howTo": "<ul><li></li>1. Listen to a short meditation from Kinchem Hegedus.</ul><ul>Click <b>Play</b> on the first media player below to listen to Kinchem Hegedus</ul><ul><br/>2. Share your ‘story of us’ with your partner.</ul><ul>Remember you are authoring your story every moment, every day, so as you open your heart to listen to this story, understand both the power of story and that you can begin to rewrite your story any time.</ul><ul><br/>3. When you have listened to each others stories, Kinchem will guide you again by asking you some questions.</ul><ul>Click <b>Play</b> on the second media player below to listen to Kinchem Hegedus<br/><br/><br/>Thank you for your trust.<li></li></ul>",
-    "data": null,
-    "background": "<p>Kinchem Hegedus, a writer from Australia, will now guide you and your partner in this process. Kinchem Hegedus lives and works in Sydney with her family and she organizes courses that help you with mapping your “inner landscape”.</p>",
-    "articles": [
-      {
-        "title": "Display Your Love Story",
-        "url": "https://nl.pinterest.com/pin/90142430019416385/"
-      },
-      {
-        "title": "What's your Love Story?",
-        "url": "https://www.psychologytoday.com/articles/200007/whats-your-love-story"
-      }
-    ],
-    "products": [],
-    "imageUrl": "/media/images/day-21.jpg",
-    "audioUrl": "/media/audio/audio_play_21.mp3",
-    "exerciseAudioUrl": "/media/audio/exercise_audio_21.mp3"
-  }
+  "background": "Dr. Sue Johnson is an author, clinical psychologist, researcher, professor and a leading innovator in the field of couple therapy. Sue is the primary developer of Emotionally Focused Couples Therapy (EFT), which has demonstrated its effectiveness in over 25 years of peer-reviewed clinical research. Her best-selling book Hold me Tight has been translated in 22 languages. She lives in Ottawa, Canada, with her husband and two children.",
+  "articles": [
+   {
+    "title": "Dr. Sue Johnson's Website",
+    "url": "www.drsuejohnson.com"
+   },
+   {
+    "title": "The New Frontier of Sex Intimac",
+    "url": "http://tedxtalks.ted.com/video/The-New-Frontier-of-Sex-Intimac"
+   }
+  ],
+  "products": [
+   {
+    "id": 36,
+    "name": "Emotionally Focused Couple Therapy For Dummies",
+    "url": "https://www.amazon.com/Emotionally-Focused-Couple-Therapy-Dummies/dp/1118512316/ref=sr_1_5?ie=UTF8&amp;qid=1475128638&amp;sr=8-5&amp;keywords=eft+relationship",
+    "author": "James Furrow",
+    "for": "Both"
+   },
+   {
+    "id": 19,
+    "name": "Hold Me Tight: Seven Conversations for a Lifetime of Love",
+    "url": "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X/ref=sr_1_21?ie=UTF8&qid=1467363080&sr=8-21&keywords=gottman",
+    "author": "Sue Johnson",
+    "for": "Both"
+   },
+   {
+    "id": 37,
+    "name": "Love Sense: The Revolutionary New Science of Romantic Relationships",
+    "url": "https://www.amazon.com/Love-Sense-Revolutionary-Romantic-Relationships/dp/0316133760/ref=sr_1_6?ie=UTF8&amp;qid=1475128691&amp;sr=8-6&amp;keywords=sue+johnson",
+    "author": "Sue Johnson",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-17.jpg",
+  "audioUrl": "/media/audio/audio_play_17.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-17.mp3"
+ },
+ {
+  "day": 18,
+  "slug": "day-18-values-of-life",
+  "title": "Values of life",
+  "type": "list-order",
+  "goal": "<p>Extensive research into the qualities of a happy couples has concluded that the most important element of a long-lasting, loving relationship is a shared attitude to life.</p><p>This means that one of the reasons why happy couples work so well together, despite being quite different people, is because there is a deeper level of shared values that keeps them solid and maybe surprisingly compatible.</p><p>Our values play a role in many aspects of our life including the choices we make, how we react or respond to situations, who we spend time with, the boundaries we set, and so much more. When our values are being honoured, we feel good. You and your partner will discover and discuss your values in life.</p>",
+  "howTo": "<ul><li>1. Go through the list of 35 Value Questions.</li><li>2. Check up to 10 values that are most important to you.</li><li>3. Rank them in importance from 1-10.</li><li>4. Discuss the values when you have both finished. Why did you choose these? What do you mean by a particular value?</li><li>5. Choose at least 5 values which you both agree will be “Your values in life”.</li><li>6. Make a photo and hang it up somewhere in your home so you see them every day! When you know what you believe in, it’s so much easier to make decisions that are in line with the kind of life you want to live.</li></ul>",
+  "data": [
+   {
+    "title": "Generosity",
+    "value": "Do you regularly give a part of your income to the charity or those in need?"
+   },
+   {
+    "title": "Friends & Family",
+    "value": "Do you enjoy spending your time, energy and resources on your friends and family?"
+   },
+   {
+    "title": "Adventure",
+    "value": "Do you appreciate new and thrilling experiences?"
+   },
+   {
+    "title": "Humor",
+    "value": "Do you love to laugh and see the lighter side of things?"
+   },
+   {
+    "title": "Authenticity",
+    "value": "Do you value saying and doing what is true to who you are?"
+   },
+   {
+    "title": "Compassion",
+    "value": "Do you appreciate tenderness,kindness, and being sensitive to the needs of others?"
+   },
+   {
+    "title": "Knowledge",
+    "value": "Do you set a high value on learning and contributing information?"
+   },
+   {
+    "title": "Excellence",
+    "value": "Do you enjoy doing something exceptionally well?"
+   },
+   {
+    "title": "Fame",
+    "value": "Do you enjoy being recognized and known by other people?"
+   },
+   {
+    "title": "Financially Responsible",
+    "value": "Do you value living within your means, paying bills on time and saving on a regular basis?"
+   },
+   {
+    "title": "Fun",
+    "value": "Do you love to be playful,entertain others or clown around?"
+   },
+   {
+    "title": "Service",
+    "value": "Do you enjoy helping others?"
+   },
+   {
+    "title": "Power",
+    "value": "Do you value influence and control?"
+   },
+   {
+    "title": "Integrity",
+    "value": "Do you like to say and do what is true to who you are?"
+   },
+   {
+    "title": "Peace",
+    "value": "Do you cherish times of tranquility without conflict or chaos?"
+   },
+   {
+    "title": "Respect",
+    "value": "Do you appreciate accepting"
+   },
+   {
+    "title": "Stability",
+    "value": "Do you treasure a balanced life with little change or upheaval?"
+   },
+   {
+    "title": "Security",
+    "value": "Do you appreciate freedom from danger or worry?"
+   },
+   {
+    "title": "Spirituality",
+    "value": "Do you value the spiritual aspects of our being?"
+   },
+   {
+    "title": "Achievements",
+    "value": "Do you enjoy accomplishing things and being task oriented?"
+   },
+   {
+    "title": "Trust",
+    "value": "Do you love people who are reliable and who keep their word?"
+   },
+   {
+    "title": "Career",
+    "value": "Do you consider your work or profession as very valuable?"
+   },
+   {
+    "title": "Wealth",
+    "value": "Do you love to have an abundance of money, possessions and/or property?"
+   },
+   {
+    "title": "Wisdom",
+    "value": "Do you set a high value on being discerning, wise or insightful?"
+   },
+   {
+    "title": "Challenge",
+    "value": "Do you appreciate confronting a demanding or difficult problem?"
+   },
+   {
+    "title": "Independence",
+    "value": "Do you love to be free from depending or relying on others?"
+   },
+   {
+    "title": "Cooperation",
+    "value": "Do you value working together with others?"
+   },
+   {
+    "title": "Adaptability",
+    "value": "Do you appreciate the ability to adjust to changing circumstances with ease?"
+   },
+   {
+    "title": "Humility",
+    "value": "Do you like to be modest, unassuming or unpretentious?"
+   },
+   {
+    "title": "Justice",
+    "value": "Do you treasure fair and impartial treatment for all?"
+   },
+   {
+    "title": "Loyalty",
+    "value": "Do you highly value people who are faithful?"
+   },
+   {
+    "title": "Leisure",
+    "value": "Do you appreciate time to relax, just doing what you want?"
+   },
+   {
+    "title": "Ambition",
+    "value": "Do you value hard work, advancement and improvement?"
+   },
+   {
+    "title": "Order",
+    "value": "Do you value neatness with everything in place?"
+   },
+   {
+    "title": "Solitude",
+    "value": "Do you like to have time"
+   }
+  ],
+  "background": null,
+  "articles": [
+   {
+    "title": "Relationship Roadblock Define Your Values",
+    "url": "https://www.psychologytoday.com/blog/fixing-families/201505/relationship-roadblock-define-your-values"
+   },
+   {
+    "title": "What are the the most important values to have in common that make for a good long term relationship?",
+    "url": "https://www.quora.com/What-are-the-the-most-important-values-to-have-in-common-that-make-for-a-good-long-term-relationship"
+   },
+   {
+    "title": "Why shared values are more important than shared interests",
+    "url": "http://www.eharmony.co.uk/dating-advice/dating/why-shared-values-are-more-important-than-shared-interests#.WCsNW5MrLow"
+   }
+  ],
+  "products": [],
+  "imageUrl": "/media/images/day-18.jpg",
+  "audioUrl": "/media/audio/audio_play_18.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-18.mp3"
+ },
+ {
+  "day": 19,
+  "slug": "day-19-love-map",
+  "title": "Love Map",
+  "type": "single-picture",
+  "goal": "<p>Create your own love map by playing “ The Love Map game’. The principle behind building a Love Map is simply: knowing the little things about your partner’s life creates a strong foundation for your friendship and intimacy. Research has found that emotionally intelligent couples are intimately familiar with each other’s worlds. They know each other’s goals in life, each other’s worries, each other’s hopes and dreams. Without such a love map, you can’t really know your partner. It is said that couples who have detailed love maps of each other’s world are far better prepared to cope with stressful events and conflict.</p>",
+  "howTo": "<ul><li>1. Write the numbers 1 through 20 on a piece of paper. Then take turns asking your partner the questions below.</li><li>2. If your partner answers correctly (and YOU are the judge), he or she receives the number of points indicated for that question, and you also receive one point. If your partner answers incorrectly, neither of you receives any points. High score wins.</li><li><br/></li><li>While you’re having fun playing, you’ll also be expanding and deepening your relationship.</li></ul><p><b>The Love Map</b></p><p>Name my two closest friends. (2)<br/>What was I wearing when we first met? (2)<br/>Name one of my hobbies. (3)<br/>What stresses am I facing right now? (4)<br/>Describe in detail what I did today, or yesterday. (4)<br/>What kind of present would I like best? (2)<br/>What personal improvements do I want to make in my life? (4)<br/>What was my favourite holiday? (2)<br/>What is one of my greatest fears or disaster scenarios? (3)<br/>What is my favourite restaurant? (2)<br/>What turns me on sexually? (3)<br/>What is my favourite time of the day for lovemaking? (2)<br/>Of all the people we both know, who do I like the least? (3)<br/>What is my favourite TV show? (2)<br/>Do I have a secret ambition? What is it? (4)<br/>What was my worst childhood experience? (3)<br/>What is the date of our anniversary? (1)<br/>Who is my greatest source of support (other than you)? (3)<br/>What are the important events coming up in my life? How do I feel about them? (4)<br/>What is one of my favourite ways to spend an evening? (2)<br/></p>",
+  "data": null,
+  "background": "<p>Dr. John Gottmann (1942) is a professor emeritus in psychology known for his work on marital stability and relationship analysis through scientific direct observations. In his book, The Seven Principles for Making Marriage Work, he sets out his idea for building a Love Map. With his wife, Julie Schwartz, Gottman heads a non-profit research institute (The Relationship Research Institute) and a for-profit therapist training entity (The Gottman Institute). www.gottman.com</p>",
+  "articles": [],
+  "products": [
+   {
+    "id": 6,
+    "name": "The Seven Principles for Making Marriage Work: A Practical Guide from the Country's Foremost Relationship Expert",
+    "url": "https://www.amazon.com/Seven-Principles-Making-Marriage-Work/dp/0553447718/ref=sr_1_1?ie=UTF8&qid=1467362511&sr=8-1&keywords=gottman",
+    "author": "Gottman",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-19.jpg",
+  "audioUrl": "/media/audio/audio_play_19.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-19.mp3"
+ },
+ {
+  "day": 20,
+  "slug": "day-20-relationshift-work-out",
+  "title": "Relationshift work out",
+  "type": "single-picture",
+  "goal": "<p>Invitation for you and your partner to come up with your own Relationshift exercise. What works in your relationship and how do you invest in your relationship? What is your relationship work out?</p>",
+  "howTo": "<p>Try to come up with something creative, fun and something new. We already got some ideas from other<br/>couples, who love to share their ideas with you.</p><ul><li>- Angela and Harold go out once a month. One of them decides what to do when they go out (e.g. organize a<br/>picnic) and the next time it is the other that makes a plan (e.g. go to a meditation<br/>class). After 6 months they switch, then Angela comes up with something she<br/>thinks Harold likes and Harold surprises Angela with something she enjoys very<br/>much.</li></ul><ul><li>- Ester en Sue like to read each other every week a different poem. Their favourite poem is the poem of<br/>Kahlil Gibran on marriage. </li></ul><ul><li>- Elizabeth and Mike like to try new workouts together like Zumba, Booty Barre, anything dance-related. They<br/>enjoy the fun and the fact that they learn new things.</li></ul><p>Please share your ideas of what you do to keep the fire burning in your relationship and inspire thousands<br/>of other couples. </p>",
+  "data": null,
+  "background": null,
+  "articles": [],
+  "products": [
+   {
+    "id": 38,
+    "name": "Couples Retreat",
+    "url": "https://www.amazon.com/Couples-Retreat-Vince-Vaughn/dp/B0037O5LLE/ref=sr_1_1?ie=UTF8&qid=1475500035&sr=8-1&keywords=couple+retreat",
+    "author": "Peter Billingsley",
+    "for": "Both"
+   },
+   {
+    "id": 40,
+    "name": "Kahlil Gibran's The Prophet",
+    "url": "https://www.amazon.com/Kahlil-Gibrans-Prophet-Blu-ray-Digital/dp/B014U45D08",
+    "author": "Roger Allers",
+    "for": "Both"
+   },
+   {
+    "id": 39,
+    "name": "The Prophet (A Borzoi Book)",
+    "url": "https://www.amazon.com/Prophet-Borzoi-Book-Kahlil-Gibran/dp/0394404289/ref=sr_1_1?s=books&ie=UTF8&qid=1475500082&sr=1-1&keywords=the+prophet",
+    "author": "Kahlil Gibran",
+    "for": "Both"
+   }
+  ],
+  "imageUrl": "/media/images/day-20.jpg",
+  "audioUrl": "/media/audio/audio_play_20.mp3",
+  "exerciseAudioUrl": null,
+  "narrationUrl": "/media/audio/day-20.mp3"
+ },
+ {
+  "day": 21,
+  "slug": "day-21-the-story-of-us-part-2",
+  "title": "The Story of Us: Part 2",
+  "type": "noop",
+  "goal": "<p>To celebrate that you have completed this journey together. Hooray, You did it!</p>",
+  "howTo": "<ul><li></li>1. Listen to a short meditation from Kinchem Hegedus.</ul><ul>Click <b>Play</b> on the first media player below to listen to Kinchem Hegedus</ul><ul><br/>2. Share your ‘story of us’ with your partner.</ul><ul>Remember you are authoring your story every moment, every day, so as you open your heart to listen to this story, understand both the power of story and that you can begin to rewrite your story any time.</ul><ul><br/>3. When you have listened to each others stories, Kinchem will guide you again by asking you some questions.</ul><ul>Click <b>Play</b> on the second media player below to listen to Kinchem Hegedus<br/><br/><br/>Thank you for your trust.<li></li></ul>",
+  "data": null,
+  "background": "<p>Kinchem Hegedus, a writer from Australia, will now guide you and your partner in this process. Kinchem Hegedus lives and works in Sydney with her family and she organizes courses that help you with mapping your “inner landscape”.</p>",
+  "articles": [
+   {
+    "title": "Display Your Love Story",
+    "url": "https://nl.pinterest.com/pin/90142430019416385/"
+   },
+   {
+    "title": "What's your Love Story?",
+    "url": "https://www.psychologytoday.com/articles/200007/whats-your-love-story"
+   }
+  ],
+  "products": [],
+  "imageUrl": "/media/images/day-21.jpg",
+  "audioUrl": "/media/audio/audio_play_21.mp3",
+  "exerciseAudioUrl": "/media/audio/exercise_audio_21.mp3",
+  "narrationUrl": "/media/audio/day-21.mp3"
+ }
 ]

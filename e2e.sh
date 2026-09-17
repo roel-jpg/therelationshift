@@ -37,7 +37,10 @@ page() { curl -s -b "$1" "$2" | strip; }
 rm -f a.jar b.jar c.jar
 check "home 200" "$(curl -s -o /dev/null -w '%{http_code}' $B/)" 200
 check "day 1 open" "$(curl -s $B/program/day/1 | strip | grep -c 'Goals in life')" 1
-check "day 2 needs login" "$(curl -s -o /dev/null -w '%{http_code}' $B/program/day/2)" 307
+# OPEN_PROGRAM staat tijdelijk aan: elke dag is te lezen zonder account. Zet dit terug op 307 zodra hij weer uit gaat.
+check "day 2 open while OPEN_PROGRAM" "$(curl -s -o /dev/null -w '%{http_code}' $B/program/day/2)" 200
+check "narration player on a day" "$(curl -s $B/program/day/2 | strip | grep -c 'media/audio/day-2.mp3')" 1
+check "all 21 days listed publicly" "$(curl -s $B/program/days | strip | grep -o 'class="hex[^"]*"' | wc -l | tr -d ' ')" 21
 
 # Sign up user A
 act_state a.jar $SIGNUP $B/signup -F firstName=Anna -F email=anna@example.com -F password=password1 >/dev/null
